@@ -41,6 +41,14 @@
     - !type:DepartmentTimeRequirement
       department: Command
       time: 40000 # 11.1 hours
+  - type: GhostRoleMobSpawner
+    prototype: MobHumanSyndicateListener
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+      - state: green
+      - sprite: Structures/Wallmounts/signs.rsi
+        state: radiation
 
 - type: entity
   noSpawn: true
