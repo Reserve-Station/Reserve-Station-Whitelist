@@ -148,3 +148,5 @@
     - /Audio/Lobby/horn.ogg
   # Reserve
     - /Audio/Lobby/retour.ogg
+    - /Audio/_Reserve/Lobby/double-u.ogg # _Reserve New Lobby Music
+    - /Audio/_Reserve/Lobby/neon.ogg # _Reserve New Lobby Music

@@ -88,3 +88,7 @@
     - /Audio/StationEvents/last_call.ogg
     - /Audio/StationEvents/tansume.ogg
     - /Audio/StationEvents/sponsored-by-syndicate.ogg
+    - /Audio/Corvax/StationEvents/level.ogg # Corvax-NukeMusic
+    - /Audio/_Reserve/StationEvents/broken.ogg # _Reserve-NukeMusic
+    - /Audio/_Reserve/StationEvents/ourclasstrial.ogg # _Reserve-NukeMusic
+    - /Audio/_Reserve/StationEvents/running-in.ogg # _Reserve-NukeMusic
