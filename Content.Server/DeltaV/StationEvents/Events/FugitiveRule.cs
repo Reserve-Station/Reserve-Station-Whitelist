@@ -1,7 +1,6 @@
 using Content.Server.Antag;
 using Content.Server.Communications;
-using Content.Server.GameTicking.Components; // TODO: Shared when upstream merged
-using Content.Server.Paper;
+using Content.Server.Forensics;
 using Content.Server.StationEvents.Components;
 using Content.Shared.Ghost;
 using Content.Shared.Hands.EntitySystems;
@@ -106,9 +105,9 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
     private FormattedMessage GenerateReport(EntityUid uid, FugitiveRuleComponent rule)
     {
         var report = new FormattedMessage();
-        report.PushMarkup(Loc.GetString("fugitive-report-title", ("name", uid)));
+        report.PushMarkup(Loc.GetString("fugitive-report-title"));
         report.PushNewline();
-        report.PushMarkup(Loc.GetString("fugitive-report-first-line", ("name", uid)));
+        report.PushMarkup(Loc.GetString("fugitive-report-first-line"));
         report.PushNewline();
 
         if (!TryComp<HumanoidAppearanceComponent>(uid, out var humanoid))
@@ -126,6 +125,13 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
         if (TryComp<PhysicsComponent>(uid, out var physics))
             report.PushMarkup(Loc.GetString("fugitive-report-weight", ("weight", Math.Round(physics.FixturesMass))));
 
+        // add a random identifying quality that officers can use to track them down
+        report.PushMarkup(RobustRandom.Next(0, 2) switch
+        {
+            0 => Loc.GetString("fugitive-report-detail-dna", ("dna", GetDNA(uid))),
+            _ => Loc.GetString("fugitive-report-detail-prints", ("prints", GetPrints(uid)))
+        });
+
         report.PushNewline();
         report.PushMarkup(Loc.GetString("fugitive-report-crimes-header"));
 
@@ -138,6 +144,16 @@ public sealed class FugitiveRule : StationEventSystem<FugitiveRuleComponent>
         report.AddMarkup(Loc.GetString("fugitive-report-last-line"));
 
         return report;
+    }
+
+    private string GetDNA(EntityUid uid)
+    {
+        return CompOrNull<DnaComponent>(uid)?.DNA ?? "?";
+    }
+
+    private string GetPrints(EntityUid uid)
+    {
+        return CompOrNull<FingerprintComponent>(uid)?.Fingerprint ?? "?";
     }
 
     private void AddCharges(FormattedMessage report, FugitiveRuleComponent rule)
