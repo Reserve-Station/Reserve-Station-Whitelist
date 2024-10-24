@@ -76,6 +76,10 @@
   - type: ProjectileGrenade # Should be worse than the syndicate one
     fillPrototype: PelletClusterLethalWeak
     capacity: 20
+  - type: Tag # DeltaV: add ExplosivePayload tag to it
+    tags:
+    - ExplosivePayload
+    - Payload
 
 - type: entity
   name: chemical payload
