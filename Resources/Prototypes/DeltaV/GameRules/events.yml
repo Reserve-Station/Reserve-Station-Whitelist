@@ -1,51 +1,4 @@
 - type: entity
-  id: XenoVents
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-xeno-vent-start-announcement
-    startAudio:
-      path: /Audio/Announcements/aliens.ogg
-    earliestStart: 45
-    minimumPlayers: 20
-    weight: 1
-    duration: 60
-  - type: VentCrittersRule
-    entries:
-    - id: MobXeno
-      prob: 0.08
-    - id: MobXenoRouny
-      prob: 0.01
-    - id: MobXenoDrone
-      prob: 0.01
-    - id: MobXenoSpitter
-      prob: 0.01
-    - id: MobXenoRunner
-      prob: 0.01
-    - id: MobXenoPraetorian
-      prob: 0.01
-    - id: MobXenoRavager
-      prob: 0.01
-    - id: MobXenoQueen
-      prob: 0.007
-
-- type: entity
-  id: MothroachSpawn
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: StationEvent
-    earliestStart: 15
-    minimumPlayers: 15
-    weight: 4
-    duration: 60
-  - type: VentCrittersRule
-    entries:
-    - id: MobMothroach
-      prob: 0.05
-
-- type: entity
   id: ListeningPost
   parent: BaseGameRule
   noSpawn: true
@@ -56,6 +9,8 @@
     minimumPlayers: 25
     maxOccurrences: 1
     duration: null
+    chaos:
+      Hostile: 150
   - type: RuleGrids
   - type: LoadFarGridRule
     path: /Maps/Shuttles/DeltaV/listening_post.yml
@@ -88,59 +43,18 @@
         prototype: ListeningPost
 
 # Mid round antag spawns
+
 - type: entity
-  abstract: true
   parent: BaseGameRule
-  id: BaseMidRoundAntag
-  components:
-  - type: StationEvent
-    weight: 7
-    reoccurrenceDelay: 5
-    minimumPlayers: 15
-    earliestStart: 25
-  - type: MidRoundAntagRule
-
-#- type: entity
-#  noSpawn: true
-#  parent: BaseMidRoundAntag
-#  id: RatKingSpawn
-#  components:
-#  if you uncomment this update this for antag refactor, below wont work
-#  - type: MidRoundAntagRule
-#    spawner: SpawnPointGhostRatKing
-
-- type: entity
-  parent: BaseMidRoundAntag
-  id: ParadoxAnomaly
-  components:
-  - type: StationEvent
-    duration: null
-  - type: ParadoxClonerRule
-  - type: AntagObjectives
-    objectives:
-    - ParadoxAnomalyKillObjective
-    - ParadoxAnomalyFriendObjective
-    - ParadoxAnomalyEscapeObjective
-  - type: AntagSelection
-    agentName: paradox-anomaly-round-end-agent-name
-    definitions:
-    - spawnerPrototype: SpawnPointGhostParadoxAnomaly
-      min: 1
-      max: 1
-      pickPlayer: false
-      mindComponents:
-      - type: RoleBriefing
-        briefing: paradox-anomaly-role-briefing
-      - type: TerminatorRole
-        prototype: ParadoxAnomaly
-
-- type: entity
-  parent: BaseMidRoundAntag
   id: Fugitive
   components:
+  - type: GameRule
+    chaosScore: 100
   - type: StationEvent
     minimumPlayers: 40 # it's really easy to find fugitives on lowpop
     duration: null
+    chaos:
+      Hostile: 25
   - type: FugitiveRule
   - type: AntagLoadProfileRule
   - type: AntagObjectives
@@ -169,11 +83,17 @@
   parent: BaseGameRule
   id: SyndicateRecruiter
   components:
+  - type: GameRule
+    chaosScore: 300
   - type: StationEvent
+    earliestStart: 15
     weight: 4
     minimumPlayers: 20
     maxOccurrences: 1
     duration: null
+    chaos:
+      Hostile: 75
+      Medical: 75
   - type: RuleGrids
   - type: LoadMapRule
     preloadedGrid: SyndieRecruiterShip
@@ -195,8 +115,8 @@
       components:
       - type: RandomMetadata
         nameSegments:
-        - fake_human_first
-        - fake_human_last
+        - fake_human_first #todo change
+        - fake_human_last #todo change
       - type: RandomHumanoidAppearance
         randomizeName: false
       - type: NpcFactionMember
@@ -213,15 +133,20 @@
   id: SynthesisSpecialist
   components:
   - type: StationEvent
+    earliestStart: 15
     weight: 4
     minimumPlayers: 20
     maxOccurrences: 1
-    duration: 1 
+    duration: 1
+    chaos:
+      Hostile: 75
+      Medical: 75
+  - type: GameRule
+    chaosScore: 300
   - type: RuleGrids
   - type: LoadMapRule
     preloadedGrid: SyndieSynthesisShip
   - type: AntagSpawner
-    prototype: MobHuman
   - type: AntagObjectives
     objectives:
     - SynthesisSurviveObjective
@@ -237,8 +162,8 @@
       components:
       - type: RandomMetadata
         nameSegments:
-        - fake_human_first
-        - fake_human_last
+        - fake_human_first #todo change
+        - fake_human_last #todo change
       - type: RandomHumanoidAppearance
         randomizeName: false
       - type: NpcFactionMember
@@ -248,4 +173,4 @@
       - type: SynthesisRole
         prototype: SynthesisSpecialist
       - type: RoleBriefing
-        briefing: You are Interdyne's Synthesis Specialist! Prescribe deadly medications, barter your goods, and make a killing.
+        briefing: synthesis-role-briefing

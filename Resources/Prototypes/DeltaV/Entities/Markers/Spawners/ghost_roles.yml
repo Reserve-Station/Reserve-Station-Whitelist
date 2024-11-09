@@ -45,17 +45,6 @@
 - type: entity
   noSpawn: true
   parent: BaseAntagSpawner
-  id: SpawnPointGhostParadoxAnomaly
-  name: paradox anomaly spawn point
-  components:
-  - type: GhostRole
-    name: ghost-role-information-paradox-anomaly-name
-    description: ghost-role-information-paradox-anomaly-description
-    rules: ghost-role-information-paradox-anomaly-rules
-
-- type: entity
-  noSpawn: true
-  parent: BaseAntagSpawner
   id: SpawnPointGhostFugitive
   name: fugitive spawn point
   components:
@@ -81,8 +70,8 @@
     - !type:OverallPlaytimeRequirement
       time: 86400 # 24h so you probably know some general lore or something
     - !type:RoleTimeRequirement
-      role: JobLawyer
-      time: 3600 # 1h as lawyer so you maybe know how to paperwork
+      role: Command
+      time: 3600 # 1h as Command so you maybe know how to paperwork
   - type: Sprite
     layers:
     - state: green
