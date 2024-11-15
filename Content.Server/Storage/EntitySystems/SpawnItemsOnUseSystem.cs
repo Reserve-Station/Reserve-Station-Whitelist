@@ -109,14 +109,18 @@ namespace Content.Server.Storage.EntitySystems
             {
                 // Don't delete the entity in the event bus, so we queue it for deletion.
                 // We need the free hand for the new item, so we send it to nullspace.
+                args.Handled = true;
                 _transform.DetachEntity(uid, Transform(uid));
                 QueueDel(uid);
             }
 
             if (entityToPlaceInHands != null)
+            {
                 _hands.PickupOrDrop(args.User, entityToPlaceInHands.Value);
-
-            args.Handled = true;
+                _audio.PlayPvs(component.Sound, entityToPlaceInHands.Value); //EE spray paint port
+            }
         }
+
     }
+
 }
