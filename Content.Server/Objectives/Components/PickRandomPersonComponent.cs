@@ -20,4 +20,6 @@ public sealed partial class PickRandomPersonComponent : Component
     /// </summary>
     [DataField]
     public bool OnlyChoosableJobs;
+    [DataField]
+    public bool NeedsOrganic; // Goobstation: Only pick non-silicon players.
 }

@@ -65,6 +65,26 @@ public sealed class KillPersonConditionSystem : EntitySystem
     private void OnPersonAssigned(Entity<PickRandomPersonComponent> ent, ref ObjectiveAssignedEvent args)
     {
         AssignRandomTarget(ent, ref args, _ => true, ent.Comp.OnlyChoosableJobs); // DeltaV: pass onlyJobs
+        // invalid objective prototype
+        if (!TryComp<TargetObjectiveComponent>(uid, out var target))
+        {
+            args.Cancelled = true;
+            return;
+        }
+
+        // target already assigned
+        if (target.Target != null)
+            return;
+
+        // no other humans to kill
+        var allHumans = _mind.GetAliveHumans(args.MindId, comp.NeedsOrganic);
+        if (allHumans.Count == 0)
+        {
+            args.Cancelled = true;
+            return;
+        }
+
+        _target.SetTarget(uid, _random.Pick(allHumans), target);
     }
 
     private void OnHeadAssigned(Entity<PickRandomHeadComponent> ent, ref ObjectiveAssignedEvent args)
