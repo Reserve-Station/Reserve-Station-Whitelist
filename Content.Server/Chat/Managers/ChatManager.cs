@@ -199,6 +199,8 @@ using Robust.Shared.Player;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
 using Content.Server._RMC14.LinkAccount; // RMC - Patreon
+using Content.Shared.ADT.CCVar; //Reserve edit
+using Content.Server.Discord; //Reserve edit
 
 namespace Content.Server.Chat.Managers;
 
@@ -226,6 +228,8 @@ internal sealed partial class ChatManager : IChatManager
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly PlayerRateLimitManager _rateLimitManager = default!;
     [Dependency] private readonly LinkAccountManager _linkAccount = default!; // RMC - Patreon
+    [Dependency] private readonly IConfigurationManager _cfg = default!; //Reserve edit
+    [Dependency] private readonly DiscordWebhook _discord = default!; //Reserve edit
 
     /// <summary>
     /// The maximum length a player-sent message can be sent
@@ -445,7 +449,7 @@ internal sealed partial class ChatManager : IChatManager
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"OOC from {player:Player}: {message}");
     }
 
-    private void SendAdminChat(ICommonSession player, string message)
+    private async void SendAdminChat(ICommonSession player, string message)
     {
         if (!_adminManager.IsAdmin(player))
         {
@@ -478,6 +482,24 @@ internal sealed partial class ChatManager : IChatManager
         }
 
         _adminLogger.Add(LogType.Chat, $"Admin chat from {player:Player}: {message}");
+        // ADT-Tweak-start: Постит в дис весь админчат, если есть данный вебхук
+        if (!string.IsNullOrEmpty(_cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook)))
+        {
+            var webhookUrl = _cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook);
+
+            if (webhookUrl == null)
+                return;
+
+            if (await _discord.GetWebhook(webhookUrl) is not { } webhookData)
+                return;
+            var payload = new WebhookPayload
+            {
+                Content = $"***AdminChat***: **{senderName}**: {message}"
+            };
+            var identifier = webhookData.ToIdentifier();
+            await _discord.CreateMessage(identifier, payload);
+        }
+        // ADT-Tweak-end
     }
 
     #endregion
