@@ -11,3 +11,6 @@ uplink-bionic-syrinx-implanter-desc = An implant that enhances a harpy's natural
 
 uplink-chainsmoker-bundle-name = Chainsmoker Bundle
 uplink-chainsmoker-bundle-desc = A Carton of 6 Packs of Interdyne Herbals, plus a weaponized flippo that turns welding fuel into incendiary shots.
+
+uplink-objective-syndicate-board-name = Syndicate law board
+uplink-objective-syndicate-board-desc = Its expensive, don't lose it!

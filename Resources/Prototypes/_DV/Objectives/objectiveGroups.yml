@@ -1,0 +1,4 @@
+- type: weightedRandom #not used by the traitor yet. maybe later
+  id: TraitorObjectiveGroupSpecial
+  weights:
+    UploadAILawObjective: 1

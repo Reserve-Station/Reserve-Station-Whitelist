@@ -1,9 +1,9 @@
 using Content.Shared.CartridgeLoader;
-using Content.Server.DeltaV.CartridgeLoader;
+using Content.Server._DV.CartridgeLoader;
 using Content.Server.CartridgeLoader.Cartridges;
 using Content.Server.CartridgeLoader;
 
-namespace Content.Server.DeltaV.CartridgeLoader.Cartridges;
+namespace Content.Server._DV.CartridgeLoader.Cartridges;
 
 public sealed class CrimeAssistCartridgeSystem : EntitySystem
 {
