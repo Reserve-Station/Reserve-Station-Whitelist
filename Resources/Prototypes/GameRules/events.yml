@@ -277,6 +277,12 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
+  # _Reserve MoreAnonces (sound and alert upgrades) bgn
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+      params:
+        volume: -4
+  # _Reserve MoreAnonces (sound and alert upgrades) end
     weight: 7
     duration: 1
     minimumPlayers: 15
@@ -293,6 +299,13 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
+  # _Reserve MoreAnonces (sound and alert upgrades) bgn
+    startAnnouncementColor: "#18abf5"
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+      params:
+        volume: -4
+  # _Reserve MoreAnonces (sound and alert upgrades) end
     startAnnouncement: station-event-bureaucratic-error-announcement
     minimumPlayers: 25
     weight: 3
@@ -311,6 +324,13 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-clerical-error-announcement
+  # _Reserve MoreAnonces (sound and alert upgrades) bgn
+    startAnnouncementColor: "#18abf5"
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+      params:
+        volume: -4
+  # _Reserve MoreAnonces (sound and alert upgrades) end
     minimumPlayers: 15
     weight: 5
     duration: 1
@@ -672,8 +692,12 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
+  # _Reserve MoreAnonces (sound and alert upgrades) bgn
     startAudio:
-      path: /Audio/_Reserve/announcement/aliens.ogg # Reserve
+      path: /Audio/_Reserve/Announcements/lifesigns.ogg
+      params:
+        volume: -4
+  # _Reserve MoreAnonces (sound and alert upgrades) end
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -700,8 +724,12 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
+  # _Reserve MoreAnonces (sound and alert upgrades) bgn
     startAudio:
-      path: /Audio/_Reserve/announcement/aliens.ogg # Reserve
+      path: /Audio/_Reserve/Announcements/lifesigns.ogg
+      params:
+        volume: -4
+  # _Reserve MoreAnonces (sound and alert upgrades) end
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -728,8 +756,12 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
+  # _Reserve MoreAnonces (sound and alert upgrades) bgn
     startAudio:
-      path: /Audio/_Reserve/announcement/aliens.ogg # Reserve
+      path: /Audio/_Reserve/Announcements/lifesigns.ogg
+      params:
+        volume: -4
+  # _Reserve MoreAnonces (sound and alert upgrades) end
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -753,7 +785,9 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/_Reserve/announcement/aliens.ogg # Reserve
+      path: /Audio/_Reserve/Announcements/lifesigns.ogg
+      params:
+        volume: -4
     earliestStart: 45 # DeltaV - was 20
     minimumPlayers: 30 # DeltaV - was 20
     weight: 1 # DeltaV - was 1.5
@@ -923,6 +957,14 @@
   id: IonStorm
   components:
   - type: StationEvent
+  # _Reserve MoreAnonces (sound and alert upgrades) bgn
+    startAnnouncementColor: "#18abf5"
+    startAnnouncement: station-event-ion-storm-start-announcement
+    startAudio:
+      path: /Audio/_Reserve/Announcements/i-storm1.ogg
+      params:
+        volume: -4
+  # _Reserve MoreAnonces (sound and alert upgrades) end
     weight: 8
     reoccurrenceDelay: 20
     duration: 1
@@ -960,9 +1002,12 @@
   parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
+  # _Reserve MoreAnonces (sound and alert upgrades) bgn
     startAudio:
-      path: /Audio/_Reserve/announcement/attention.ogg # Reserve
-    weight: 5
+      path: /Audio/_Reserve/Announcements/greytide.ogg
+      params:
+        volume: -4
+  # _Reserve MoreAnonces (sound and alert upgrades) end
     minimumPlayers: 25
     reoccurrenceDelay: 20
     chaos: # Goobstation
