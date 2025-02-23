@@ -41,3 +41,11 @@ ghost-role-information-syndicate-refugee-rules = You're a regular crewmember fro
                                                     You are a [color=green][bold]Non-antagonist[/bold][/color].
                                                     You're allowed to commit crimes, don't be a threat to the station, don't assist Syndicate agents, metashield rules applies.
                                                     All normal rules apply unless an administrator tells you otherwise.
+
+ghost-role-information-roboneuroticist-name = Syndicate Robo-Neuroticist
+ghost-role-information-roboneuroticist-description = You are a member of the Syndicate, sent by Cybersun Industries! You are provided with all of the tools to manufacture and upgrade the various Silicon entities aboard a nearby station, in the name of accomplishing your nefarious goals.
+ghost-role-information-roboneuroticist-rules =
+    Build machines of war, and send them to the station to extract your toll.
+    Your ship contains all of the resources you need to get started, but for the more advanced modules, you must strike out at the station.
+
+deltav-ghost-role-information-space-dragon-description = Call in 3 carp rifts and take over this quadrant! You must place a rift every 10 minutes or suffer the consequences!
