@@ -636,6 +636,8 @@
   - type: EmagLatheRecipes # Goobstation
     emagStaticPacks:
     - MechWeaponsSecurityStatic
+    - Cybernetics # Shitmed change
+    - RoboticsEmagStatic # DeltaV
     emagDynamicPacks:
     - MechWeaponsSalvage
     - MechWeaponsSecurityLight
