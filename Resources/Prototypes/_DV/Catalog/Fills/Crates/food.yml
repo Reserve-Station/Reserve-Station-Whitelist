@@ -1,0 +1,76 @@
+- type: entity
+  id: CrateFoodDonkpocketSavory
+  parent: CratePlastic
+  components:
+    - type: StorageFill
+      contents:
+        - id: FoodBoxDonkpocket
+          amount: 2
+        - id: FoodBoxDonkpocketPizza
+          amount: 1
+        - id: FoodBoxDonkpocketSpicy
+          amount: 1
+        - id: FoodBoxDonkpocketTeriyaki
+          amount: 1
+        - id: FoodBoxDonkpocketDink
+          prob: 0.1
+
+- type: entity
+  id: CrateFoodDonkpocketSweet
+  parent: CratePlastic
+  components:
+    - type: StorageFill
+      contents:
+        - id: FoodBoxDonkpocket
+          amount: 2
+        - id: FoodBoxDonkpocketHonk
+          amount: 1
+        - id: FoodBoxDonkpocketBerry
+          amount: 1
+        - id: FoodBoxDonkpocketDink
+          prob: 0.1
+
+- type: entity
+  id: CrateFoodEmergencyPie
+  parent: CratePlastic
+  name: emergency pie delivery
+  description: '"Then let them eat pie."'
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodPieBananaCream
+      amount: 13
+
+- type: entity
+  parent: LockerFreezerBase
+  id: LockerFreezerMRE
+  suffix: MRE, Alcohol, No Access
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: FillRandomAlcoholicBottle
+          rolls:  !type:ConstantNumberSelector
+            value: 3
+        - id: BoxMRE
+        - id: FoodSnackEnergyBar
+          amount: !type:RangeNumberSelector
+            range: 2, 4
+
+- type: entityTable
+  id: FillRandomAlcoholicBottle
+  table: !type:GroupSelector
+    children:
+    - id: DrinkAleBottleFullGrowler
+    - id: DrinkBeerGrowler
+    - id: DrinkCoffeeLiqueurBottleFull
+    - id: DrinkCognacBottleFull
+    - id: DrinkGinBottleFull
+    - id: DrinkRumBottleFull
+    - id: DrinkTequilaBottleFull
+    - id: DrinkVermouthBottleFull
+    - id: DrinkVodkaBottleFull
+    - id: DrinkWhiskeyBottleFull
+    - id: DrinkWineBottleFull
