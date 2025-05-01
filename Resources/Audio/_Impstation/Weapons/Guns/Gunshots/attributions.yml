@@ -4,15 +4,46 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - files: ["adder.ogg"]
+- files: ["silenced2"]
+  license: "CC0-1.0"
+  copyright: "Made by Carlfnf on Freesound"
+  source: "https://freesound.org/s/690099/"
+
+- files: ["autodisabler"]
+  license: "CC-BY-3.0"
+  copyright: "Made by flyingsaucerinvasion on Freesound and edited by DVD Player"
+  source: "https://freesound.org/people/flyingsaucerinvasion/sounds/615811/"
+
+- files: ["beecannon"]
+  license: "CC-BY-3.0"
+  copyright: "made by Lee Barkovich on opengameart"
+  source: https://opengameart.org/content/robotic-mechanic-step-sounds
+
+- files: ["beecannon2"]
+  license: "CC-BY-3.0"
+  copyright: "made by Red Eclipse on opengameart"
+  source: https://opengameart.org/content/red-eclipse-sounds
+
+- files: ["blastercannon"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Made by Q009 on opengameart and edited by DVD Player"
+  source: "https://opengameart.org/content/q009s-weapon-sounds"
+
+- files: ["blasterpist"]
+  license: "CC0-1.0"
+  copyright: "Made by SuperPhat on freesound and edited by DVD Player"
+  source: "https://freesound.org/people/SuperPhat/sounds/531861/"
+
+- files: ["blasterrunner"]
   license: "CC-BY-4.0"
   copyright: "Made By Artninja on freesound-- CC-BY-4.0"
   source: "https://freesound.org/people/Artninja/sounds/786134/"
-  
+
 - files: ["akurra.ogg"]
   license: "CC-BY-4.0"
   copyright: "Made By Artninja on freesound and Edited by DVDPlayerOfDiscordFame --CC-BY-4.0"
   source: "https://freesound.org/people/Artninja/sounds/786134/"
-  
+
 - files: ["anaconda.ogg"]
   license: "CC0-1.0"
   copyright: "Made by SuperPhat on Freesound"
@@ -22,7 +53,7 @@
   license: "CC-BY-3.0"
   copyright: "made by Lee Barkovich on opengameart"
   source: https://opengameart.org/content/robotic-mechanic-step-sounds
-  
+
 - files: ["beecannon2.ogg"]
   license: "CC-BY-3.0"
   copyright: "made by Red Eclipse on opengameart"
@@ -32,8 +63,8 @@
   license: "CC-BY-3.0"
   copyright: "made by Red Eclipse on opengameart"
   source: https://opengameart.org/content/red-eclipse-sounds
- 
+
 - files: ["leviathan.ogg"]
   license: "CC-BY-SA-3.0"
   copyright: "Two sounds made by Q009 on opengameart layered together"
-  source: "https://opengameart.org/content/q009s-weapon-sounds"  
+  source: "https://opengameart.org/content/q009s-weapon-sounds"
