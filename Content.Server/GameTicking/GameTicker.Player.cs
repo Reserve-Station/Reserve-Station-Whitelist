@@ -42,6 +42,8 @@ using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Content.Server.Discord;
+using Content.Server.ADT.Administration;
+using System.Linq;
 
 namespace Content.Server.GameTicking
 {
@@ -91,10 +93,24 @@ namespace Content.Server.GameTicking
                     var firstConnection = record != null &&
                                           Math.Abs((record.FirstSeenTime - record.LastSeenTime).TotalMinutes) < 60; //Reserve edit - until 1hr played total
 
-                    var firstSeenTime = record?.FirstSeenTime.ToString("dd.MM.yyyy") ?? "неизвестно"; // Reserve edit- first connection date
+                    var firstSeenTime = record?.FirstSeenTime.ToString("dd.MM.yyyy") ?? "unknown"; // Reserve edit- first connection date
 
-                    _chatManager.SendAdminAnnouncement(firstConnection
-                        ? Loc.GetString("player-first-join-message", ("name", args.Session.Name)) +$" с {firstSeenTime}." //Reserve edit
+                    //ADT tweak begin
+                    var creationDate = "Unable to get account creation date";
+                    try
+                    {
+                        // Получаем дату создания аккаунта через API визардов
+                        creationDate = await AuthApiHelper.GetCreationDate(args.Session.UserId.ToString());
+                    }
+                    catch (Exception ex)
+                    {
+                        Log.Error($"Ошибка при получении даты создания аккаунта: {ex.Message}");
+                    }
+                    //ADT tweak end
+                        _chatManager.SendAdminAnnouncement(firstConnection
+                        ? Loc.GetString("player-first-join-message", ("name", args.Session.Name)) +
+                          Loc.GetString("player-first-join-date", ("firstSeenTime", firstSeenTime)) + //Reserve edit
+                          Loc.GetString("player-first-join-account-date", ("creationDate", creationDate)) //Reserve edit
                         : Loc.GetString("player-join-message", ("name", args.Session.Name)));
 
                     // ADT-Tweak-start: Постит в дис админчата, о заходе новых игроков
@@ -109,7 +125,7 @@ namespace Content.Server.GameTicking
                             return;
                         var payload = new WebhookPayload
                         {
-                            Content = $"**Недавно/впервые зашёл на сервер** ({args.Session.Name})"
+                            Content = Loc.GetString("player-first-join-message-webhook", ("name", args.Session.Name))
                         };
                         var identifier = webhookData.ToIdentifier();
                         await _discord.CreateMessage(identifier, payload);
