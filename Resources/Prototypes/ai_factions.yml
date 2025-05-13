@@ -22,7 +22,6 @@
 # SPDX-FileCopyrightText: 2025 Arraydeess <arraygitbash@gmail.com>
 # SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 # SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 amogus <113782077+whateverusername0@users.noreply.github.com>
@@ -42,7 +41,6 @@
     - AllHostile
     - Heretic # goob edit - heretics
     - Blob # Goobstation - Blob
-    - Greytide # Goobstation
   friendly: # Goobstation
     - Wizard
     - PirateFaction # goob - pirates
@@ -97,7 +95,6 @@
   - Heretic # goob edit - heretics
   - Blob # Goobstation - Blob
   - PirateFaction # goob - pirates
-  - Greytide # Goobstation
   friendly: # Goobstation
     - Wizard
 
@@ -119,7 +116,6 @@
   - Blob # Goobstation - Blob
   - Wizard # goob edit - wizard
   - PirateFaction # goob - pirates
-  - Greytide # Goobstation
 
 - type: npcFaction
   id: Xeno
@@ -135,7 +131,6 @@
   - Heretic # goob edit - heretics
   - Blob # Goobstation - Blob
   - PirateFaction # goob - pirates
-  - Greytide # Goobstation
   friendly: # Goobstation
     - Wizard
 
@@ -156,7 +151,6 @@
   - Blob # Goobstation - Blob
   - Wizard # goob edit - wizard
   - PirateFaction # goob - pirates
-  - Greytide # Goobstation
 
 - type: npcFaction
   id: Revolutionary
@@ -169,7 +163,6 @@
   - Blob # Goobstation - Blob
   - Wizard # Goobstation - wizard
   - PirateFaction # goob - pirates
-  - Greytide # Goobstation
 
 - type: npcFaction
   id: AllHostile
