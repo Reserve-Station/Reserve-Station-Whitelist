@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2025 Svarshik <lexasvarshik666@gmail.com>
+# SPDX-FileCopyrightText: 2025 echotry <xippl1@mail.ru>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - files: ["admin_shuttle_stolen.ogg"]
   license: "CC0-1.0"
   copyright: "basiandia - discord user"
