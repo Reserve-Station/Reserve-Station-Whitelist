@@ -4,9 +4,12 @@
 // SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 DoutorWhite <thedoctorwhite@gmail.com>
+// SPDX-FileCopyrightText: 2025 Kill_Me_I_Noobs <118206719+Vonsant@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ReserveBot <211949879+ReserveBot@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 nazrin <tikufaev@outlook.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
