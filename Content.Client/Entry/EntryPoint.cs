@@ -113,6 +113,7 @@
 // SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
 // SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
 // SPDX-FileCopyrightText: 2025 NazrinNya <137837419+NazrinNya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ReserveBot <211949879+ReserveBot@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Svarshik <lexasvarshik666@gmail.com>
 // SPDX-FileCopyrightText: 2025 echotry <48294642+echotry-ss14@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 echotry <xippl1@mail.ru>
