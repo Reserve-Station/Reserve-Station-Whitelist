@@ -1,5 +1,3 @@
-ent-ZooimovCircuitBoard = law board (Zooimov)
-    .desc = An electronics board containing the Zooimov lawset.
 ent-PlayerBorgDerelictSyndicateAssaultBattery = { ent-BorgChassisDerelictSyndicateAssault }
     .suffix = Battery, Module, Operative, Derelict
     .desc = { ent-BorgChassisDerelictSyndicateAssault.desc }
