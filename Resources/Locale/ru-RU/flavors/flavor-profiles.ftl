@@ -319,7 +319,6 @@ flavor-complex-sui-dream = как картина Альп
 flavor-complex-toxins-special = как освоение космоса
 flavor-complex-vodka-martini = как шпионский фильм из России
 flavor-complex-vodka-tonic = освежающе горький
-flavor-complex-bacchus-blessing = как кирпичная стена
 
 ### This is exactly what pilk tastes как. I'm not even joking. I might've been a little drunk though
 
