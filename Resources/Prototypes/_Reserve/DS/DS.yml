@@ -6,13 +6,13 @@
   frequency: 2213
   color: "DarkViolet"
   longRange: true
+
 #КЛЮЧ ШИФРОВАНИЯ
 - type: entity
   parent: EncryptionKey
   id: EncryptionKeyDS
-  name: ключ шифрования эскадрона смерти
-  description: Вам лучше не слышать того, о чем говорят на этой частоте...
-  suffix: резерв
+  name: death squad encryption key
+  description: You're better off not hearing what is being talked about on this frequency.....
   components:
   - type: EncryptionKey
     channels:
@@ -23,13 +23,13 @@
     layers:
     - state: crypt_blue
     - state: cap_label
+
 #ГАРНИТУРА
 - type: entity
-  parent: ClothingHeadset
+  parent: [ClothingHeadsetAlt, BaseCentcommContraband]
   id: ClothingHeadsetDS
-  name: гарнитура эскадрона смерти
-  description: Специальный наушник эскадрона смерти.
-  suffix: резерв
+  name: deathsquad over-ear headset
+  description: A special death squad headset.
   components:
   - type: ContainerFill
     containers:
@@ -38,17 +38,16 @@
       - EncryptionKeyCentCom
       - EncryptionKeyStationMaster
   - type: Sprite
-    sprite: Clothing/Ears/Headsets/brigmedic.rsi
+    sprite: _Goobstation/Clothing/Ears/Headsets/deathsquad.rsi
   - type: Clothing
-    sprite: Clothing/Ears/Headsets/brigmedic.rsi
+    sprite: _Goobstation/Clothing/Ears/Headsets/deathsquad.rsi
 
 #ПУЛЬТ КОМАНДИРА
 - type: entity
   parent: DoorRemoteAllCC
   id: DoorRemoteAllDSl
-  name: пульт командира
-  description: Пульт с полным доступом к станции. Имеет доступы ЦК и ДСО.
-  suffix: резерв
+  name: commander's door remote
+  description: Remote control with full access to the station. Has CC access.
   components:
   - type: Sprite
     layers:
@@ -67,9 +66,8 @@
 - type: entity
   id: CommunicationsConsolePortative
   parent: BaseItem
-  name: портативная консоль связи ДСО
-  description: Портативная консоль, используемая для подачи объявлений на всю станцию, изменения уровня угрозы, вызова эвакуационного шаттла и мониторинга экипажа. Имеет прямую связь с офицером спецопераций.
-  suffix: резерв
+  name: DSO portable communications console
+  description: A portable console used for station-wide announcements, changing threat levels, calling the evacuation shuttle, and crew monitoring. Has a direct link to the Special Operations Officer.
   components:
   - type: Sprite
     sprite: Objects/Devices/tablets.rsi
@@ -96,9 +94,9 @@
       enum.CommunicationsConsoleUiKey.Key:
         type: CommunicationsConsoleBoundUserInterface
   - type: Prayable
-    sentMessage: Вы отправили сообщение Офицеру Спецопераций!
-    notifiactionPrefix: Эскадрон Смерти
-    verb: Сообщение для ОСО
+    sentMessage: prayer-popup-notify-centcom-sent
+    notificationPrefix: prayer-chat-notify-centcom
+    verb: prayer-verbs-call
     verbImage: null
   - type: CrewMonitoringServer
   - type: SingletonDeviceNetServer
@@ -116,9 +114,8 @@
 - type: entity
   parent: PinpointerBase
   id: PinpointerNuclearBomb
-  name: пинпоинтер ядерной боеголовки
-  description: Портативное устройство слежения. Способно обнаружить ближайшую ядерную боеголовку.
-  suffix: резерв
+  name: nuclear warhead pinpointer
+  description: Portable tracking device. Capable of detecting the nearest nuclear warhead.
   components:
   - type: Pinpointer
     component: Nuke
@@ -126,11 +123,10 @@
 
 #ГИПОСПРЕЙ
 - type: entity
-  name: боевой гипоспрей
   parent: Hypospray
-  description: Гипоспрей военного образца, содержит в себе омнизин, и медленно восстанавливет его запас.
-  suffix: резерв
   id: HyposprayDS
+  name: combat hypospray
+  description: Military-grade hypospray, contains omnizine, and slowly restores its supply.
   components:
   - type: Sprite
     state: combat_hypo
@@ -154,11 +150,10 @@
 
 #АПТЕЧКА
 - type: entity
-  id: MedkitCombatFilledDS
   parent: MedkitCombat
-  name: боевая аптечка
-  description: Аптечка, оснащенная передовыми медикаментами, которые удобно применять в бою.
-  suffix: резерв
+  id: MedkitCombatFilledDS
+  name: advanced combat medkit
+  description: A first aid kit equipped with advanced medicines that are convenient to use in battle.
   components:
   - type: Item
     size: Normal
@@ -166,7 +161,7 @@
     grid:
     - 0,0,4,2
   - type: ExplosionResistance
-    damageCoefficient: 0
+    damageCoefficient: 0.1
   - type: StorageFill
     contents:
       - id: HyposprayDS
@@ -181,14 +176,13 @@
 
 #ЯЩИК ВЗРЫВЧАТКИ
 - type: entity
-  id: CrateServiceDSOExp
   parent: CrateCommandSecure
-  name: ящик взрывчатки
-  description: Содержит запас взрывчатых веществ для подрыва целой станции. Требуется доступ командира.
-  suffix: резерв
+  id: CrateServiceDSOExp
+  name: explosives crate
+  description: Contains a stockpile of explosives to blow up an entire station. Requires CC access.
   components:
   - type: AccessReader
-    access: [["DSOL"]]
+    access: [[ "CentralCommand" ]]
   - type: ExplosionResistance
     damageCoefficient: 0
   - type: EntityStorage
@@ -222,10 +216,10 @@
 #РЕАГЕНТ РЕГЕНЕРАЦИИ
 - type: reagent
   id: Omniplus
-  name: омниплюс
+  name: omniplus
   group: Medicine
-  desc: Комбинированный препарат широкого спектра действия, используемый в боевых имплантах.
-  physicalDesc: студенистое
+  desc: A broad-spectrum combination drug used in combat implants.
+  physicalDesc: reagent-physical-desc-gelatinous
   flavor: medicine
   color: "#F08080"
   metabolisms:
@@ -277,11 +271,9 @@
 
 #ИРП
 - type: entity
-  name: И.Р.П.
   parent: BoxMRE
   id: BoxMREDS
-  description: Индивидуальный паек современного образца, содержит полноценный рацион на несколько дней.
-  suffix: резерв
+  description: Individual rations of modern design, contains a complete ration for several days.
   components:
   - type: Storage
     maxItemSize: Normal
@@ -296,13 +288,13 @@
       - id: DrinkMREFlask
       - id: DrinkIcedTeaCan
       - id: DrinkEnergyDrinkCan
+
 #ПРОТОКОЛ
 - type: entity
-  name: "протокол миссии"
   parent: Paper
   id: PaperDS
-  description: Протокол выполнения предстоящей миссии. Совершенно секретно.
-  suffix: резерв
+  name: mission protocol
+  description: Protocol for accomplishing the upcoming mission. Top secret.
   components:
   - type: Paper
     stampState: paper_stamp-syndicate
@@ -310,13 +302,12 @@
     - stampedName: ДСО
       stampedColor: "#800000"
     content: "[color=#1b487e]███░███░░░░██░░░░[/color]\n[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]     Бланк документа[/head]\n[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]    NanoTrasen[/head]\n[color=#1b487e]░░░░██░░██░██░██░[/color]              [bold]    ДСО-ЭС ТФ-832[/bold]\n[color=#1b487e]░░░░██░░░████░███[/color][bold][color=#A52A2A]        СОВЕРШЕННО СЕКРЕТНО[/color][/bold]\n====================================================\n                                         [head=3]ПРОТОКОЛ МИССИИ[/head]\n====================================================\n[head=3]Основная цель[/head]\nЗащита репутации NanoTrasen любой ценой. Полное уничтожение объекта.\n[bold]Взаимодействие с экипажем[/bold]\nПолная ликвидация. Без исключений.\n[bold]Вербальный контант с экипажем[/bold]\nЗапрещен.\n[bold]Применение корабельной артилерии[/bold]\nБез ограничений.\n[bold]Запрос БСА[/bold]\nПо необходимости.\n[bold]Уничтожение станции[/bold]\nВ обязательном порядке."
+
 #ЯДЕРНЫЕ КОДЫ
 - type: entity
   parent: NukeCodePaperStation
   id: NukeCodePaperDS
-  name: ядерные коды
-  description: Если не осталось иных вариантов...
-  suffix: резерв
+  description: That's it.
   components:
   - type: Paper
     stampState: paper_stamp-syndicate
@@ -327,11 +318,9 @@
 ###СТРУКТУРЫ
 #КОНСОЛЬ СВЯЗИ
 - type: entity
-  parent: ComputerComms
+  parent: CentcommComputerComms
   id: DSOComputerComms
-  name: консоль связи ДСО
-  description: Консоль, используемая для подачи объявлений на всю станцию, изменения уровня угрозы и вызова эвакуационного шаттла.
-  suffix: резерв
+  name: DSO communication console
   components:
     - type: AccessReader
       access: [[ "CentralCommand" ]]
@@ -342,24 +331,22 @@
       sound:
         path: /Audio/Misc/delta_alt.ogg
         params:
-          volume: -4
+          volume: -1
+
 #ПЛАТА ДСО
 - type: entity
   parent: DoorElectronics
   id: DoorElectronicsDSO
-  noSpawn: true
-  suffix: резерв
+  categories: [ HideSpawnMenu ]
   components:
   - type: AccessReader
-    access: [["DSO"]]
+    access: [[ "CentralCommand" ]]
 
 #СТЕНА ШАТТЛА
 - type: entity
   parent: BaseWall
   id: WallShuttleArm
-  name: армированная стена шаттла
-  description: Удерживает плохих снаружи, а хороших внутри.
-  suffix: резерв
+  name: reinforced shuttle wall
   components:
   - type: Tag
     tags:
@@ -395,9 +382,6 @@
 - type: entity
   parent: WallShuttleDiagonal
   id: WallShuttleDiagonalArm
-  name: армированная стена шаттла
-  description: Удерживает плохих снаружи, а хороших внутри.
-  suffix: резерв, Диагональная
   components:
   - type: Tag
     tags:
@@ -426,10 +410,8 @@
 #СТЕКЛО
 - type: entity
   id: ShuttleWindowArm
-  name: армированное окно шаттла
   parent: ShuttleWindow
-  description: Удерживает плохих снаружи, а хороших внутри.
-  suffix: резерв
+  name: reinforced shuttle window
   components:
   - type: Sprite
     color: "#505050"
@@ -450,11 +432,9 @@
 
 #СТАВНИ
 - type: entity
-  id: ShuttersArmOpen
   parent: ShuttersNormalOpen
-  name: армированные ставни
-  description: Удерживает плохих снаружи, а хороших внутри.
-  suffix: резерв
+  id: ShuttersArmOpen
+  name: reinforced shutters
   components:
   - type: Sprite
     color: "#505050"
@@ -466,9 +446,7 @@
 - type: entity
   parent: AirlockShuttle
   id: AirlockShuttleArm
-  suffix: резерв
-  name: армированный стыковочный шлюз
-  description: Удерживает плохих снаружи, а хороших внутри.
+  name: reinforced external airlock
   components:
   - type: Sprite
     color: "#505050"
@@ -496,14 +474,13 @@
 
 #ПУШКА
 - type: entity
-  id: EmitterCannon
-  name: противокорабельное орудие
   parent: Emitter
-  description: Мощная плазменная пушка для уничтожения шаттлов. При попадании создает разрушительный взрыв и ослепительный всплеск ЭМИ.
-  suffix: резерв
+  id: EmitterCannon
+  name: anti-ship gun
+  description: A powerful plasma cannon to destroy shuttles. On impact, it creates a devastating explosion and a blinding EMP burst.
   components:
   - type: AccessReader
-    access: [[ "DSO" ]]
+    access: [[ "CentralCommand" ]]
   - type: Sprite
     color: "#696969"
     sprite: Objects/Weapons/Guns/Shuttles/laser.rsi
@@ -538,10 +515,10 @@
 
 #СНАРЯД
 - type: entity
+  parent: BulletRocket
   id: BulletPlasma
   name: заряд плазмы
-  parent: BulletRocket
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
@@ -576,13 +553,13 @@
     radius: 2.5
     color: "#800080"
     energy: 2
+
 #ДВИГАТЕЛЬ
 - type: entity
-  id: ThrusterM
-  name: военный двигатель
-  description: Мощный двигатель используемый в боевых шаттлах.
-  suffix: резерв
   parent: Thruster
+  id: ThrusterMillitary
+  name: military thruster
+  description: The powerful thruster used in the battle shuttles.
   components:
   - type: Sprite
     color: "#808080"
