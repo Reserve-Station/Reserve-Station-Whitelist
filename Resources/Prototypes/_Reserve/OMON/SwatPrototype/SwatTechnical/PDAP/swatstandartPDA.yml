@@ -5,6 +5,8 @@
   description: Smells like beatings.
   suffix: Reserve
   components:
+  - type: Sprite
+    sprite: _Reserve/Objects/Devices/pda.rsi
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType:

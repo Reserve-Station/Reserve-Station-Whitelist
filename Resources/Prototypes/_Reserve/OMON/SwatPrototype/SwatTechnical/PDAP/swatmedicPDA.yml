@@ -5,11 +5,13 @@
   description: Smells like a hospital.
   suffix: Reserve
   components:
+  - type: Sprite
+    sprite: _Reserve/Objects/Devices/pda.rsi
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
-        !type:String
-        pda-swatmedic
+       !type:String
+       pda-swatmedic
   - type: Pda
     id: SwatMedicIDCard
   - type: Icon
