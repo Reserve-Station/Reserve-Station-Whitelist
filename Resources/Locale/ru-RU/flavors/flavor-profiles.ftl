@@ -226,6 +226,7 @@ flavor-complex-coffee = как кофе
 flavor-complex-milk = как молоко
 flavor-complex-tea = как чай
 flavor-complex-ice = как лёд
+flavor-complex-bacchus-blessing = как стена из кирпичей
 
 ## Cocktails
 
