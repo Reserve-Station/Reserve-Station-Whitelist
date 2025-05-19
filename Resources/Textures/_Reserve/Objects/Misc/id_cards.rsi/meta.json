@@ -8,17 +8,17 @@
   },
   "states": [
     {
-      "name": "gold"
+      "name": "gold",
 	  "_comment": "Refer to Resources/Textures/Objects/Misc/id_cards.rsi/meta.json for licensing information"
     },
     {
       "name": "gold-inhand-left",
-      "directions": 4
+      "directions": 4,
 	  "_comment": "Refer to Resources/Textures/Objects/Misc/id_cards.rsi/meta.json for licensing information"
     },
     {
       "name": "gold-inhand-right",
-      "directions": 4
+      "directions": 4,
 	  "_comment": "Refer to Resources/Textures/Objects/Misc/id_cards.rsi/meta.json for licensing information"
     },
     {

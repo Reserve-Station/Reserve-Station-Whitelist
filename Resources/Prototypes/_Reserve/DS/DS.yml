@@ -44,8 +44,8 @@
 
 #ПУЛЬТ КОМАНДИРА
 - type: entity
-  parent: DoorRemoteAllCC
-  id: DoorRemoteAllDSl
+  parent: [DoorRemoteDefault, BaseCentcommContraband]
+  id: DoorRemoteAllCC
   name: commander's door remote
   description: Remote control with full access to the station. Has CC access.
   components:
