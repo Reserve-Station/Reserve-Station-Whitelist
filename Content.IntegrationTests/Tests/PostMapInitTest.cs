@@ -224,7 +224,11 @@ namespace Content.IntegrationTests.Tests
             "Lavatest", // Lavaland Change
             "Loop",
             "Delta", // Goobstation - add Delta
-			"BattleRoyale" // BattleRoyale Change
+			"BattleRoyale", // BattleRoyale Change
+            "ReserveCluster", // Reserve map
+            "ReserveOmega", // Reserve map
+            "ReserveSaltern", // Reserve map
+            "ReserveSillyIsland" // Reserve map
         };
 
         /// <summary>
