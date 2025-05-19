@@ -186,6 +186,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_Goobstation/Shuttles/retort_engineering.yml",
             "/Maps/_Goobstation/Shuttles/retort_janitorial.yml",
             "/Maps/_Goobstation/Shuttles/retort_cburn.yml",
+            "/Maps/_CorvaxNext/Nonstations/vox.yml" //Reserve edit - Vox raiders port
         };
 
         private static readonly string[] GameMaps =
