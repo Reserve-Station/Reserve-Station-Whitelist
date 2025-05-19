@@ -216,9 +216,9 @@
 #РЕАГЕНТ РЕГЕНЕРАЦИИ
 - type: reagent
   id: Omniplus
-  name: omniplus
+  name: reagent-name-omniplus
   group: Medicine
-  desc: A broad-spectrum combination drug used in combat implants.
+  desc: reagent-desc-royal-omniheal
   physicalDesc: reagent-physical-desc-gelatinous
   flavor: medicine
   color: "#F08080"
@@ -372,8 +372,6 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-    destroySound:
-      collection: MetalBreak
   - type: IconSmooth
     key: walls
     base: state
@@ -404,8 +402,6 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-    destroySound:
-      collection: MetalBreak
 
 #СТЕКЛО
 - type: entity
@@ -469,8 +465,6 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-    destroySound:
-      collection: MetalBreak
 
 #ПУШКА
 - type: entity
@@ -498,12 +492,8 @@
     boltType: BulletPlasma
     fireBurstSize: 99
     fireInterval: 4
-    baseFireInterval: 4
-    fireRateMultiplier: 0
     fireBurstDelayMin: 0
     fireBurstDelayMax: 0
-    baseFireBurstDelayMin: 0
-    baseFireBurstDelayMax: 0
   - type: Gun
     minAngle: 2
     maxAngle: 5

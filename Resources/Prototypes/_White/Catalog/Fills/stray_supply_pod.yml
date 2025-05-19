@@ -549,7 +549,7 @@
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateSecurityGrenadeBarrier
+          id: BoxStinger
           weight: 1
         # Cargo - Service
       - !type:GroupSelector
@@ -639,12 +639,12 @@
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateSecurityShanlinTacsuit
+          id: CrateArmoryCombatRiotHardsuit
           weight: 1
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateSecurityGuanYuTacsuit
+          id: LavalandCrateNecropolisCultArmor #bruh
           weight: 1
         # Cargo - Medical
       - !type:GroupSelector

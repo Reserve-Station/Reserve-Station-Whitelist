@@ -10,7 +10,7 @@
       state: SwatMedic
     - type: RandomMetadata
       nameSegments:
-      - SwatNamesLeaderFirst
+      - SwatLeaderNamesFirst
       - SwatNamesLast
       nameFormat: name-format-ert
     - type: RandomHumanoidSpawner

@@ -85,7 +85,6 @@
     organs: # posibrain is stored in the torso
       eyes:
         id: "eyes"
-    vital: true
   - type: Input
     context: "ghost"
   - type: MovementSpeedModifier
