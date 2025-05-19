@@ -1,19 +1,8 @@
 - type: entity
-  parent: MobHumanERT
-  id: MobHumanLeader
-  name: Полковник Эхо
-  suffix: reserve, без роли
-  components:
-    - type: Loadout
-      prototypes: [ERTLeaderEchoGear]
-      hair: HairBald
-    - type: CommandStaff
-
-- type: entity
   parent: MobHuman
   id: MobHumanERT
   name: Полковник Эхо
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Stamina
       decay: 6
@@ -25,7 +14,18 @@
       - MindShieldImplant
       - TrackingImplanter
 
-
+- type: entity
+  parent: MobHumanERT
+  id: MobHumanLeader
+  name: Полковник Эхо
+  suffix: reserve, без роли
+  components:
+    - type: Loadout
+      prototypes: [ERTLeaderEchoGear]
+    - type: RandomHumanoidAppearance
+      randomizeName: false
+      hair: HairBald
+    - type: CommandStaff
 
 # Офицер ОБР.
 
@@ -588,9 +588,9 @@
     - id: CombatKnife
     - id: Hypospray
     - id: CrowbarRed
-    - id: OmnizineChemistryBottle
-    - id: EpinephrineChemistryBottle
-    - id: EpinephrineChemistryBottle
+    - id: ChemistryBottleOmnizine
+    - id: ChemistryBottleEpinephrine
+    - id: ChemistryBottleEpinephrine
     - id: Cautery
     - id: SpaceMedipen
     - id: EmergencyMedipen

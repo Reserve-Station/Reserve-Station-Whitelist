@@ -11,6 +11,6 @@
       - id: MagazinePistol
       - id: MedicatedSuture
       - id: RegenerativeMesh
-      - id: OmnizineChemistryBottle
-      - id: EpinephrineChemistryBottle
+      - id: ChemistryBottleOmnizine
+      - id: ChemistryBottleEpinephrine
       - id: Stunbaton

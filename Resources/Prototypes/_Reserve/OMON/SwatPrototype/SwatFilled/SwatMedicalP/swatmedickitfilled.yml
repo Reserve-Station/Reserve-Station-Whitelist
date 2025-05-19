@@ -41,8 +41,8 @@
       - id: MedicatedSuture
       - id: RegenerativeMesh
       - id: Bloodpack
-      - id: EpinephrineChemistryBottle
-      - id: EpinephrineChemistryBottle
+      - id: ChemistryBottleEpinephrine
+      - id: ChemistryBottleEpinephrine
       - id: Syringe
       - id: Syringe
       - id: Syringe

@@ -114,7 +114,7 @@
     outerClothing: ClothingOuterHardsuitDeathsquadAdv
     shoes: ClothingShoesBootsMagAdv
     id: DSLeaderPDA
-    pocket1: WeaponRevolverMatebaAPReserve
+    pocket1: WeaponRevolverMatebaAP
     pocket2: EnergySwordDS
     suitstorage: WeaponPulseCarbineDS
     belt: ClothingBeltAssaultDS
@@ -131,14 +131,14 @@
     outerClothing: ClothingOuterHardsuitDeathsquadAdv
     shoes: ClothingShoesBootsMagAdv
     id: DSSoldPDA
-    pocket1: WeaponRevolverMatebaAPReserve
+    pocket1: WeaponRevolverMatebaAP
     pocket2: EnergySwordDS
     suitstorage: WeaponPulseCarbineDS
     belt: ClothingBeltAssaultDS
 #КАНАЛ СВЯЗИ
 - type: radioChannel
   id: DS
-  name: Эскадрон Смерти
+  name: chat-radio-vox-ds
   keycode: 'у'
   frequency: 2213
   color: "DarkViolet"
@@ -441,7 +441,7 @@
       - state: generic
         shader: unshaded
   - type: CommunicationsConsole
-    title: Департамент Спецопераций
+    title: comms-console-announcement-title-dso
     global: true
     color: "DarkViolet"
     sound:
@@ -1160,9 +1160,9 @@
         acts: [ "Destruction" ]
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
     destroySound:
-      path: /Audio/Effects/metalbreak.ogg
+      collection: MetalBreak
   - type: IconSmooth
     key: walls
     base: state
@@ -1194,9 +1194,9 @@
         acts: [ "Destruction" ]
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
     destroySound:
-      path: /Audio/Effects/metalbreak.ogg
+      collection: MetalBreak
 #СТЕКЛО
 - type: entity
   id: ShuttleWindowArm
@@ -1262,9 +1262,9 @@
         acts: [ "Destruction" ]
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
     destroySound:
-      path: /Audio/Effects/metalbreak.ogg
+      collection: MetalBreak
 #ШЛЮЗ
 - type: entity
   parent: AirlockCommandGlass
