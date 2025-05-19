@@ -1184,14 +1184,14 @@ entities:
     - type: Transform
       pos: -2.5,-2.5
       parent: 1
-- proto: SpawnerERTLeaderReserve
+- proto: RandomHumanoidSpawnerERTLeaderEVA
   entities:
   - uid: 205
     components:
     - type: Transform
       pos: -2.5,7.5
       parent: 1
-- proto: SpawnerERTSecurityReserve
+- proto: RandomHumanoidSpawnerERTSecurityEVA
   entities:
   - uid: 206
     components:

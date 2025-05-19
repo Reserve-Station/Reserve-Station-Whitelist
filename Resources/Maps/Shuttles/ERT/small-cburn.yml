@@ -1171,14 +1171,14 @@ entities:
     - type: Transform
       pos: -2.5,-2.5
       parent: 1
-- proto: SpawnerCBURNUnitLeaderReserve
+- proto: RandomHumanoidSpawnerCBURNUnit
   entities:
   - uid: 198
     components:
     - type: Transform
       pos: -2.5,7.5
       parent: 1
-- proto: SpawnerCBURNUnitReserve
+- proto: RandomHumanoidSpawnerCBURNUnit
   entities:
   - uid: 199
     components:

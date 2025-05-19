@@ -2859,14 +2859,14 @@ entities:
     - type: Transform
       pos: -6.5,-1.5
       parent: 1
-- proto: SpawnerERTLeaderReserve
+- proto: RandomHumanoidSpawnerERTLeaderEVA
   entities:
   - uid: 498
     components:
     - type: Transform
       pos: -3.5,12.5
       parent: 1
-- proto: SpawnerERTSecurityReserve
+- proto: RandomHumanoidSpawnerERTSecurityEVA
   entities:
   - uid: 499
     components:

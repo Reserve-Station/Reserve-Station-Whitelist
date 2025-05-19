@@ -1358,14 +1358,14 @@ entities:
     - type: Transform
       pos: -2.5,-2.5
       parent: 1
-- proto: SpawnerERTLeaderReserve
+- proto: RandomHumanoidSpawnerERTLeaderEVA
   entities:
   - uid: 231
     components:
     - type: Transform
       pos: -2.5,7.5
       parent: 1
-- proto: SpawnerERTMedicalReserve
+- proto: RandomHumanoidSpawnerERTMedicalEVA
   entities:
   - uid: 232
     components:

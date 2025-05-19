@@ -987,7 +987,7 @@ entities:
     - type: Transform
       pos: -3.5,-2.5
       parent: 1
-- proto: HighSecDSOLocked
+- proto: HighSecCentralCommandLocked
   entities:
   - uid: 136
     components:
@@ -1187,7 +1187,7 @@ entities:
     - type: Transform
       pos: -3.5,3.5
       parent: 1
-- proto: ThrusterM
+- proto: ThrusterMillitary
   entities:
   - uid: 141
     components:
@@ -1466,7 +1466,7 @@ entities:
     - type: Transform
       pos: -4.377922,3.3251257
       parent: 1
-- proto: WeaponTurretDeathSquad
+- proto: WeaponTurretNanoTrasen
   entities:
   - uid: 87
     components:
@@ -1498,7 +1498,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -0.5,2.5
       parent: 1
-- proto: WindoorDSOLocked
+- proto: WindoorSecureCentralCommandLocked
   entities:
   - uid: 12
     components:

@@ -1734,7 +1734,7 @@ entities:
     - type: Transform
       pos: -2.5,-2.5
       parent: 1
-- proto: SpawnerERTEngineerReserve
+- proto: RandomHumanoidSpawnerERTEngineerEVA
   entities:
   - uid: 252
     components:
@@ -1751,7 +1751,7 @@ entities:
     - type: Transform
       pos: -0.5,4.5
       parent: 1
-- proto: SpawnerERTLeaderReserve
+- proto: RandomHumanoidSpawnerERTLeaderEVA
   entities:
   - uid: 251
     components:
