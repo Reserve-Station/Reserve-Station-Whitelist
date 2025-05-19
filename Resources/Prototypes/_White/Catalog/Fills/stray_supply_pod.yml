@@ -304,37 +304,37 @@
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateEngineeringFotiaHardsuit
+          id: MachinePowerTransmissionLaserCrate #Feel free to change to another cargo hadsuit crate if new one will be added
           weight: 1
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateEngineeringLampsiHardsuit
+          id: CrateEngineeringFirefighterBackpackTank #Feel free to change to another cargo hadsuit crate if new one will be added
           weight: 1
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateLogisticsKritiHardsuit
+          id: CrateCargoLuxuryHardsuit
           weight: 1
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateLogisticsLavrionHardsuit
+          id: CrateArmoryCombatHardsuit
           weight: 1
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateSecurityBaghaturTacsuit
+          id: CrateArmoryCombatMedicalHardsuit
           weight: 1
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateSecuritySuldeTacsuit
+          id: CrateArmoryCombatRiotHardsuit
           weight: 1
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateSecurityTsagaanTacsuit
+          id: CrateEvaKit #Feel free to change to another cargo hadsuit crate if new one will be added
           weight: 1
         # Cargo - Livestock
       - !type:GroupSelector
@@ -421,17 +421,17 @@
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateMaterialUranium
+          id: CrateScienceModsuitCoresFilled
           weight: 1
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateMaterialGold
+          id: CrateCargoGambling
           weight: 1
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateMaterialSilver
+          id: CrateCargoGatewayLavaland
           weight: 1
         # Cargo - Medical
       - !type:GroupSelector
