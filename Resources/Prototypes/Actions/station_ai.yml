@@ -18,24 +18,6 @@
       state: ai_core
     event: !type:JumpToCoreEvent
 
-# Reserve ai update begin
-- type: entity
-  id: ActionShowJobIcons
-  name: Show job icons
-  description: Shows job icons for crew members.
-  components:
-  - type: InstantAction
-    priority: -5
-    itemIconStyle: BigAction
-    icon:
-      sprite: Interface/Actions/actions_ai.rsi
-      state: job_view
-    event: !type:ActionComponentChangeEvent
-      components:
-      - type: ShowJobIcons
-      - type: ShowCriminalRecordIcons # WD edit
-# Reserve ai update end
-
 - type: entity
   id: ActionSurvCameraLights
   name: Toggle camera lights
