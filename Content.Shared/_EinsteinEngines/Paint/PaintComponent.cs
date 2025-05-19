@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2024 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.Chemistry.Reagent;
 using Content.Goobstation.Maths.FixedPoint;
 using Robust.Shared.Audio;
