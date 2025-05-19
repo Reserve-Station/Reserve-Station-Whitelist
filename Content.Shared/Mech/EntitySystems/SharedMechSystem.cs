@@ -50,7 +50,6 @@ using Robust.Shared.Timing;
 
 // Goobstation Change
 using Content.Shared.CCVar;
-using Content.Shared._Goobstation.CCVar;
 using Content.Shared.Emag.Systems;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Hands.Components;
@@ -81,9 +80,6 @@ public abstract class SharedMechSystem : EntitySystem
     [Dependency] private readonly SharedHandsSystem _hands = default!; // Goobstation Change
     [Dependency] private readonly SharedVirtualItemSystem _virtualItem = default!; // Goobstation Change
     [Dependency] private readonly IConfigurationManager _config = default!; // Goobstation Change
-
-    // Goobstation: Local variable for checking if mech guns can be used out of them.
-    private bool _canUseMechGunOutside;
 
     // Goobstation: Local variable for checking if mech guns can be used out of them.
     private bool _canUseMechGunOutside;

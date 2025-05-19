@@ -1,8 +1,11 @@
 using Content.Server.Objectives.Components;
 using Content.Shared.Mind;
 using Content.Shared.Objectives.Components;
+using Content.Shared.Roles; // DeltaV
+using Content.Shared.Roles.Jobs; // DeltaV
 using Content.Server.GameTicking.Rules;
-using Content.Server.Revolutionary.Components;
+using Content.Server.Revolutionary.Components; //Reserve
+using Robust.Shared.Prototypes; // DeltaV
 using Robust.Shared.Random;
 using System.Linq;
 
@@ -18,6 +21,8 @@ public sealed class PickObjectiveTargetSystem : EntitySystem
     [Dependency] private readonly SharedMindSystem _mind = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly TraitorRuleSystem _traitorRule = default!;
+    [Dependency] private readonly SharedRoleSystem _role = default!; // DeltaV
+    [Dependency] private readonly IPrototypeManager _proto = default!; // DeltaV
 
     public override void Initialize()
     {
@@ -73,7 +78,14 @@ public sealed class PickObjectiveTargetSystem : EntitySystem
         if (target.Target != null)
             return;
 
-        var allHumans = _mind.GetAliveHumans(args.MindId);
+        // Begin DeltaV Additions: Only target people with jobs
+
+        var allHumans = _mind.GetAliveHumans(args.MindId).Where(mindId =>
+        _role.MindHasRole<JobRoleComponent>((mindId.Owner, mindId.Comp), out var role) &&
+        role?.Comp1.JobPrototype is {} jobId &&
+        _proto.Index(jobId).SetPreference).ToHashSet();
+
+        // End DeltaV Additions
 
         // Can't have multiple objectives to kill the same person
         foreach (var objective in args.Mind.Objectives)

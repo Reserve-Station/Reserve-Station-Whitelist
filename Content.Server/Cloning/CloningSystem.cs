@@ -61,14 +61,6 @@ using Content.Server.EUI;
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.Humanoid;
 using Content.Shared.Administration.Logs;
-using Content.Server.Jobs;
-using Content.Server.Materials;
-using Content.Server.Popups;
-using Content.Server.Power.EntitySystems;
-using Content.Shared._EinsteinEngines.Silicon.Components; // Goobstation
-using Content.Shared.Atmos;
-using Content.Shared.CCVar;
-using Content.Shared.Chemistry.Components;
 using Content.Shared.Cloning;
 using Content.Shared.Cloning.Events;
 using Content.Shared.Database;
@@ -142,92 +134,8 @@ public sealed partial class CloningSystem : EntitySystem
         {
             if (!_componentFactory.TryGetRegistration(componentName, out var componentRegistration))
             {
-                EntityManager.RemoveComponent<BeingClonedComponent>(uid);
-                return;
-            }
-            UpdateStatus(clonedComponent.Parent, CloningPodStatus.Cloning, cloningPodComponent);
-        }
-
-        private void OnPortDisconnected(EntityUid uid, CloningPodComponent pod, PortDisconnectedEvent args)
-        {
-            pod.ConnectedConsole = null;
-        }
-
-        private void OnAnchor(EntityUid uid, CloningPodComponent component, ref AnchorStateChangedEvent args)
-        {
-            if (component.ConnectedConsole == null || !TryComp<CloningConsoleComponent>(component.ConnectedConsole, out var console))
-                return;
-
-            if (args.Anchored)
-            {
-                _cloningConsoleSystem.RecheckConnections(component.ConnectedConsole.Value, uid, console.GeneticScanner, console);
-                return;
-            }
-            _cloningConsoleSystem.UpdateUserInterface(component.ConnectedConsole.Value, console);
-        }
-
-        private void OnExamined(EntityUid uid, CloningPodComponent component, ExaminedEvent args)
-        {
-            if (!args.IsInDetailsRange || !_powerReceiverSystem.IsPowered(uid))
-                return;
-
-            args.PushMarkup(Loc.GetString("cloning-pod-biomass", ("number", _material.GetMaterialAmount(uid, component.RequiredMaterial))));
-        }
-
-        public bool TryCloning(EntityUid uid, EntityUid bodyToClone, Entity<MindComponent> mindEnt, CloningPodComponent? clonePod, float failChanceModifier = 1)
-        {
-            if (!Resolve(uid, ref clonePod))
-                return false;
-
-            if (HasComp<ActiveCloningPodComponent>(uid))
-                return false;
-
-            var mind = mindEnt.Comp;
-            // GoobStation: Remove this logic entirely, infinite clone army
-            /*if (ClonesWaitingForMind.TryGetValue(mind, out var clone))
-            {
-                if (EntityManager.EntityExists(clone) &&
-                    !_mobStateSystem.IsDead(clone) &&
-                    TryComp<MindContainerComponent>(clone, out var cloneMindComp) &&
-                    (cloneMindComp.Mind == null || cloneMindComp.Mind == mindEnt))
-                    return false; // Mind already has clone
-
-                ClonesWaitingForMind.Remove(mind);
-            }*/
-
-            // GoobStation: Lets you clone living people
-            //if (mind.OwnedEntity != null && !_mobStateSystem.IsDead(mind.OwnedEntity.Value))
-            //    return false; // Body controlled by mind is not dead
-
-            // Yes, we still need to track down the client because we need to open the Eui
-            if (mind.UserId == null || !_playerManager.TryGetSessionById(mind.UserId.Value, out var client))
-                return false; // If we can't track down the client, we can't offer transfer. That'd be quite bad.
-
-            if (!TryComp<HumanoidAppearanceComponent>(bodyToClone, out var humanoid))
-                return false; // whatever body was to be cloned, was not a humanoid
-
-            if (HasComp<SiliconComponent>(bodyToClone))
-                return false; // Goobstation: Don't clone IPCs.
-
-            if (!_prototype.TryIndex(humanoid.Species, out var speciesPrototype))
-                return false;
-
-            if (!TryComp<PhysicsComponent>(bodyToClone, out var physics))
-                return false;
-
-            var cloningCost = (int) Math.Round(physics.FixturesMass);
-
-            if (_configManager.GetCVar(CCVars.BiomassEasyMode))
-                cloningCost = (int) Math.Round(cloningCost * EasyModeCloningCost);
-
-            // biomass checks
-            var biomassAmount = _material.GetMaterialAmount(uid, clonePod.RequiredMaterial);
-
-            if (biomassAmount < cloningCost)
-            {
-                if (clonePod.ConnectedConsole != null)
-                    _chatSystem.TrySendInGameICMessage(clonePod.ConnectedConsole.Value, Loc.GetString("cloning-console-chat-error", ("units", cloningCost)), InGameICChatType.Speak, false);
-                return false;
+                Log.Error($"Tried to use invalid component registration for cloning: {componentName}");
+                continue;
             }
 
             if (EntityManager.TryGetComponent(original, componentRegistration.Type, out var sourceComp)) // Does the original have this component?
