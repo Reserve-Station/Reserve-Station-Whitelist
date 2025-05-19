@@ -26,14 +26,27 @@ public sealed class AdditionalMapFix : EntitySystem
     {
         Timer.Spawn(TimeSpan.FromSeconds(5), () =>
         {
-            var query = AllEntityQuery<GridAtmosphereComponent, TransformComponent>();
-
-            while (query.MoveNext(out var dummyatmos, out var comp))
+            try
             {
-                var gridUid = comp.GridUid;
-                _host.AppendCommand($"fixgridatmos {gridUid}");
-                Logger.Error($"executed command on {gridUid}");
+                var query = AllEntityQuery<GridAtmosphereComponent, TransformComponent>();
+
+                while (query.MoveNext(out var dummyatmos, out var comp))
+                {
+                    if (!comp.GridUid.HasValue || !Exists(comp.GridUid))
+                   {
+                       Logger.Warning($"Skipping invalid grid entity {comp.GridUid}");
+                       continue;
+                  }
+
+                    var gridUid = comp.GridUid.Value;
+                    _host.ExecuteCommand($"fixgridatmos {gridUid}");
+                    Logger.Debug($"Fixed atmos for grid {gridUid}"); // Изменено на Debug, чтобы не засорять логи
+                }
             }
-        });
+            catch (Exception ex)
+            {
+                Logger.Error($"Failed to fix grid atmos: {ex}");
+            }
+        }, CancellationToken.None); // Добавлен токен отмены
     }
 }
