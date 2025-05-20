@@ -17,8 +17,8 @@ name: Publish
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 10 * * *'
+  #schedule: #Reserve edit
+  #  - cron: '0 10 * * *'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
