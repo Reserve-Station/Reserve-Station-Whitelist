@@ -20,10 +20,11 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 <Box>
 <GuideEntityEmbed Entity="RightHandHuman" Caption="правая кисть"/>
 <GuideEntityEmbed Entity="RightArmHuman" Caption="правая рука"/>
-<GuideEntityEmbed Entity="TorsoHuman" Caption="торс"/>
+<GuideEntityEmbed Entity="ChestHuman" Caption="грудина"/>
 <GuideEntityEmbed Entity="LeftArmHuman" Caption="левая рука"/>
 <GuideEntityEmbed Entity="LeftHandHuman" Caption="правая кисть"/>
 </Box>
+<GuideEntityEmbed Entity="GroinHuman" Caption="паховая часть"/>
 <Box>
 <GuideEntityEmbed Entity="RightFootHuman" Caption="правая ступня"/>
 <GuideEntityEmbed Entity="RightLegHuman" Caption="правая нога"/>
