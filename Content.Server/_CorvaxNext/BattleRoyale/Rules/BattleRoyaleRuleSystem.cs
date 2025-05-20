@@ -117,6 +117,11 @@ namespace Content.Server._CorvaxNext.BattleRoyale.Rules
 
             Timer.Spawn(TimeSpan.FromMinutes(2), () =>
             {
+                //Reserve edit begin
+                if (!Exists(uid) || !TryComp<GameRuleComponent>(uid, out var gameRule))
+                    return;
+                //Reserve edit end
+
                 if (!GameTicker.IsGameRuleActive(uid, gameRule))
                     return;
 
