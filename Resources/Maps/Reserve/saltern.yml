@@ -55388,7 +55388,6 @@ entities:
       pos: -9.637523,21.683886
       parent: 2
     - type: HandheldLight
-      toggleActionEntity: invalid
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
@@ -55398,8 +55397,6 @@ entities:
         actions: !type:Container
           showEnts: False
           occludes: True
-          ents:
-          - invalid
     - type: Physics
       angularDamping: 0
       linearDamping: 0
