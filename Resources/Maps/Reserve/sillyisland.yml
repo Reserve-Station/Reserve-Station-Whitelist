@@ -5639,371 +5639,235 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 10.5,-17.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 13
   - uid: 6814
     components:
     - type: Transform
       pos: 20.5,3.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6813
-      - 6815
   - uid: 6825
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,-13.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
-      - 671
   - uid: 6826
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 10.5,-9.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
   - uid: 6827
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 4.5,-8.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
-      - 671
   - uid: 6828
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 6.5,-6.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 12
   - uid: 6830
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 11.5,8.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
   - uid: 6831
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 11.5,3.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
   - uid: 6832
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 9.5,1.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
   - uid: 6833
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 4.5,5.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
   - uid: 6834
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 16.5,11.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2162
   - uid: 6835
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 16.5,7.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2162
   - uid: 6836
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 23.5,15.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2162
   - uid: 6837
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 24.5,11.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2162
   - uid: 6911
     components:
     - type: Transform
       pos: -12.5,1.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 6912
     components:
     - type: Transform
       pos: -14.5,4.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 6913
     components:
     - type: Transform
       pos: -17.5,6.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 6914
     components:
     - type: Transform
       pos: -17.5,-0.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 6915
     components:
     - type: Transform
       pos: -19.5,3.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 6916
     components:
     - type: Transform
       pos: -13.5,6.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 6917
     components:
     - type: Transform
       pos: -3.5,4.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2169
   - uid: 6918
     components:
     - type: Transform
       pos: -10.5,7.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6919
   - uid: 6920
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -1.5,12.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2160
   - uid: 6921
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -7.5,13.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2160
   - uid: 6929
     components:
     - type: Transform
       pos: -7.5,-4.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6928
   - uid: 6930
     components:
     - type: Transform
       pos: -9.5,-1.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2166
   - uid: 6931
     components:
     - type: Transform
       pos: -9.5,1.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2166
   - uid: 6932
     components:
     - type: Transform
       pos: -5.5,-1.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2166
   - uid: 6933
     components:
     - type: Transform
       pos: 5.5,0.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2165
   - uid: 6934
     components:
     - type: Transform
       pos: 0.5,0.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2165
   - uid: 6935
     components:
     - type: Transform
       pos: -3.5,-0.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2165
   - uid: 6936
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6941
   - uid: 6937
     components:
     - type: Transform
       pos: 5.5,-3.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6940
   - uid: 6938
     components:
     - type: Transform
       pos: -2.5,-2.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6941
   - uid: 6939
     components:
     - type: Transform
       pos: 7.5,-1.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6940
   - uid: 6945
     components:
     - type: Transform
       pos: 4.5,8.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6943
   - uid: 6946
     components:
     - type: Transform
       pos: 8.5,8.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2161
   - uid: 6947
     components:
     - type: Transform
       pos: 6.5,11.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2161
   - uid: 6948
     components:
     - type: Transform
       pos: 1.5,11.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2161
   - uid: 6949
     components:
     - type: Transform
       pos: 0.5,14.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2161
   - uid: 6950
     components:
     - type: Transform
       pos: 7.5,16.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2161
   - uid: 6951
     components:
     - type: Transform
       pos: 11.5,16.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2161
   - uid: 6952
     components:
     - type: Transform
       pos: 11.5,13.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2161
   - uid: 6953
     components:
     - type: Transform
       pos: 16.5,3.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6816
-      - 6954
 - proto: AltarConvertOrange
   entities:
   - uid: 111
@@ -20568,348 +20432,6 @@ entities:
     - type: Transform
       pos: 12.5,-7.5
       parent: 5197
-- proto: FireAlarm
-  entities:
-  - uid: 11
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 2.5,-15.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2230
-      - 2226
-      - 2228
-      - 2227
-      - 2225
-      - 6825
-      - 6827
-      - 6826
-      - 6906
-      - 6905
-      - 6902
-      - 6903
-      - 6904
-  - uid: 12
-    components:
-    - type: Transform
-      pos: 6.5,-4.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2180
-      - 2181
-      - 2182
-      - 2183
-      - 2184
-      - 2229
-      - 2239
-      - 2240
-      - 6828
-      - 6907
-      - 6908
-  - uid: 13
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 8.5,-18.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2250
-      - 14
-  - uid: 2159
-    components:
-    - type: Transform
-      pos: -13.5,5.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 6915
-      - 6914
-      - 6913
-      - 6916
-      - 6912
-      - 6911
-      - 2192
-      - 2193
-      - 2175
-      - 2174
-      - 2173
-      - 2191
-      - 2188
-      - 2190
-      - 2189
-      - 2249
-  - uid: 2160
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -0.5,11.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2195
-      - 2194
-      - 2198
-      - 2197
-      - 2196
-      - 2200
-      - 2201
-      - 2199
-      - 6920
-      - 6921
-      - 6922
-      - 6923
-      - 6924
-  - uid: 2161
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 9.5,13.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2211
-      - 2210
-      - 2209
-      - 2208
-      - 2207
-      - 2205
-      - 2206
-      - 2204
-      - 2202
-      - 2203
-      - 6952
-      - 6951
-      - 6950
-      - 6949
-      - 6948
-      - 6947
-      - 6946
-      - 6944
-  - uid: 2162
-    components:
-    - type: Transform
-      pos: 15.5,9.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 6836
-      - 2215
-      - 2214
-      - 2179
-      - 2178
-      - 2177
-      - 2212
-      - 2213
-      - 6834
-      - 6835
-      - 6837
-  - uid: 2163
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 18.5,3.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2218
-      - 2217
-      - 2216
-      - 2219
-  - uid: 2164
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 17.5,-3.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2221
-      - 2220
-      - 2222
-      - 2223
-  - uid: 2165
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 3.5,-0.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2233
-      - 2237
-      - 6933
-      - 6934
-      - 2238
-      - 6935
-  - uid: 2166
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -4.5,-0.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2247
-      - 2246
-      - 2245
-      - 2251
-      - 6909
-      - 6910
-      - 6932
-      - 6930
-      - 6931
-  - uid: 2167
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 7.5,0.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2216
-      - 2219
-      - 2242
-      - 2241
-      - 2202
-      - 2243
-      - 2244
-      - 2186
-      - 2185
-      - 2187
-  - uid: 2169
-    components:
-    - type: Transform
-      pos: -6.5,5.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2199
-      - 2200
-      - 2201
-      - 2244
-      - 2243
-      - 6917
-      - 2246
-      - 2245
-      - 2192
-      - 2193
-  - uid: 6815
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 18.5,1.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 6814
-      - 2217
-  - uid: 6829
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 12.5,5.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2242
-      - 2241
-      - 2187
-      - 2185
-      - 2186
-      - 2176
-      - 2212
-      - 2213
-      - 2244
-      - 2243
-      - 2204
-      - 2202
-      - 6833
-      - 6832
-      - 6831
-      - 6830
-  - uid: 6919
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -10.5,5.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2199
-      - 2198
-      - 6918
-  - uid: 6925
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -21.5,6.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2248
-  - uid: 6928
-    components:
-    - type: Transform
-      pos: -7.5,-2.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 6927
-      - 6926
-      - 6929
-  - uid: 6940
-    components:
-    - type: Transform
-      pos: 4.5,-1.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2234
-      - 2235
-      - 2236
-      - 6937
-      - 6939
-  - uid: 6941
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -1.5,-4.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 2232
-      - 6938
-      - 6936
-      - 2233
-      - 2234
-      - 2231
-  - uid: 6943
-    components:
-    - type: Transform
-      pos: 0.5,10.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 6945
-      - 2206
-      - 6944
-      - 2205
-      - 2204
-  - uid: 6954
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 14.5,-0.5
-      parent: 2
-    - type: DeviceList
-      devices:
-      - 6953
-      - 2217
-      - 2216
 - proto: FireAxeCabinetFilled
   entities:
   - uid: 2171
@@ -20953,190 +20475,124 @@ entities:
       rot: 3.141592653589793 rad
       pos: -15.5,2.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 2174
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -14.5,2.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 2175
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -13.5,2.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 2176
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 12.5,8.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
   - uid: 2177
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 13.5,9.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2162
   - uid: 2178
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 18.5,11.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2162
   - uid: 2179
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 18.5,10.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2162
   - uid: 2180
     components:
     - type: Transform
       pos: 2.5,-7.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 12
   - uid: 2181
     components:
     - type: Transform
       pos: 3.5,-7.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 12
   - uid: 2182
     components:
     - type: Transform
       pos: 4.5,-7.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 12
   - uid: 2183
     components:
     - type: Transform
       pos: 5.5,-7.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 12
   - uid: 2184
     components:
     - type: Transform
       pos: 6.5,-7.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 12
   - uid: 2185
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 10.5,1.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
   - uid: 2186
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 10.5,2.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
   - uid: 2187
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 10.5,0.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
   - uid: 6907
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 1.5,-7.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 12
   - uid: 6908
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 1.5,-6.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 12
   - uid: 6909
     components:
     - type: Transform
       pos: -6.5,-5.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2166
   - uid: 6910
     components:
     - type: Transform
       pos: -5.5,-5.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2166
   - uid: 6922
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -1.5,15.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2160
   - uid: 6926
     components:
     - type: Transform
       pos: -8.5,-5.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6928
   - uid: 6927
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-4.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6928
 - proto: FirelockGlass
   entities:
   - uid: 2188
@@ -21144,51 +20600,31 @@ entities:
     - type: Transform
       pos: -17.5,4.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 2189
     components:
     - type: Transform
       pos: -18.5,2.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 2190
     components:
     - type: Transform
       pos: -17.5,1.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 2191
     components:
     - type: Transform
       pos: -15.5,5.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 2192
     components:
     - type: Transform
       pos: -10.5,3.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2169
-      - 2159
   - uid: 2193
     components:
     - type: Transform
       pos: -10.5,4.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2169
-      - 2159
   - uid: 2194
     components:
     - type: Transform
@@ -21214,42 +20650,26 @@ entities:
     - type: Transform
       pos: -6.5,7.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6919
   - uid: 2199
     components:
     - type: Transform
       pos: -8.5,5.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2169
-      - 6919
   - uid: 2200
     components:
     - type: Transform
       pos: -2.5,6.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2169
   - uid: 2201
     components:
     - type: Transform
       pos: -1.5,6.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2169
   - uid: 2202
     components:
     - type: Transform
       pos: 7.5,6.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
   - uid: 2203
     components:
     - type: Transform
@@ -21260,26 +20680,16 @@ entities:
     - type: Transform
       pos: 4.5,6.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
-      - 6943
   - uid: 2205
     components:
     - type: Transform
       pos: 5.5,10.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6943
   - uid: 2206
     components:
     - type: Transform
       pos: 3.5,10.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6943
   - uid: 2207
     components:
     - type: Transform
@@ -21310,52 +20720,31 @@ entities:
     - type: Transform
       pos: 12.5,10.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
-      - 2162
   - uid: 2213
     components:
     - type: Transform
       pos: 12.5,11.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
-      - 2162
   - uid: 2214
     components:
     - type: Transform
       pos: 16.5,9.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2162
   - uid: 2215
     components:
     - type: Transform
       pos: 24.5,14.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2162
   - uid: 2216
     components:
     - type: Transform
       pos: 12.5,1.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6954
   - uid: 2217
     components:
     - type: Transform
       pos: 18.5,2.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6815
-      - 6954
   - uid: 2218
     components:
     - type: Transform
@@ -21396,181 +20785,111 @@ entities:
     - type: Transform
       pos: 9.5,-11.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
   - uid: 2226
     components:
     - type: Transform
       pos: 5.5,-12.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
   - uid: 2227
     components:
     - type: Transform
       pos: 7.5,-10.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
   - uid: 2228
     components:
     - type: Transform
       pos: 7.5,-9.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
   - uid: 2229
     components:
     - type: Transform
       pos: 8.5,-8.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 12
   - uid: 2230
     components:
     - type: Transform
       pos: 6.5,-11.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
   - uid: 2231
     components:
     - type: Transform
       pos: 0.5,-5.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6941
   - uid: 2232
     components:
     - type: Transform
       pos: -1.5,-3.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6941
   - uid: 2233
     components:
     - type: Transform
       pos: -0.5,-1.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2165
-      - 6941
   - uid: 2234
     components:
     - type: Transform
       pos: 2.5,-3.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6940
-      - 6941
   - uid: 2235
     components:
     - type: Transform
       pos: 6.5,-2.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6940
   - uid: 2236
     components:
     - type: Transform
       pos: 4.5,-5.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6940
   - uid: 2237
     components:
     - type: Transform
       pos: 3.5,0.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2165
   - uid: 2238
     components:
     - type: Transform
       pos: -1.5,0.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2165
   - uid: 2239
     components:
     - type: Transform
       pos: 9.5,-5.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 12
   - uid: 2240
     components:
     - type: Transform
       pos: 9.5,-6.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 12
   - uid: 2241
     components:
     - type: Transform
       pos: 10.5,-0.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
   - uid: 2242
     components:
     - type: Transform
       pos: 11.5,-0.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6829
   - uid: 2243
     components:
     - type: Transform
       pos: 2.5,5.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2169
-      - 6829
   - uid: 2244
     components:
     - type: Transform
       pos: 2.5,4.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2169
-      - 6829
   - uid: 2245
     components:
     - type: Transform
       pos: -6.5,2.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2169
   - uid: 2246
     components:
     - type: Transform
       pos: -5.5,2.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2169
   - uid: 2247
     components:
     - type: Transform
@@ -21581,105 +20900,68 @@ entities:
     - type: Transform
       pos: -23.5,3.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6925
   - uid: 2249
     components:
     - type: Transform
       pos: -21.5,2.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2159
   - uid: 2250
     components:
     - type: Transform
       pos: 11.5,-15.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 13
   - uid: 2251
     components:
     - type: Transform
       pos: -7.5,-1.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2166
   - uid: 6902
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,-11.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
   - uid: 6903
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,-11.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
   - uid: 6904
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 4.5,-11.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
   - uid: 6905
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 1.5,-12.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
   - uid: 6906
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 1.5,-13.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 11
   - uid: 6923
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -4.5,17.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2160
   - uid: 6924
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -3.5,17.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 2160
   - uid: 6944
     components:
     - type: Transform
       pos: 4.5,10.5
       parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6943
-      - 2161
 - proto: Fireplace
   entities:
   - uid: 2252
