@@ -32234,6 +32234,10 @@ entities:
       parent: 2
     - type: Construction
       defaultTarget: start
+    - type: AccessReader
+      access:
+      - - Engineering
+      - - Security
 - proto: HolopadCargoBay
   entities:
   - uid: 3053
