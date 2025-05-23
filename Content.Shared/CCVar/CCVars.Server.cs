@@ -21,13 +21,13 @@ public sealed partial class CCVars
     ///     Change this to have the changelog and rules "last seen" date stored separately.
     /// </summary>
     public static readonly CVarDef<string> ServerId =
-        CVarDef.Create("server.id", "Goobstation", CVar.REPLICATED | CVar.SERVER); // if ur a fork of goob pls change this thanks :)
+        CVarDef.Create("server.id", "Reserve station", CVar.REPLICATED | CVar.SERVER); // if ur a fork of goob pls change this thanks :) //Reserve edit
 
     /// <summary>
     ///     Guide Entry Prototype ID to be displayed as the server rules.
     /// </summary>
     public static readonly CVarDef<string> RulesFile =
-        CVarDef.Create("server.rules_file", "DefaultRuleset", CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("server.rules_file", "DefaultRulesetReserve", CVar.REPLICATED | CVar.SERVER); //Reserve edit
 
     /// <summary>
     ///     Guide entry that is displayed by default when a guide is opened.

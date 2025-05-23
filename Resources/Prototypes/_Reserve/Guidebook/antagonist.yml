@@ -1,0 +1,53 @@
+- type: guideEntry
+  id: Antagonists
+  name: guide-entry-antagonists
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Antagonists.xml"
+  children:
+  - Traitors
+  - Thieves
+  - Revolutionaries
+  - NuclearOperatives
+  - SpaceNinja
+  - Wizard
+  - Zombies
+  - MinorAntagonists
+
+- type: guideEntry
+  id: Traitors
+  name: guide-entry-traitors
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Traitors.xml"
+
+- type: guideEntry
+  id: NuclearOperatives
+  name: guide-entry-nuclear-operatives
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Nuclear Operatives.xml"
+
+- type: guideEntry
+  id: Zombies
+  name: guide-entry-zombies
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Zombies.xml"
+
+- type: guideEntry
+  id: Revolutionaries
+  name: guide-entry-revolutionaries
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Revolutionaries.xml"
+
+- type: guideEntry
+  id: MinorAntagonists
+  name: guide-entry-minor-antagonists
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/MinorAntagonists.xml"
+
+- type: guideEntry
+  id: SpaceNinja
+  name: guide-entry-space-ninja
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/SpaceNinja.xml"
+
+- type: guideEntry
+  id: Thieves
+  name: guide-entry-thieves
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Thieves.xml"
+
+- type: guideEntry
+  id: Wizard
+  name: guide-entry-wizard
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Wizard.xml"
