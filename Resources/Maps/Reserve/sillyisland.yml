@@ -3459,8 +3459,6 @@ entities:
     - type: GravityShake
       shakeTimes: 10
   - uid: 3485
-    mapInit: true
-    paused: true
     components:
     - type: MetaData
       name: solution - food
@@ -5058,8 +5056,6 @@ entities:
     - type: GravityShake
       shakeTimes: 10
   - uid: 7484
-    mapInit: true
-    paused: true
     components:
     - type: MetaData
       name: solution - food
@@ -5077,8 +5073,6 @@ entities:
       containerName: food
       container: 7483
   - uid: 7486
-    mapInit: true
-    paused: true
     components:
     - type: MetaData
       name: solution - food
@@ -35879,8 +35873,6 @@ entities:
 - proto: Paper
   entities:
   - uid: 843
-    mapInit: true
-    paused: true
     components:
     - type: Transform
       pos: 5.4263296,-20.515905
@@ -37479,8 +37471,6 @@ entities:
 - proto: PrintedDocumentConditionReport
   entities:
   - uid: 7483
-    mapInit: true
-    paused: true
     components:
     - type: Transform
       pos: 1.9075739,-0.35825348
@@ -37539,8 +37529,6 @@ entities:
 - proto: PrintedDocumentReporDepartment
   entities:
   - uid: 7485
-    mapInit: true
-    paused: true
     components:
     - type: MetaData
       desc: Кажется, край листа подпален
