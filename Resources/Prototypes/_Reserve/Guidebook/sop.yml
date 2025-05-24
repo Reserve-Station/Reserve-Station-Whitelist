@@ -17,7 +17,6 @@
   - Jobs SOP Reserve
   - Legal SOP Reserve
   - StandardProcedures SOP Reserve
-  - SpaceLawReserveTable
 
 # Alert Levels Main Directory
 - type: guideEntry
@@ -142,7 +141,6 @@
   name: guide-entry-sop-security
   text: "/ServerInfo/_Reserve/Guidebook/SoP/Jobs/Security/SecuritySOP.xml"
   children:
-  - SpaceLawReserveTable
   - Warden SOP Reserve
   - OfficerCadet SOP Reserve
   - Detective SOP Reserve
