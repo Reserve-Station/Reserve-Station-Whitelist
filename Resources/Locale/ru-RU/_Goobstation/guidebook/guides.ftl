@@ -51,7 +51,7 @@ guide-entry-sop-cargotech = Грузчик
 guide-entry-sop-salvage = Утилизатор
 # - Командование
 guide-entry-sop-ntr = ПНТ
-guide-entry-sop-bso = Офицер синего щита
+guide-entry-sop-bso = Офицер "Синий Щит"
 guide-entry-sop-captain = Капитан
 guide-entry-sop-hop = ГП
 guide-entry-sop-hos = ГСБ

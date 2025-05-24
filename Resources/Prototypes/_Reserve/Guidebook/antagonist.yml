@@ -91,26 +91,26 @@
 
 - type: guideEntry
   id: ChangelingsReserve
-  name: "Changelings"
+  name: "Генокрады"
   text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Changelings.xml"
   children:
   - ChangelingsAbilitiesReserve
 
 - type: guideEntry
   id: ChangelingsAbilitiesReserve
-  name: "Changeling Abilities"
+  name: "Способности генокрадов"
   text: "/ServerInfo/_Reserve/Guidebook/Antagonist/ChangelingsAbilities.xml"
 
 - type: guideEntry
   id: DevilReserve
-  name: "Devil"
+  name: "Дьявол"
   text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Devil.xml"
   children:
   - DevilClausesReserve
 
 - type: guideEntry
   id: DevilClausesReserve
-  name: "Devil Clauses"
+  name: "Части сделки с Дьяволом"
   text: "/ServerInfo/_Reserve/Guidebook/Antagonist/DevilClauses.xml"
 
 - type: guideEntry

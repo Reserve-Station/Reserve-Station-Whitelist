@@ -69,6 +69,7 @@ guide-entry-pyrotechnics = Пиротехника
 guide-entry-toxins = Токсины
 guide-entry-foods = Пищевые
 guide-entry-biological = Биологические
+guide-entry-special = Специальное
 guide-entry-others = Другие
 guide-entry-botanical = Ботанические
 guide-entry-jobs = Должности
