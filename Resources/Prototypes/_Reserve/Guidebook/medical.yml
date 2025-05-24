@@ -76,7 +76,7 @@
 - type: guideEntry
   id: Medical Patches Reserve
   name: guide-entry-medpatches
-  text: "/ServerInfo/_Goobstation/Guidebook/Medical/Medicalpatches.xml"
+  text: "/ServerInfo/_Reserve/Guidebook/Medical/Medicalpatches.xml"
 
 #Shitmed
 

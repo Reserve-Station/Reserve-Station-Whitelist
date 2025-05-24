@@ -41,6 +41,7 @@ guide-entry-sop-stationdamage = Повреждение станции
 guide-entry-sop-supermatterdelam = Расслаивание СМ
 guide-entry-sop-wardeclaration = Война
 guide-entry-sop-zombieoutbreak = Зомби
+guide-entry-sop-emergencyresponseteam = Отряд Быстрого Реагирования
 # - Юридический
 guide-entry-sop-execution = Казни
 guide-entry-sop-permabrig = Перманентный бриг

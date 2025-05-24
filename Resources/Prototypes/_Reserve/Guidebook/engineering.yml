@@ -382,9 +382,9 @@
 - type: guideEntry
   id: SupermatterReserve
   name: guide-entry-sm
-  text: "/ServerInfo/_Goobstation/Guidebook/Engineering/Supermatter.xml"
+  text: "/ServerInfo/_Reserve/Guidebook/Engineering/Supermatter.xml"
 
 - type: guideEntry
   id: AutomationReserve
   name: guide-entry-automation
-  text: "/ServerInfo/_Goobstation/Guidebook/Engineering/Automation.xml"
+  text: "/ServerInfo/_Reserve/Guidebook/Engineering/Automation.xml"

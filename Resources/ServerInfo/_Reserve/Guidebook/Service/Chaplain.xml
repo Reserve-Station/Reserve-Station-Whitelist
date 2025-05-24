@@ -7,7 +7,7 @@
 
   <Box>
     <GuideEntityEmbed Entity="Bible"/>
-    <GuideEntityEmbed Entity="Nullrod"/>
+    <GuideEntityEmbed Entity="Nullrod" Caption="Нулевой Стержень"/>
   </Box>
 
 ## Религии:
