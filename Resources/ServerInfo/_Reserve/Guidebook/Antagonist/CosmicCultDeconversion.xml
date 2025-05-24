@@ -1,25 +1,17 @@
 <Document>
-  # Deconversion
-  <Box>
-    <GuideEntityEmbed Entity="Bible" Caption=""/>
-  </Box>
+# Обратное обращение
 
-  When mounting an effort to thwart the [color=#4cabb3]Cosmic Cult[/color], there are several methods the crew might employ to ensure their survival and safety. One of these methods is [color=Yellow]Deconversion[/color].
+Когда необходимо противостоять [color=#4cabb3]Космическому Культу[/color], у экипажа есть несколько способов обеспечить свою безопасность. Один из них — [color=Yellow]обратное обращение[/color].
 
-  To [color=Yellow]Deconvert[/color] a cosmic cultist, two methods can be employed. The first is by having a cultist drink a glass of [color=#91C3F7]Holy Water[/color] — by force, if neccesary. Holy Water can be procured from:
-  - Shipments of religious supplies, available from Cargo. These contain two jugs of Holy Water, as well as a Bible.
-  - Usage of a Bible by a Chaplain on most containers of water will bless the water, turning it into Holy Water.
+Чтобы [color=Yellow]вернуть культиста[/color] в нормальное состояние, можно использовать два метода:
+1. **Святая вода** — заставить культиста выпить стакан [color=#91C3F7]святой воды[/color] (если потребуется, силой). Её можно получить:
+  - Заказ религиозных принадлежностей, доступный в Карго. Он содержит два кувшина со святой водой, а также Библию.
+  - Освятив обычную воду с помощью библии (только для священника).
 
-  ## Suppression Methods
-  <Box>
-    <GuideEntityEmbed Entity="Bible" Caption=""/>
-    <GuideEntityEmbed Entity="MindShieldImplanter" Caption=""/>
-  </Box>
+## Методы подавления
 
-  Deconversion is but one method for dealing with an encroaching cult. Crew aboard the station may alternatively wish to invest in [color=Green]Mindshield[/color] implanters.
-
-  These state-of-the-art devices can prevent outside influences from brainwashing crewmembers, providing a powerful utility against the cult's influence.
-
-  The [color=Yellow]Chaplain[/color]'s devotion renders them immune to nearly all of the cosmic cult's powers.
+Обратное обращение — не единственный способ борьбы с культом. Экипаж также может использовать:
+- **Ментальные щиты** — импланты, блокирующие внешнее влияние и защищающие от обращения.
+- **Священника** — его вера делает его практически неуязвимым к способностям культа.
 
 </Document>

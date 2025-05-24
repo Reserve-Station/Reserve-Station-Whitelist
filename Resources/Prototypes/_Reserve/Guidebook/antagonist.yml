@@ -61,7 +61,7 @@
 - type: guideEntry
   id: RevolutionariesReserve
   name: guide-entry-revolutionaries
-  text: "/ServerInfo/_Reserve/_Reserve/Guidebook/Antagonist/Revolutionaries.xml" # goobstation
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Revolutionaries.xml" # goobstation
 
 - type: guideEntry
   id: MinorAntagonistsReserve
@@ -134,3 +134,28 @@
   id: WizardSpellsReserve
   name: guide-entry-wizard-spells
   text: "/ServerInfo/_Reserve/Guidebook/Antagonist/WizardSpells.xml"
+
+#DV
+- type: guideEntry
+  id: CosmicCultReserve
+  name: guide-entry-cosmiccult
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/CosmicCult.xml"
+  children:
+  - CosmicCultMonumentReserve
+  - CosmicCultInfluencesReserve
+  - CosmicCultDeconversionReserve
+
+- type: guideEntry
+  id: CosmicCultMonumentReserve
+  name: guide-entry-cosmiccult-monument
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/CosmicCultMonument.xml"
+
+- type: guideEntry
+  id: CosmicCultInfluencesReserve
+  name: guide-entry-cosmiccult-influences
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/CosmicCultInfluences.xml"
+
+- type: guideEntry
+  id: CosmicCultDeconversionReserve
+  name: guide-entry-cosmiccult-deconversion
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/CosmicCultDeconversion.xml"
