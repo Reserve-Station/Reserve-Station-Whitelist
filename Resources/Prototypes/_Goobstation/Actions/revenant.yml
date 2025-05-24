@@ -9,7 +9,7 @@
       sprite: Mobs/Ghosts/revenant.rsi
       state: icon
     event: !type:RevenantHauntActionEvent
-    useDelay: 20
+    useDelay: 45 #Revenant nerf
 
 - type: entity
   id: ActionRevenantBloodWriting
