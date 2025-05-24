@@ -384,7 +384,6 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         bool ignoreInsulation = false)
     {
         // Reserve edit - electrocution chance
-        Logger.Debug($"Electrocution chance check: {_random.Prob(electrocutionChance)} (chance: {electrocutionChance})");
         if (electrocutionChance < 1f && !_random.Prob(electrocutionChance))
             return false;
         // Reserve edit end
