@@ -17,7 +17,7 @@ namespace Content.Goobstation.Server.ChronoLegionnaire.Components;
 public sealed partial class StasisOnCollideComponent : Component
 {
     [DataField("stasisTime")]
-    public TimeSpan StasisTime = TimeSpan.FromSeconds(60);
+    public TimeSpan StasisTime = TimeSpan.FromSeconds(90); //Revenant nerf
 
     [DataField("fixture")]
     public string FixtureID = "projectile";
