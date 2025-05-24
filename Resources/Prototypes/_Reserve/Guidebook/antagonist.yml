@@ -117,3 +117,20 @@
   id: AbductorsReserve
   name: guide-entry-abductors
   text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Abductors.xml"
+
+- type: guideEntry
+  id: HereticsReserve
+  name: guide-entry-heretics
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Heretics.xml"
+
+- type: guideEntry
+  id: WizardReserve
+  name: guide-entry-wizard
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/Wizard.xml"
+  children:
+  - WizardSpellsReserve
+
+- type: guideEntry
+  id: WizardSpellsReserve
+  name: guide-entry-wizard-spells
+  text: "/ServerInfo/_Reserve/Guidebook/Antagonist/WizardSpells.xml"

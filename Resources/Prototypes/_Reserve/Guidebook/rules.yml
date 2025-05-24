@@ -233,10 +233,10 @@
   priority: 7
   text: "/ServerInfo/_Reserve/Guidebook/ServerRules/RoleplayRules/RuleR5Escalation.xml"
   children:
-  - RuleR5-1
+  - RuleRReserve51
 
 - type: guideEntry
-  id: RuleRReserve5-1
+  id: RuleRReserve51
   name: guide-entry-rules-r-reserve5-1
   ruleEntry: true
   priority: 6
@@ -356,7 +356,7 @@
 - type: guideEntry
   id: SpaceLawReserveTable
   name: guide-entry-space-law-table
-  text: "/ServerInfo/_Reserve/Guidebook/SpaceLaw/SLCrimeListReserve.xml"
+  text: "/ServerInfo/_Reserve/Guidebook/SpaceLaw/SLCrimeList.xml"
   children:
   - SpaceLawReserveViolationsMinor
   - SpaceLawReserveViolationsCommon

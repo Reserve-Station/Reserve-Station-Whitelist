@@ -59,9 +59,9 @@
   text: "/ServerInfo/_Reserve/Guidebook/SoP/StandardProcedures/StandardProceduresSOP.xml"
   children:
   - Alert Levels
-  - Emergencies SOP Reserve Reserve
-  - Demoting SOP Reserve Reserve
-  - EarlyEvacuation SOP Reserve Reserve
+  - Emergencies SOP Reserve
+  - Demoting SOP Reserve
+  - EarlyEvacuation SOP Reserve
   - Hiring SOP Reserve
   - Succession Reserve
 

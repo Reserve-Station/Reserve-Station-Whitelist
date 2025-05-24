@@ -124,3 +124,14 @@
   id: TajaranReserve
   name: species-name-tajaran
   text: "/ServerInfo/_Reserve/Guidebook/Mobs/Tajaran.xml"
+
+#DV
+- type: guideEntry
+  id: RodentiaReserve
+  name: species-name-rodentia
+  text: "/ServerInfo/_Reserve/Guidebook/Mobs/Rodentia.xml"
+
+- type: guideEntry
+  id: OniReserve
+  name: species-name-oni
+  text: "/ServerInfo/_Reserve/Guidebook/Mobs/Oni.xml"
