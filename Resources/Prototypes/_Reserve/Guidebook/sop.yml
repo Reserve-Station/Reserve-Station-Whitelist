@@ -58,7 +58,7 @@
   name: guide-entry-sop-standards
   text: "/ServerInfo/_Reserve/Guidebook/SoP/StandardProcedures/StandardProceduresSOP.xml"
   children:
-  - Alert Levels
+  - Alert Levels Reserve
   - Emergencies SOP Reserve
   - Demoting SOP Reserve
   - EarlyEvacuation SOP Reserve

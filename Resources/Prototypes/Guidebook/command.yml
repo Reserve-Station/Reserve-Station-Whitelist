@@ -7,5 +7,6 @@
 
 - type: guideEntry
   id: Command
+  abstract: true #Reserve guidebook
   name: guide-entry-command
   text: "/ServerInfo/Guidebook/Command.xml"

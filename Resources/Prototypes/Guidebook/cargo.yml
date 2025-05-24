@@ -11,6 +11,7 @@
 
 - type: guideEntry
   id: Cargo
+  abstract: true #Reserve guidebook
   name: guide-entry-cargo
   text: "/ServerInfo/Guidebook/Cargo/Cargo.xml"
   children:
@@ -19,10 +20,12 @@
 
 - type: guideEntry
   id: CargoBounties
+  abstract: true #Reserve guidebook
   name: guide-entry-cargo-bounties
   text: "/ServerInfo/Guidebook/Cargo/CargoBounties.xml"
 
 - type: guideEntry
   id: Salvage
+  abstract: true #Reserve guidebook
   name: guide-entry-salvage
   text: "/ServerInfo/Guidebook/Cargo/Salvage.xml"

@@ -22,6 +22,7 @@
 
 - type: guideEntry
   id: SS14
+  abstract: true #Reserve guidebook
   name: guide-entry-ss14
   text: "/ServerInfo/Guidebook/SpaceStation14.xml"
   children:
@@ -32,10 +33,12 @@
 
 - type: guideEntry
   id: Glossary
+  abstract: true #Reserve guidebook
   name: guide-entry-glossary
   text: "/ServerInfo/Guidebook/Glossary.xml"
 
 - type: guideEntry
   id: Survival
+  abstract: true #Reserve guidebook
   name: guide-entry-survival
   text: "/ServerInfo/Guidebook/Survival.xml"

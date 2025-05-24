@@ -7,5 +7,6 @@
 
 - type: guideEntry
   id: Blob
+  abstract: true #Reserve guidebook
   name: guide-entry-blob
   text: "/ServerInfo/_Goobstation/Guidebook/Antagonist/Blob.xml"

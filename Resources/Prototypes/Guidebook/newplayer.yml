@@ -7,6 +7,7 @@
 
 - type: guideEntry
   id: NewPlayer
+  abstract: true #Reserve guidebook
   name: guide-entry-newplayer
   text: "/ServerInfo/Guidebook/NewPlayer/NewPlayer.xml"
   children:
@@ -15,6 +16,7 @@
 
 - type: guideEntry
   id: Controls
+  abstract: true #Reserve guidebook
   name: guide-entry-controls
   text: "/ServerInfo/Guidebook/NewPlayer/Controls/Controls.xml"
   children:
@@ -22,11 +24,13 @@
 
 - type: guideEntry
   id: Radio
+  abstract: true #Reserve guidebook
   name: guide-entry-radio
   text: "/ServerInfo/Guidebook/NewPlayer/Controls/Radio.xml" 
 
 - type: guideEntry
   id: CharacterCreation
+  abstract: true #Reserve guidebook
   name: guide-entry-charactercreation
   text: "/ServerInfo/Guidebook/NewPlayer/CharacterCreation.xml"
   children:
@@ -35,5 +39,6 @@
 
 - type: guideEntry
   id: YourFirstCharacter
+  abstract: true #Reserve guidebook
   name: guide-entry-yourfirstcharacter
   text: "/ServerInfo/Guidebook/NewPlayer/YourFirstCharacter.xml"
