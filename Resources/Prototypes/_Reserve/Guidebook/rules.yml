@@ -30,7 +30,7 @@
   name: guide-entry-rules-core
   ruleEntry: true
   priority: 30
-  text: "/ServerInfo/_Reserve/Guidebook/ServerRules/CoreRules/ReserveCoreRul.xml"
+  text: "/ServerInfo/_Reserve/Guidebook/ServerRules/ReserveCoreRul.xml"
   children:
   - RuleReserve0
   - RuleReserve1
