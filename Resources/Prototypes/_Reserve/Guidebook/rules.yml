@@ -250,7 +250,7 @@
   text: "/ServerInfo/_Reserve/Guidebook/ServerRules/RoleplayRules/RuleR6SpaceLaw.xml"
 
 - type: guideEntry
-  id: RuleRReserve6
+  id: RuleRReserve7
   name: guide-entry-rules-r-reserve7
   ruleEntry: true
   priority: 9
