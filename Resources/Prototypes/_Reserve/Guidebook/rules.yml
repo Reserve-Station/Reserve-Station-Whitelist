@@ -183,7 +183,7 @@
 # Reserve-Rule-End
 
 - type: guideEntry
-  id: RoleplayRules
+  id: RoleplayRulesReserve
   name: guide-entry-rules-roleplay
   ruleEntry: true
   priority: 40
