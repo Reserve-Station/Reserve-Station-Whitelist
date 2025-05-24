@@ -1,146 +1,128 @@
 <Document>
-  ## Soul Ownership
-  <Box>
+## Владение душой
+<Box>
     [color=#999999][italic]25 Weight[/italic][/color]
-  </Box>
+</Box>
+- Передаёт право на душу подписанта дьяволу
+- Присутствует в каждом контракте по умолчанию
 
-  - Transfers ownership of a soul to the contractor.
-  - Default on every contract.
-
-  ## Death
-  <Box>
+## Воскрешение
+<Box>
     [color=#999999][italic]-25 Weight[/italic][/color]
-  </Box>
+</Box>
+- Позволяет подписанту возродиться один раз после смерти
+- Стандартное условие всех контрактов
 
-  - Allows the contractee to revive themselves exactly once on death.
-  - Default on every contract.
-
-  ## Weakness
-  <Box>
+## Слабость
+<Box>
     [color=#999999][italic]-35 Weight[/italic][/color]
-  </Box>
+</Box>
+- Уменьшает получаемый урон на 50%
+- Увеличивает урон от святых источников
 
-  - Cuts all damage the contractee takes in half.
-  - Increases holy damage taken.
-
-  ## Fear of Space
-  <Box>
+## Страх космоса
+<Box>
     [color=#999999][italic]-25 Weight[/italic][/color]
-  </Box>
+</Box>
+- Делает подписанта невосприимчивым к вакууму
+- Устраняет потребность в дыхании
 
-  - Makes the contractee immune to spacing
-  - Disables the contractees need to breathe.
-
-  ## Shadows
-  <Box>
+## Тени
+<Box>
     [color=#999999][italic]-25 Weight[/italic][/color]
-  </Box>
+</Box>
+- Делает подписанта невидимым
 
-  - Makes the contractee invisible.
-
-  ## Fear of Fire
-  <Box>
+## Страх огня
+<Box>
     [color=#999999][italic]-20 Weight[/italic][/color]
-  </Box>
+</Box>
+- Даёт полную невосприимчивость к огню
+- Защищает от возгорания
 
-  - Makes the contractee immune to fire, and immune to being lit on fire.
-
-  ## Fear of Light
-  <Box>
+## Страх света
+<Box>
     [color=#999999][italic]-15 Weight[/italic][/color]
-  </Box>
+</Box>
+- Защищает от ослепления вспышками
 
-  - Makes the contractee immune to flashes.
-
-  ## Fear of Electricity
-  <Box>
+## Страх электричества
+<Box>
     [color=#999999][italic]-15 Weight[/italic][/color]
-  </Box>
+</Box>
+- Даёт иммунитет к поражению электрическим током
 
-  - Makes the contractee immune to electrical shocks.
-
-  ## Inner Peace
-  <Box>
+## Покой
+<Box>
     [color=#999999][italic]5 Weight[/italic][/color]
-  </Box>
+</Box>
+- Дарует вечный покой (смерть)
 
-  - Grants the target peace. Everlasting.
-
-  ## Strength
-  <Box>
+## Сила
+<Box>
     [color=#999999][italic]25 Weight[/italic][/color]
-  </Box>
+</Box>
+- Удваивает получаемый урон
 
-  - Makes the contractee take double damage.
-
-  ## Coherence
-  <Box>
+## Ясность
+<Box>
     [color=#999999][italic]30 Weight[/italic][/color]
-  </Box>
+</Box>
+- Вызывает нарушения координации
+- Искажает речь
 
-  - Makes the contractee clumsy and messes up their speech.
-
-  ## Voice
-  <Box>
+## Голос
+<Box>
     [color=#999999][italic]25 Weight[/italic][/color]
-  </Box>
+</Box>
+- Лишает подписанта способности говорить
 
-  - Permanently mutes the contractee.
-
-  ## A hand
-  <Box>
+## Кисть
+<Box>
     [color=#999999][italic]30 Weight[/italic][/color]
-  </Box>
+</Box>
+- Мгновенно отрезает одну руку
 
-  - Immediately severs one of the contractees hands.
-
-  ## A leg
-  <Box>
+## Нога
+<Box>
     [color=#999999][italic]30 Weight[/italic][/color]
-  </Box>
+</Box>
+- Мгновенно отрезает одну ногу
 
-  - Immediately severs one of the contractees legs.
-
-  ## Legs
-  <Box>
+## Ноги
+<Box>
     [color=#999999][italic]40 Weight[/italic][/color]
-  </Box>
+</Box>
+- Парализует обе ноги навсегда
 
-  - Permanently paralyzes both of the contractees legs.
-
-  ## An organ
-  <Box>
+## Орган
+<Box>
     [color=#999999][italic]45 Weight[/italic][/color]
-  </Box>
+</Box>
+- Извлекает один случайный орган (обычно сердце)
 
-  - Dumps one of the contractees organs on the ground.
-  - This is most likely the heart.
-
-  ## Sight
-  <Box>
+## Зрение
+<Box>
     [color=#999999][italic]60 Weight[/italic][/color]
-  </Box>
+</Box>
+- Лишает зрения навсегда
 
-  - Permanently blinds the contractee.
-
-  ## Will to fight
-  <Box>
+## Воля к борьбе
+<Box>
     [color=#999999][italic]80 Weight[/italic][/color]
-  </Box>
+</Box>
+- Полностью подавляет агрессию
 
-  - Permanently pacifies the contractee.
-
-  ## Time
-  <Box>
+## Время
+<Box>
     [color=#999999][italic]150 Weight[/italic][/color]
-  </Box>
+</Box>
+- Убивает подписанта через 5 минут
 
-  - Kills the contractee after five minutes.
-
-  ## Mortality
-  <Box>
+## Бессмертие
+<Box>
     [color=#999999][italic]-100 Weight[/italic][/color]
-  </Box>
+</Box>
+- Даёт неограниченное количество самовоскрешений
 
-  - Grants the target an unlimited amount of self revives.
 </Document>
