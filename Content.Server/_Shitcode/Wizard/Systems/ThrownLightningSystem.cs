@@ -72,7 +72,7 @@ public sealed class ThrownLightningSystem : EntitySystem
         if (!TryComp(args.Target, out StatusEffectsComponent? status))
             return;
 
-        _electrocution.TryDoElectrocution(args.Target, ent, 2, TimeSpan.Zero, true, 0.5f, status, true);
+        _electrocution.TryDoElectrocution(args.Target, ent, 2, TimeSpan.Zero, true, 0.5f, 1f, status, true); //Reserve electrocutionChance
         _stamina.TakeStaminaDamage(args.Target, ent.Comp.StaminaDamage);
         _sparks.DoSparks(Transform(ent).Coordinates);
     }

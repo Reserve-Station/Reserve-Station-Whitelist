@@ -310,6 +310,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
                     TimeSpan.FromSeconds(electrified.ShockTime * MathF.Pow(RecursiveTimeMultiplier, depth)),
                     true,
                     electrified.SiemensCoefficient,
+                    electrocutionChance: electrified.ElectrocutionChance, // Reserve edit
                     ignoreInsulation: electrified.IgnoreInsulation // Goobstation
                 );
             }
@@ -344,6 +345,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
                     TimeSpan.FromSeconds(electrified.ShockTime * MathF.Pow(RecursiveTimeMultiplier, depth) * timeScalar),
                     true,
                     electrified.SiemensCoefficient,
+                    electrocutionChance: electrified.ElectrocutionChance, // Reserve edit
                     electrified.IgnoreInsulation); // Goob edit
             }
             return lastRet;
@@ -371,9 +373,22 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
 
     /// <inheritdoc/>
     public override bool TryDoElectrocution(
-        EntityUid uid, EntityUid? sourceUid, int shockDamage, TimeSpan time, bool refresh, float siemensCoefficient = 1f,
-        StatusEffectsComponent? statusEffects = null, bool ignoreInsulation = false)
+        EntityUid uid,
+        EntityUid? sourceUid,
+        int shockDamage,
+        TimeSpan time,
+        bool refresh,
+        float siemensCoefficient = 1f,
+        float electrocutionChance = 1f,// Reserve edit
+        StatusEffectsComponent? statusEffects = null,
+        bool ignoreInsulation = false)
     {
+        // Reserve edit - electrocution chance
+        Logger.Debug($"Electrocution chance check: {_random.Prob(electrocutionChance)} (chance: {electrocutionChance})");
+        if (electrocutionChance < 1f && !_random.Prob(electrocutionChance))
+            return false;
+        // Reserve edit end
+
         if (!DoCommonElectrocutionAttempt(uid, sourceUid, ref siemensCoefficient, ignoreInsulation)
             || !DoCommonElectrocution(uid, sourceUid, shockDamage, time, refresh, siemensCoefficient, statusEffects))
             return false;
@@ -390,10 +405,14 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         TimeSpan time,
         bool refresh,
         float siemensCoefficient = 1f,
+        float electrocutionChance = 1f, //Reserve edit
         bool ignoreInsulation = false, // Goobstation
         StatusEffectsComponent? statusEffects = null,
         TransformComponent? sourceTransform = null)
     {
+        if (electrocutionChance < 1f && !_random.Prob(electrocutionChance)) //Reserve edit
+            return false;
+
         if (!DoCommonElectrocutionAttempt(uid, sourceUid, ref siemensCoefficient, ignoreInsulation)) // Goob edit
             return false;
 

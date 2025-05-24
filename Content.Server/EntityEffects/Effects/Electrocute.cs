@@ -20,6 +20,8 @@ public sealed partial class Electrocute : EntityEffect
     /// </remarks>
     [DataField] public bool Refresh = true;
 
+    [DataField] public float ElectrocutionChance = 1f; // Reserve edit - ElectrocutionChance
+
     protected override string? ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
         => Loc.GetString("reagent-effect-guidebook-electrocute", ("chance", Probability), ("time", ElectrocuteTime));
 
@@ -30,7 +32,7 @@ public sealed partial class Electrocute : EntityEffect
         if (args is EntityEffectReagentArgs reagentArgs)
         {
             reagentArgs.EntityManager.System<ElectrocutionSystem>().TryDoElectrocution(reagentArgs.TargetEntity, null,
-                Math.Max((reagentArgs.Quantity * ElectrocuteDamageScale).Int(), 1), TimeSpan.FromSeconds(ElectrocuteTime), Refresh, ignoreInsulation: true);
+                Math.Max((reagentArgs.Quantity * ElectrocuteDamageScale).Int(), 1), TimeSpan.FromSeconds(ElectrocuteTime), Refresh, electrocutionChance: ElectrocutionChance, ignoreInsulation: true); //Reserve edit - electrocutionChance
 
             if (reagentArgs.Reagent != null)
                 reagentArgs.Source?.RemoveReagent(reagentArgs.Reagent.ID, reagentArgs.Quantity);

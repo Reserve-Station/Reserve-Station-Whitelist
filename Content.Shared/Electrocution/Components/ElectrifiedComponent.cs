@@ -163,4 +163,12 @@ public sealed partial class ElectrifiedComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadOnly), AutoNetworkedField]
     public EntityUid? IgnoredEntity;
+
+    /// <summary>
+    /// Reserve
+    /// Chance of entity to apply shock to target
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float ElectrocutionChance = 1f;
+
 }
