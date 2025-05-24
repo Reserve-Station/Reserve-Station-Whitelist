@@ -1,6 +1,6 @@
 cosmicability-generic-fail = Вашему влиянию не удается закрепиться..
 
-cosmicability-glare-confirm = Нажмите еще раз, чтобы активировать нулевой блик.
+cosmicability-glare-confirm = Нажмите еще раз, чтобы активировать Ошеломляющий Взгляд.
 
 cosmicability-siphon-cultist-success = Ваши попытки привлечь энтропию охлаждают {CAPITALIZE(THE($target))}
 cosmicability-siphon-success = Вы молча черпаете энтропию из {CAPITALIZE(THE($target))}.
