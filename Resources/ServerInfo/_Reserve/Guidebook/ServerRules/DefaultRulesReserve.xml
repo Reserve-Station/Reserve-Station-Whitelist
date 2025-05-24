@@ -8,24 +8,24 @@
 
 Во время режима смертельная битва(deathmatch) все правила, кроме П0, П1, П3.2, П3.4, П3.8, П9, П10 не действуют.
 
-  - [textlink="0. Не будь мудаком" link="ReserveRul0"]
-  - [textlink="1. Гриф" link="ReserveRul1"]
-  - [textlink="2. Убийство" link="ReserveRul2"]
-  - [textlink="3. Нарушение игровой атмосферы" link="ReserveRul3"]
-  - [textlink="3.1. Победкаёбство" link="ReserveRul31"]
-  - [textlink="3.2. Метагейм" link="ReserveRul32"]
-  <!-- - [textlink="3.3. Ограничения на проф. навыки" link="ReserveRul33"] Не используется -->
-  - [textlink="3.4. IC в ООС" link="ReserveRul34"]
-  - [textlink="3.5. Мультиаккаунт" link="ReserveRul35"]
-  - [textlink="3.6. Выход из роли" link="ReserveRul36"]
-  - [textlink="3.7. Безграмотность" link="ReserveRul37"]
-  - [textlink="3.8. Поддержание уважительной обстановки" link="ReserveRul38"]
-  - [textlink="4. Логика персонажей" link="ReserveRul4"]
-  - [textlink="6. Ответственная игра за антагониста" link="ReserveRul6"]
-  - [textlink="7. Самоантагонизм" link="ReserveRul7"]
-  - [textlink="8. Валидхант" link="ReserveRul8"]
-  - [textlink="9. ERP" link="ReserveRul9"]
-  - [textlink="10. Нечестная игра" link="ReserveRul10"]
+  - [textlink="0. Не будь мудаком" link="RuleReserve0"]
+  - [textlink="1. Гриф" link="RuleReserve1"]
+  - [textlink="2. Убийство" link="RuleReserve2"]
+  - [textlink="3. Нарушение игровой атмосферы" link="RuleReserve3"]
+  - [textlink="3.1. Победкаёбство" link="RuleReserve31"]
+  - [textlink="3.2. Метагейм" link="RuleReserve32"]
+  <!-- - [textlink="3.3. Ограничения на проф. навыки" link="RuleReserve33"] Не используется -->
+  - [textlink="3.4. IC в ООС" link="RuleReserve34"]
+  - [textlink="3.5. Мультиаккаунт" link="RuleReserve35"]
+  - [textlink="3.6. Выход из роли" link="RuleReserve36"]
+  - [textlink="3.7. Безграмотность" link="RuleReserve37"]
+  - [textlink="3.8. Поддержание уважительной обстановки" link="RuleReserve38"]
+  - [textlink="4. Логика персонажей" link="RuleReserve4"]
+  - [textlink="6. Ответственная игра за антагониста" link="RuleReserve6"]
+  - [textlink="7. Самоантагонизм" link="RuleReserve7"]
+  - [textlink="8. Валидхант" link="RuleReserve8"]
+  - [textlink="9. ERP" link="RuleReserve9"]
+  - [textlink="10. Нечестная игра" link="RuleReserve10"]
 
 ## ДОПОЛНИТЕЛЬНЫЕ ПРАВИЛА РОЛЕВОЙ ИГРЫ
   Дополнительные правила лишь более детально уточняют, как свод правил регулирует некоторые игровые ситуации.
@@ -33,13 +33,12 @@
   Дополнительные сведения о различных типах ролей см. в списке [textlink="Роли" link="RoleTypesReserve"].
 
   - [textlink="1. Фамильяры должны подчиняться своему хозяину" link="RuleRReserve1"]
-  <!-- no rule 2 :troll: -->
-  - [textlink="2. Отыгрывайте нормальную персону" link="RuleRReserve3"] <!-- wait there is rule 2 WTF -->
-  - [textlink="3. Не мешайте прибывающим" link="RuleRReserve4"]
-  - [textlink="4. Не затягивайте раунд" link="RuleRReserve5"]
-  - [textlink="5. Соблюдайте разумную эскалацию" link="RuleRReserve6"]
-  - [textlink="6. Амнезия после смерти: вы не знаете, кто вас убил." link="RuleRReserve7"]
-  - [textlink="8. Командование и Служба Безопасности должны следовать Космическому Закону." link="RuleRReserve8"]
+  - [textlink="2. Отыгрывайте нормальную персону" link="RuleRReserve2"]
+  - [textlink="3. Не мешайте прибывающим" link="RuleRReserve3"]
+  - [textlink="4. Не затягивайте раунд" link="RuleRReserve4"]
+  - [textlink="5. Соблюдайте разумную эскалацию" link="RuleRReserve5"]
+  - [textlink="6. Амнезия после смерти: вы не знаете, кто вас убил." link="RuleRReserve6"]
+  - [textlink="8. Командование и Служба Безопасности должны следовать Космическому Закону." link="RuleRReserve7"]
 
 
   ## ПРАВИЛА СИЛИКОНОВ

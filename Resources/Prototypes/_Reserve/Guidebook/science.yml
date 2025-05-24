@@ -1,62 +1,66 @@
-# SPDX-FileCopyrightText: 2025 ReserveBot <211949879+ReserveBot@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Svarshik <96281939+lexaSvarshik@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 M3739 <47579354+M3739@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 OttoMaticode <124523848+OttoMaticode@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: MIT
 
 - type: guideEntry
-  id: Science
+  id: ScienceReserve
   name: guide-entry-science
   text: "/ServerInfo/_Reserve/Guidebook/Science/Science.xml"
   children:
-  - Technologies
-  - AnomalousResearch
-  - Xenoarchaeology
-  - Robotics
+  - TechnologiesReserve
+  - AnomalousResearchReserve
+  - XenoarchaeologyReserve
+  - RoboticsReserve
 
 - type: guideEntry
-  id: Technologies
+  id: TechnologiesReserve
   name: guide-entry-technologies
   text: "/ServerInfo/_Reserve/Guidebook/Science/Technologies.xml"
   filterEnabled: True
 
 - type: guideEntry
-  id: AnomalousResearch
+  id: AnomalousResearchReserve
   name: guide-entry-anomalous-research
   text: "/ServerInfo/_Reserve/Guidebook/Science/AnomalousResearch.xml"
   children:
-  - APE
-  - ScannersAndVessels
+  - APEReserve
+  - ScannersAndVesselsReserve
 
 - type: guideEntry
-  id: ScannersAndVessels
+  id: ScannersAndVesselsReserve
   name: guide-entry-scanners-and-vessels
   text: "/ServerInfo/_Reserve/Guidebook/Science/ScannersAndVessels.xml"
 
 - type: guideEntry
-  id: APE
+  id: APEReserve
   name: guide-entry-ape
   text: "/ServerInfo/_Reserve/Guidebook/Science/APE.xml"
 
 - type: guideEntry
-  id: Xenoarchaeology
+  id: XenoarchaeologyReserve
   name: guide-entry-xenoarchaeology
   text: "/ServerInfo/_Reserve/Guidebook/Science/Xenoarchaeology.xml"
   children:
-  - ArtifactReports
+  - ArtifactReportsReserve
 
 - type: guideEntry
-  id: Robotics
+  id: RoboticsReserve
   name: guide-entry-robotics
   text: "/ServerInfo/_Reserve/Guidebook/Science/Robotics.xml"
   children:
-  - Cyborgs
+  - CyborgsReserve
 
 - type: guideEntry
-  id: ArtifactReports
+  id: ArtifactReportsReserve
   name: guide-entry-artifact-reports
   text: "/ServerInfo/_Reserve/Guidebook/Science/ArtifactReports.xml"
 
 - type: guideEntry
-  id: Cyborgs
+  id: CyborgsReserve
   name: guide-entry-cyborgs
   text: "/ServerInfo/_Reserve/Guidebook/Science/Cyborgs.xml"
