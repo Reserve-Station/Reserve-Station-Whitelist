@@ -83,6 +83,7 @@ guide-entry-sop-janitor = Уборщик
 guide-entry-sop-librarian = Библиотекарь
 guide-entry-sop-mime = Мим
 guide-entry-sop-reporter = Репортер
+guide-entry-chaplain = Священник
 # - Космический закон
 guide-entry-space-law-table = Таблица статей
 guide-entry-space-law-violations-minor = 1ХХ статьи (лёгкие)

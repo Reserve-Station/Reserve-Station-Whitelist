@@ -20,7 +20,8 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 <Box>
 <GuideEntityEmbed Entity="RightHandHuman" Caption="правая кисть"/>
 <GuideEntityEmbed Entity="RightArmHuman" Caption="правая рука"/>
-<GuideEntityEmbed Entity="TorsoHuman" Caption="торс"/>
+<GuideEntityEmbed Entity="ChestHuman" Caption="торс"/>
+<GuideEntityEmbed Entity="GroinHuman" Caption="пах"/>
 <GuideEntityEmbed Entity="LeftArmHuman" Caption="левая рука"/>
 <GuideEntityEmbed Entity="LeftHandHuman" Caption="правая кисть"/>
 </Box>
@@ -55,6 +56,6 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 ## она не работает?
 
 Ваш пациент получил достаточно повреждений, чтобы нервы его конечности были сильно повреждены, и их нужно как следует залечить, прежде чем она сможет снова работать.
-Для этого вы можете попробовать операцию «Залечить раны» или позволить ему использовать топические средства на ранах.
+Для этого вы можете попробовать операцию «Залечить раны» или применить хирургические нити, бинты или мази на ранах.
 
 </Document>
