@@ -25,3 +25,5 @@ uplink-rocketinc-desc = A box containing 3 incendiary rockets compatible with th
 uplink-rocketcon-name = Leviathan concussion rocket bundle
 uplink-rocketcon-desc = A box containing 3 concussion rockets compatible with the Leviathan.
 
+uplink-poison-injector-name = Lethal Poison Auto-Injector
+uplink-poison-injector-desc = A single dose of a lethal toxin mix, courtesy of Gorlex's Stealth Operations department, induces gradual organ failure and esophagus inflammation which eliminates a subject within one to two minutes of injection.
