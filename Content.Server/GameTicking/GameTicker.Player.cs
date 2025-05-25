@@ -88,10 +88,12 @@ namespace Content.Server.GameTicking
 
                     var record = await _db.GetPlayerRecordByUserId(args.Session.UserId);
                     var firstConnection = record != null &&
-                                          Math.Abs((record.FirstSeenTime - record.LastSeenTime).TotalMinutes) < 1;
+                                          Math.Abs((record.FirstSeenTime - record.LastSeenTime).TotalMinutes) < 60; //Reserve edit - until 1hr played total
+
+                    var firstSeenTime = record?.FirstSeenTime.ToString("dd.MM.yyyy") ?? "неизвестно"; // Reserve edit- first connection date
 
                     _chatManager.SendAdminAnnouncement(firstConnection
-                        ? Loc.GetString("player-first-join-message", ("name", args.Session.Name))
+                        ? Loc.GetString("player-first-join-message", ("name", args.Session.Name)) +$" с {firstSeenTime}." //Reserve edit
                         : Loc.GetString("player-join-message", ("name", args.Session.Name)));
 
                     RaiseNetworkEvent(GetConnectionStatusMsg(), session.Channel);
