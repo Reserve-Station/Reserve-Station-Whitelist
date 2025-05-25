@@ -199,7 +199,6 @@ using Robust.Shared.Player;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
 using Content.Server._RMC14.LinkAccount; // RMC - Patreon
-using Content.Shared.ADT.CCVar; //Reserve edit
 using Content.Server.Discord; //Reserve edit
 
 namespace Content.Server.Chat.Managers;
@@ -483,18 +482,21 @@ internal sealed partial class ChatManager : IChatManager
 
         _adminLogger.Add(LogType.Chat, $"Admin chat from {player:Player}: {message}");
         // ADT-Tweak-start: Постит в дис весь админчат, если есть данный вебхук
-        if (!string.IsNullOrEmpty(_cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook)))
+        if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
         {
-            var webhookUrl = _cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook);
+            var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
 
             if (webhookUrl == null)
                 return;
 
             if (await _discord.GetWebhook(webhookUrl) is not { } webhookData)
                 return;
+
+            var senderAdmin = _adminManager.GetAdminData(player);
+
             var payload = new WebhookPayload
             {
-                Content = $"***AdminChat***: **{senderName}**: {message}"
+                Content = $"{player.Name}[{(senderAdmin?.Title ?? "Admin")}]:\n{message}" //Reserve edit
             };
             var identifier = webhookData.ToIdentifier();
             await _discord.CreateMessage(identifier, payload);

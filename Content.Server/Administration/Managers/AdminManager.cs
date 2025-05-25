@@ -108,9 +108,8 @@ using Robust.Shared.Player;
 using Robust.Shared.Toolshed;
 using Robust.Shared.Toolshed.Errors;
 using Robust.Shared.Utility;
-using Content.Shared.ADT.CCVar;
-using Content.Server.Discord;
-using Serilog;
+using Content.Server.Discord; //Reserve ADT port
+using Serilog; //Reserve ADT port
 
 
 namespace Content.Server.Administration.Managers
@@ -189,9 +188,9 @@ namespace Content.Server.Administration.Managers
             SendPermsChangedEvent(session);
             UpdateAdminStatus(session);
             // ADT-Tweak-start: Постит сообщение в чат при деадмине
-            if (!string.IsNullOrEmpty(_cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook)))
+            if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
             {
-                var webhookUrl = _cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook);
+                var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
                 if (webhookUrl == null)
                     return;
                 if (await _discord.GetWebhook(webhookUrl) is not { } webhookData)
@@ -291,9 +290,9 @@ namespace Content.Server.Administration.Managers
             SendPermsChangedEvent(session);
             UpdateAdminStatus(session);
             // ADT-Tweak-start: Постит сообщение в чат при деадмине
-            if (!string.IsNullOrEmpty(_cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook)))
+            if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
             {
-                var webhookUrl = _cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook);
+                var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
                 if (webhookUrl == null)
                     return;
                 if (await _discord.GetWebhook(webhookUrl) is not { } webhookData)
@@ -501,9 +500,9 @@ namespace Content.Server.Administration.Managers
         // ADT-Tweak-start: Кидает инфу в дис если админ вышел из игры
         private async void DisconnectedAdminMaybe(ICommonSession session)
         {
-            if (!string.IsNullOrEmpty(_cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook)))
+            if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
             {
-                var webhookUrl = _cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook);
+                var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
                 var senderName = session.Name;
                 if (await _discord.GetWebhook(webhookUrl) is not { } webhookData)
                     return;
@@ -554,9 +553,9 @@ namespace Content.Server.Administration.Managers
                         _chat.SendAdminAnnouncement(Loc.GetString("admin-manager-admin-login-message",
                             ("name", session.Name)));
                         // ADT-Tweak-start: Кидает инфу в дис если админ зашёл
-                        if (!string.IsNullOrEmpty(_cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook)))
+                        if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)))
                         {
-                            var webhookUrl = _cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook);
+                            var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
                             var senderAdmin = GetAdminData(session);
                             if (senderAdmin == null)
                                 return;
