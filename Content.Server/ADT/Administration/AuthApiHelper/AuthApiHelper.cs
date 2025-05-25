@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 Schrödinger <132720404+Schrodinger71@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
