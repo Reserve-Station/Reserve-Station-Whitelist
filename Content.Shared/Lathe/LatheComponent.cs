@@ -93,6 +93,9 @@ namespace Content.Shared.Lathe
         [DataField, AutoNetworkedField]
         public int DefaultProductionAmount = 1;
 
+        [DataField]
+        public float PriceModifier = 0.4f;
+
         #region Visualizer info
         [DataField]
         public string? IdleState;

@@ -49,7 +49,7 @@ namespace Content.Server.Cargo.Systems;
 /// <summary>
 /// This handles calculating the price of items, and implements two basic methods of pricing materials.
 /// </summary>
-public sealed class PricingSystem : EntitySystem
+public sealed partial class PricingSystem : EntitySystem // Reserve Station - made partial
 {
     [Dependency] private readonly IComponentFactory _factory = default!;
     [Dependency] private readonly IConsoleHost _consoleHost = default!;
@@ -234,7 +234,7 @@ public sealed class PricingSystem : EntitySystem
 
         // TODO: Proper container support.
 
-        return price;
+        return ApplyPrototypePriceModifier(prototype, price); // ReserveStation
     }
 
     /// <summary>
@@ -280,7 +280,7 @@ public sealed class PricingSystem : EntitySystem
             }
         }
 
-        return price;
+        return ApplyPriceModifier(uid, price); // ReserveStation
     }
 
     private double GetMaterialsPrice(EntityUid uid)

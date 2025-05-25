@@ -163,7 +163,7 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50
+        maxVol: 100 # Reserve Station more reagents for chefs
   - type: SolutionTransfer
     # This is potentially badly-handled due to 'drink opening',
     #  but it lets the flour be tampered with, refilled, etc.
@@ -241,10 +241,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50
+        maxVol: 100 # Reserve Station more reagents for chefs
         reagents:
         - ReagentId: Flour
-          Quantity: 50
+          Quantity: 100 # Reserve Station more reagents for chefs
 
 - type: entity
   parent: [ReagentPacketBase, ItemHeftyBase]
@@ -275,7 +275,7 @@
       food:
         reagents:
         - ReagentId: Cornmeal
-          Quantity: 50
+          Quantity: 100 # Reserve Station more reagents for chefs
 
 - type: entity
   parent: ReagentPacketBase
@@ -306,7 +306,7 @@
       food:
         reagents:
         - ReagentId: Rice
-          Quantity: 50
+          Quantity: 100 # Reserve Station more reagents for chefs
 
 - type: entity
   parent: ReagentPacketBase
@@ -337,7 +337,7 @@
       food:
         reagents:
         - ReagentId: Sugar
-          Quantity: 50
+          Quantity: 100 # Reserve Station more reagents for chefs
 
 - type: entity
   parent: ReagentPacketBase
@@ -384,10 +384,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50 # you always need more mayo
+        maxVol: 100 # Reserve Station more reagents for chefs
         reagents:
         - ReagentId: Mayo
-          Quantity: 50
+          Quantity: 100 # Reserve Station more reagents for chefs
   - type: Tag
     tags:
       - Mayo

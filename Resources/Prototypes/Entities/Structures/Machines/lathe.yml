@@ -990,6 +990,7 @@
       idleState: icon
       runningState: building
       defaultProductionAmount: 10
+      priceModifier: 1 # ReserveStation
       staticPacks:
       - OreSmelting
       - RGlassSmelting

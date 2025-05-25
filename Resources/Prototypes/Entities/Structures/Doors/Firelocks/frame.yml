@@ -90,7 +90,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 500
+        damage: 100 # Reserv Station Nerfed 500 to 100
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]

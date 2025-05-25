@@ -72,6 +72,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Server.Administration.Logs;
 using Content.Server.Atmos.EntitySystems;
+using Content.Server._Reserve.Cargo.Components;
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.Lathe.Components;
 using Content.Server.Materials;
@@ -301,6 +302,7 @@ namespace Content.Server.Lathe
                 if (comp.CurrentRecipe.Result is { } resultProto)
                 {
                     var result = Spawn(resultProto, Transform(uid).Coordinates);
+                    EnsureComp<PriceModifierComponent>(result).Modifier = comp.PriceModifier; // ReserveStation
                     _stack.TryMergeToContacts(result);
                 }
 
