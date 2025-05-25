@@ -41,7 +41,6 @@ using Robust.Shared.Enums;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using Content.Shared.ADT.CCVar;
 using Content.Server.Discord;
 
 namespace Content.Server.GameTicking
@@ -99,9 +98,9 @@ namespace Content.Server.GameTicking
                         : Loc.GetString("player-join-message", ("name", args.Session.Name)));
 
                     // ADT-Tweak-start: Постит в дис админчата, о заходе новых игроков
-                    if (!string.IsNullOrEmpty(_cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook)) && firstConnection)
+                    if (!string.IsNullOrEmpty(_cfg.GetCVar(CCVars.DiscordAdminchatWebhook)) && firstConnection)
                     {
-                        var webhookUrl = _cfg.GetCVar(ADTDiscordWebhookCCVars.DiscordAdminchatWebhook);
+                        var webhookUrl = _cfg.GetCVar(CCVars.DiscordAdminchatWebhook);
 
                         if (webhookUrl == null)
                             return;
@@ -110,7 +109,7 @@ namespace Content.Server.GameTicking
                             return;
                         var payload = new WebhookPayload
                         {
-                            Content = $"**Оповещение: ЗАШЁЛ НОВИЧОК** ({args.Session.Name})"
+                            Content = $"**Недавно/впервые зашёл на сервер** ({args.Session.Name})"
                         };
                         var identifier = webhookData.ToIdentifier();
                         await _discord.CreateMessage(identifier, payload);
