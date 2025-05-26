@@ -10,7 +10,6 @@ nullrod-honkmother-untrained-usage-popup = Ты думаешь, что ты см
 nullrod-uristhand-untrained-usage-popup = Проникновение на охраняемую территорию.
 nullrod-chainsaw-untrained-usage-popup = Ах, и посмотрите, кто у нас здесь — чертов язычник!
 
-nullrod-pray-prompt = Молиться нулевому стержню
-nullrod-pray-start = {$user} начинает шептать в {$nullrod}...
-
-nullrod-spelldenial-popup = СИЛА БОЖЬЯ ПОБУЖДАЕТ ВАС!
+alternate-pray-prompt = Молиться {$item}
+alternate-pray-start = {$user} начинает нашептывать в {$item}...
+nullrod-spelldenial-popup = СИЛА БОЖЬЯ ПЕРЕПОЛНЯЕТ ВАС!
