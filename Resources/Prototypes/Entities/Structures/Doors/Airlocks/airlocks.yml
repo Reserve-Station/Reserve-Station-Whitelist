@@ -234,11 +234,6 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/syndicate.rsi
-  - type: PaintableAirlock
-    department: null
-    group: Standard
-  - type: Wires
-    layoutId: AirlockSyndicate
 
 - type: entity
   parent: AirlockCargo
@@ -398,11 +393,6 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/syndicate.rsi
-  - type: PaintableAirlock
-    department: null
-    group: Glass
-  - type: Wires
-    layoutId: AirlockSyndicate
 
 - type: entity
   parent: AirlockCargoGlass
