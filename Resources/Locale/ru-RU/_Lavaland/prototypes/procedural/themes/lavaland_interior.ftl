@@ -1,3 +1,3 @@
-ent-LavalandInteriorRoomMarker = Lavaland interior marker
-    .suffix = 5x5
+ent-LavalandInteriorRoomMarker = Маркер интерьера лаваленда
+    .suffix = 5х5
     .desc = { ent-BaseRoomMarker.desc }

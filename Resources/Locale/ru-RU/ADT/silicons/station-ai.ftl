@@ -8,4 +8,3 @@ station-ai-customization-window = Кастомизация ИИ
 sai-info-name-label = Имя ИИ: [color=white]{ $name }[/color]
 sai-ui-menu-title = Интерфейс ИИ
 sai-ui-robotics-button = Манифест киборгов
-# Action
