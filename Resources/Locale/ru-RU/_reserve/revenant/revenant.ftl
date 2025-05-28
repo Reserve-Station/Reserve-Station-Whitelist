@@ -21,5 +21,3 @@ revenant-revealed-salt = Соляная лужа ослабляет ваш эф�
 
 revenant-already-haunted = { CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } был проклят.
 
-ent-CrayonBlood-name = Кровавый мелок
-ent-CrayonBlood-desc = Кровавый мелок. Выглядит страшно. У-у-у...
