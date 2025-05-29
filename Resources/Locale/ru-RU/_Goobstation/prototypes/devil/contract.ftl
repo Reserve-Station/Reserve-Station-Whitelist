@@ -1,4 +1,4 @@
-ent-BaseDevilContract = заключайте контракт снизу
+ent-BaseDevilContract = Дьяволский договор
     .desc = Дьявольский кусок черного пергамента с подробным описанием контракта. Кажется, что все чернила, попадающие на страницу, превращаются в кровь.
 ent-PaperDevilContractBlank = { ent-BaseDevilContract }
     .suffix = Пустой

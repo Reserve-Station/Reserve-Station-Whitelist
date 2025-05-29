@@ -1,2 +1,2 @@
-ent-EnchantFireAspect = Огненный аспект
+ent-EnchantFireAspect = Поджигатель
     .desc = { ent-BaseEnchant.desc }
