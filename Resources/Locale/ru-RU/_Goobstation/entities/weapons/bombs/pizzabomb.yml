@@ -1,2 +1,6 @@
+# SPDX-FileCopyrightText: 2025 Gamma91302 <gamma91302@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 ent-FoodBoxPizzaBomb = коробка пиццы
     .desc = { ent-FoodBoxPizza.desc }
