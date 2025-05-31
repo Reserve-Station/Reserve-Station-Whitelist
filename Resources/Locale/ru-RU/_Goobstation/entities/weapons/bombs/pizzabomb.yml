@@ -1,0 +1,2 @@
+ent-FoodBoxPizzaBomb = коробка пиццы
+    .desc = { ent-FoodBoxPizza.desc }

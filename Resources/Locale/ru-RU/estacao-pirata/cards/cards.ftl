@@ -80,5 +80,5 @@ card-sc-king-spades = король пик
 card-sc-queen-spades = пиковая дама
 card-sc-joker = джокер
 card-sc-joker-black = джокер
-container-sealed = На нем стоит голографическая печать безопасности. Если его открыть, печать исчезнет.
+container-sealed = Здесь стоит голографическая печать безопасности. Если открыть коробку, печать исчезнет.
 container-unsealed = Наложенная печать исчезает.
