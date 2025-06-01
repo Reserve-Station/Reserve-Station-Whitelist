@@ -4,3 +4,6 @@ flavor-base-sigma = сигмовато
 flavor-complex-fentanyl = горящая смола
 flavor-base-tears = солёные слёзы
 flavor-base-alienblood = пришелец
+flavor-base-old = старьё
+flavor-base-robust = робаст
+flavor-complex-unicorntears = слёзы единорогов
