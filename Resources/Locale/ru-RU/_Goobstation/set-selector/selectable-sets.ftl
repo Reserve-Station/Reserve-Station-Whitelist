@@ -28,9 +28,10 @@ selectable-set-thief-syndie-description =
 
 selectable-set-thief-sleeper-name = Набор сони
 selectable-set-thief-sleeper-description =
-    Как поётся в песне: Until we close our eyes for good.
-    В комплект входят: Баллон с оксидом азота, два бутылька с ноктюрином,
-    и гипоручка.
+    Пока мы не закроем глаза навсегда, используйте свои незаконные рецепты.
+    чтобы не дать другим уснуть.
+    В комплект входят: Баллон с закисью азота, два флакона с ноктурином,
+    и гипопен.
 
 selectable-set-thief-communicator-name = Набор переговорщика
 selectable-set-thief-communicator-description =
