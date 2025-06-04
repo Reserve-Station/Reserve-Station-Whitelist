@@ -1,4 +1,4 @@
-ent-ActionVaporizeFreeman = Смайт
+ent-ActionVaporizeFreeman = Покарать
     .desc = На этом все.
 ent-ActionBlinkFreeman = Блинк
     .desc = Мудро сделано, мистер Фримен. Увидимся впереди.
