@@ -4,15 +4,15 @@ heretic-ability-fail-notarget = Не удалось найти подходящ�
 heretic-ability-fail-lowhealth = Это заклинание наносит { $damage } урона, и если вы его произнесете, то окажетесь в критическом состоянии!
 heretic-magicitem-examine = [color=yellow]Позволяет использовать продвинутые заклинания, находясь в руках или снаряжении[/color].
 heretic-ability-fail-tile-not-rusted = Выбранное покрытие должно быть ржавым, чтобы использовать эту способность!
-heretic-ability-fail-tile-underneath-not-rusted = Tile that you are standing on must be rusted to use this ability!
+heretic-ability-fail-tile-underneath-not-rusted = Тайл, на котором вы стоите должен быть покрыт ржавчиной!
 heretic-ability-fail-tile-occupied = Покрытие занято!
 heretic-ability-fail-rust-stage-low = Вы недостаточно сильны чтобы покрыть ржавчиной данное покрытие!
-heretic-ability-fail-target-ghoul = Target is ghoul already!
-heretic-ability-fail-target-no-mind = Target has no soul!
+heretic-ability-fail-target-ghoul = Цель уже является гулем!
+heretic-ability-fail-target-no-mind = У цели нет души!
 
 ## blade
 
-mansus-grasp-trigger-fail = Something prevents you from activating this!
+mansus-grasp-trigger-fail = Что-то мешает вам использовать это!
 heretic-blade-examine = [color=yellow]Если использовать его, пока он в руке, то клинок сломается и телепортирует вас подальше от опасности[/color].
 heretic-blade-use = Клинок разлетается на куски, и вы чувствуете, как голоса уводят вас прочь.
 heretic-riposte-used = Ответный удар использован!

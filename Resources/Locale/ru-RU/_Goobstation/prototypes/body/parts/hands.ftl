@@ -8,5 +8,5 @@ ent-RightHandFelinid = правая кисть руки фелинида
     .desc = { ent-PartHuman.desc }
 ent-LeftHandBananamen = левая кисть руки бананамена
     .desc = { ent-PartHuman.desc }
-ent-RightHandBananamen = правая кисть руки
+ent-RightHandBananamen = правая кисть руки бананамена
     .desc = { ent-PartHuman.desc }
