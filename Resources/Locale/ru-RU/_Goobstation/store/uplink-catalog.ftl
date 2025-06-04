@@ -33,7 +33,7 @@ uplink-hardlight-bow-desc = Современный лук, способный с
 
 uplink-pie-cannon-name = Регенерирующий пирогомёт
 uplink-pie-cannon-desc = Пирогомёт, которая автоматически регенерирует кремовые пироги, по одному каждые десять секунд.
-uplink-mobroach-microbomb-name = Телепортатор Синдитаракомоли
+uplink-mobroach-microbomb-name = Телепорт СиндиЛичинки
 uplink-mobroach-microbomb-desc = Призывает таракомоль, оснащенную бомбой. Взрывается при серьезном ранении.
 uplink-advanced-combat-medipen-name = Продвинутый боевой медипен
 uplink-advanced-combat-medipen-desc = Усовершенствованный одноразовый медипен, содержащий химические вещества, которые быстро исцеляют большинство видов повреждений, полученных в бою.
