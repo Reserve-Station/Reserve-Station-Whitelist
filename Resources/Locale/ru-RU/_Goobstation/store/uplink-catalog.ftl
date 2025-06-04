@@ -1,7 +1,7 @@
 # Surplus Hardsuits
 
 uplink-hardsuit-syndiemedic-name = Скафандр агента Горлекса
-uplink-hardsuit-syndiemedic-desc = Боевой скафандр медика от Мародеров Горлекса.
+uplink-hardsuit-syndiemedic-desc = Боевой скафандр медика от Мародеров Горлакса.
 uplink-hardsuit-syndiecommander-name = Скафандр командира Горлекса
 uplink-hardsuit-syndiecommander-desc = Боевой скафандр командира от Мародеров Горлакса. Слишком громоздкий, чтобы поместить его в набор, поэтому в комплект не входят баллоны!
 
@@ -33,8 +33,8 @@ uplink-hardlight-bow-desc = Современный лук, способный с
 
 uplink-pie-cannon-name = Регенерирующий пирогомёт
 uplink-pie-cannon-desc = Пирогомёт, которая автоматически регенерирует кремовые пироги, по одному каждые десять секунд.
-uplink-mobroach-microbomb-name = Телепортатор Синдитаракомоли
-uplink-mobroach-microbomb-desc = Призывает таракомоль, оснащенную бомбой. Взрывается при серьезном ранении.
+uplink-mobroach-microbomb-name = Телепорт СиндиЛичинки
+uplink-mobroach-microbomb-desc = Призывает личинку таракамоли, оснащенную бомбой. Взрывается при серьезном ранении.
 uplink-advanced-combat-medipen-name = Продвинутый боевой медипен
 uplink-advanced-combat-medipen-desc = Усовершенствованный одноразовый медипен, содержащий химические вещества, которые быстро исцеляют большинство видов повреждений, полученных в бою.
 uplink-beenades-name = Пчелиная граната

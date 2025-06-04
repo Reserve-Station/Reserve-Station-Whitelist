@@ -24,4 +24,4 @@ reverse-bear-trap-component-start-welding-by-other = { $otherName } срезае
 reverse-bear-trap-component-start-unlocking-target-self = Вы начинаете снимать капкан!
 reverse-bear-trap-component-start-unlocking-observer = { $user } разблокировал капкан с головы { $target } !
 reverse-bear-trap-component-start-unlocking-target = Вы начинаете снимать капкан с головы { $targetName }.
-reverse-bear-trap-component-start-unlocking-by-other = { $otherName } разблокировал капкан с вашей головы!
+reverse-bear-trap-component-start-unlocking-by-other = { $otherName } разблокировал капкан на вашей голове!
