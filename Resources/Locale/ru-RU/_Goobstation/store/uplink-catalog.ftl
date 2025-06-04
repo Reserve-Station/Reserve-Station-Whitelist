@@ -3,7 +3,7 @@
 uplink-hardsuit-syndiemedic-name = Скафандр агента Горлекса
 uplink-hardsuit-syndiemedic-desc = Боевой скафандр медика от Мародеров Горлекса.
 uplink-hardsuit-syndiecommander-name = Скафандр командира Горлекса
-uplink-hardsuit-syndiecommander-desc = Боевой скафандр командира от Мародеров Горлекса. Слишком громоздкий, чтобы поместить его в набор, поэтому в комплект не входят баллоны!
+uplink-hardsuit-syndiecommander-desc = Боевой скафандр командира от Мародеров Горлакса. Слишком громоздкий, чтобы поместить его в набор, поэтому в комплект не входят баллоны!
 
 # Cybersun Stealth
 
