@@ -1,2 +1,2 @@
-skinning-start = { $performer } начинает освеживать { $target }                        
+skinning-start = { $performer } начинает освежёвывать { $target }                        
 skin-verb = Освеживать сущность
