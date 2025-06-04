@@ -5,4 +5,4 @@
 
 ventcrawling-enter-pipe-network = Войти в систему труб
 ventcrawling-block-enter-reson-equiptment = Ваше снаряжение мешает вам зайти в систему труб
-ventcrawling-block-enter-reson-hand = Мне нужно что-бы мои руки были свободны что-бы зайти в систему труб.
+ventcrawling-block-enter-reson-hand = Мне нужно, чтобы мои руки были свободны для входа в систему труб.
