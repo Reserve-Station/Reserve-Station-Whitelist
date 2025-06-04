@@ -4,24 +4,24 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-reverse-bear-trap-component-target-self = Вы начинаете надевать капкан на свою голову...
-reverse-bear-trap-component-start-cuffing-observer = { $user } надел капкана на голову { $target }!
-reverse-bear-trap-component-start-cuffing-target = Вы начинаете одевать капкана на голову { $targetName }.
-reverse-bear-trap-component-start-cuffing-by-other = { $otherName } надевает на вашу голову капкан!
-reverse-bear-trap-component-unlocked-trap-self = Вы разблокировали капкан!
-reverse-bear-trap-component-unlocked-trap-observer = { $user } разблокировал капкан!
-reverse-bear-trap-component-failed-unlocked-trap-self = Вам не удалось снять капкан!
-reverse-bear-trap-component-failed-unlocked-trap-observer = { $user } не удалось снять капкан!
-reverse-bear-trap-component-trap-fall-observer = Капкан падает с головы { $user } .
-reverse-bear-trap-component-trap-fall-self = Капкан падает с вашей головы!
-reverse-bear-trap-component-trap-click-observer = Капкан защёлкивается на голове { $user } !
-reverse-bear-trap-component-trap-click-self = Капкан защёлкивается!
-reverse-bear-trap-component-trap-snap-observer = ЧПОК! Капкан рвёт голову { $user } пополам!
-reverse-bear-trap-component-trap-snap-self = ЧПОК! Капкан рвёт вашу голову пополам!
-reverse-bear-trap-component-start-welding-observer = { $user } срезает капкан с головы { $target }!
-reverse-bear-trap-component-start-welding-target = Вы начинаете срезать капкан с головы { $targetName }.
-reverse-bear-trap-component-start-welding-by-other = { $otherName } срезает капкан с вашей головы!
-reverse-bear-trap-component-start-unlocking-target-self = Вы начинаете снимать капкан!
-reverse-bear-trap-component-start-unlocking-observer = { $user } разблокировал капкан с головы { $target } !
-reverse-bear-trap-component-start-unlocking-target = Вы начинаете снимать капкан с головы { $targetName }.
-reverse-bear-trap-component-start-unlocking-by-other = { $otherName } разблокировал капкан на вашей голове!
+reverse-bear-trap-component-target-self = You start putting the trap onto your head.
+reverse-bear-trap-component-start-cuffing-observer = { $user } is putting a trap on { $target }!
+reverse-bear-trap-component-start-cuffing-target = You start putting the trap on { $targetName }.
+reverse-bear-trap-component-start-cuffing-by-other = { $otherName } is forcing a trap onto your head!
+reverse-bear-trap-component-unlocked-trap-self = You manage to unlock the trap!
+reverse-bear-trap-component-unlocked-trap-observer = { $user } has managed to unlock the trap!
+reverse-bear-trap-component-failed-unlocked-trap-self = You fail to unlock the trap!
+reverse-bear-trap-component-failed-unlocked-trap-observer = { $user } has failed to unlock the trap!
+reverse-bear-trap-component-trap-fall-observer = The trap falls off { $user } head.
+reverse-bear-trap-component-trap-fall-self = The trap falls off your head.
+reverse-bear-trap-component-trap-click-observer = The trap clicks shut on { $user } head!
+reverse-bear-trap-component-trap-click-self = The trap clicks shut!
+reverse-bear-trap-component-trap-snap-observer = SNAP! The trap rips { $user } head apart!
+reverse-bear-trap-component-trap-snap-self = SNAP! The trap rips your head apart!
+reverse-bear-trap-component-start-welding-observer = { $user } is cutting the trap off of { $target }!
+reverse-bear-trap-component-start-welding-target = You start cutting the trap on { $targetName }.
+reverse-bear-trap-component-start-welding-by-other = { $otherName } is cutting off the trap on your head!
+reverse-bear-trap-component-start-unlocking-target-self = You start unlocking the trap.
+reverse-bear-trap-component-start-unlocking-observer = { $user } is unlocking the trap on { $target } head!
+reverse-bear-trap-component-start-unlocking-target = You start unlocking the trap on { $targetName }.
+reverse-bear-trap-component-start-unlocking-by-other = { $otherName } is unlocking the trap on your head!
