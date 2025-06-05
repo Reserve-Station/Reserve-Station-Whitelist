@@ -151,7 +151,7 @@
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"
   supervisors: job-supervisors-captain
-  canBeAntag: true #Reserve - no MS for heads
+  canBeAntag: false
   goobcoins: 40 #Goob content
   access:
   - Medical
@@ -163,8 +163,8 @@
   - Cryogenics
   - External # goobstation
   special:
-  #- !type:AddImplantSpecial #Reserve - no MS for heads
-  #  implants: [ MindShieldImplant ] #Reserve - no MS for heads
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
