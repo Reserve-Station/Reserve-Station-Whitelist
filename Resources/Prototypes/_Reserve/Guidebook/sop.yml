@@ -390,7 +390,7 @@
 # Security SOP Entries
 
 - type: guideEntry
-  id: Brigmedic SOP
+  id: Brigmedic SOP Reserve
   name: guide-entry-sop-brigmedic
   text: "/ServerInfo/_Reserve/Guidebook/SoP/Jobs/Security/BrigmedicSOP.xml"
 
