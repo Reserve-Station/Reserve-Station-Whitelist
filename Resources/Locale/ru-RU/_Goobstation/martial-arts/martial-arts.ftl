@@ -4,7 +4,7 @@ cqc-fail-knowanother = Вы уже владеете другим боевым и
 cqc-fail-changeling = Нам это ни к чему.
 cqc-fail-already = Вы уже знаете все о Боевом искусстве.
 cqc-success-unblocked = Ваши навыки кулинарного CQC больше не привязаны к кухне.
-cqc-success-learned = Вы уже знаете CQC.
+cqc-success-learned = Вы выучили CQC.
 cqc-manual-used = [color=white]{ CAPITALIZE(THE($manual)) } выглядит использованным.[/color]
 carp-scroll-waiting = Путешествие в тысячу миль начинается с одного шага, и путь мудрости прокладывается медленно, по одному уроку за раз.
 

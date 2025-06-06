@@ -15,4 +15,4 @@ armor-examine-modify-delayed-knockdown-time =
     } оглушение дубинкой на [color=lightblue]{ NATURALFIXED($amount, 2) } { $amount ->
         [1] секунду
        *[other] секунд
-    }[/color].
+    }__РН_0__.
