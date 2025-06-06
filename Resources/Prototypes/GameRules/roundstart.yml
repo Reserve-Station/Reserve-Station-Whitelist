@@ -222,8 +222,6 @@
   parent: BaseGameRule
   id: BaseNukeopsRule
   components:
-  - type: GameRule
-    minPlayers: 20 # Reserve edit
   - type: RandomMetadata #this generates the random operation name cuz it's cool.
     nameSegments:
     - NamesOperationPrefix
@@ -234,6 +232,7 @@
   - type: AntagSelection
   # Goobstation
   - type: GameRule
+    minPlayers: 20 # Reserve edit
     chaosScore: 1200
   - type: AntagLoadProfileRule
     speciesOverride: Human
