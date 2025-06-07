@@ -1,8 +1,8 @@
 ent-PartSlime = часть тела слаймолюда
     .desc = { ent-BaseItem.desc }
-ent-ChestVox = грудная клетка слаймолюда
+ent-ChestSlime = грудная клетка слаймолюда
     .desc = { ent-PartSlime.desc }
-ent-GroinVox = пах слаймолюда
+ent-GroinSlime = пах слаймолюда
     .desc = { ent-PartSlime.desc }
 ent-HeadSlime = череп слаймолюда
     .desc = { ent-PartSlime.desc }
