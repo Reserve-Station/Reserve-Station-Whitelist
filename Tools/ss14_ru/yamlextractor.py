@@ -1,6 +1,8 @@
 
 import os
 import logging
+import glob
+from file import YAMLFile
 from project import Project
 
 class YAMLExtractor:
@@ -43,6 +45,11 @@ class YAMLExtractor:
         logging.info(f"Создан en-файл: {en_file_path}")
         return en_file_path
 
+logging.basicConfig(level = logging.INFO)
+project = Project()
+
+yaml_files_paths = project.get_files_paths_by_dir(project.prototypes_dir_path, 'yml')
+yaml_files = list(map(lambda yaml_file_path: YAMLFile(yaml_file_path), yaml_files_paths))
 
 if __name__ == "__main__":
     yaml_files = []  # Заглушка
