@@ -1271,6 +1271,7 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
+  - SecurityJudoBelt
 
 - type: loadoutGroup
   id: SecurityOuterClothing
