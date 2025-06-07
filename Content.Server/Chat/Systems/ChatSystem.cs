@@ -180,7 +180,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
     public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
     public const string DefaultAnnouncementSound = "/Audio/Announcements/attention.ogg"; // Reserve Announcements
-    public const string CentComAnnouncementSound = "/Audio/Corvax/Announcement/centcomm.ogg"; // Reserve Announcements
+    public const string CentComAnnouncementSound = "/Audio/Corvax/Announcements/centcomm.ogg"; // Reserve Announcements
 
     private bool _loocEnabled = true;
     private bool _deadLoocEnabled;
