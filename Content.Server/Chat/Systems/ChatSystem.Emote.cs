@@ -26,6 +26,7 @@ using System.Collections.Frozen;
 using Content.Goobstation.Common.MisandryBox;
 using Content.Shared.Chat;
 using Content.Shared.Chat.Prototypes;
+using Content.Shared.Emoting;
 using Content.Shared.Speech;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
@@ -193,14 +194,29 @@ public partial class ChatSystem
     /// </summary>
     /// <param name="uid"></param>
     /// <param name="textInput"></param>
-    private void TryEmoteChatInput(EntityUid uid, string textInput)
+    private void TryEmoteChatInput(EntityUid uid, string textInput, out bool consumed)
     {
+        consumed = false;
         var actionTrimmedLower = TrimPunctuation(textInput.ToLower());
         if (!_wordEmoteDict.TryGetValue(actionTrimmedLower, out var emote))
             return;
 
         if (!AllowedToUseEmote(uid, emote))
             return;
+
+        //Reserve emote cooldown begin
+        if (TryComp<EmotingComponent>(uid, out var comp))
+        {
+            var currentTime = _gameTiming.CurTime;
+            if (currentTime - comp.LastChatEmoteTime < comp.ChatEmoteCooldown)
+            {
+                consumed = true;
+                return;
+            }
+
+            comp.LastChatEmoteTime = currentTime;
+        }
+        //Reserve emote cooldown end
 
         InvokeEmoteEvent(uid, emote);
         return;

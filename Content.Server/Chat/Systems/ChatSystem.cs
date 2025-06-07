@@ -140,6 +140,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
+using Robust.Shared.Timing;
 
 namespace Content.Server.Chat.Systems;
 
@@ -170,6 +171,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly GhostVisibilitySystem _ghostVisibility = default!; // Goobstation Change
     [Dependency] private readonly ScryingOrbSystem _scrying = default!; // Goobstation Change
     [Dependency] private readonly CollectiveMindUpdateSystem _collectiveMind = default!; // Goobstation - Starlight collective mind port
+    [Dependency] private readonly IGameTiming _gameTiming = default!; //Reserve - emote cooldown
 
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
@@ -815,7 +817,13 @@ public sealed partial class ChatSystem : SharedChatSystem
             ("message", FormattedMessage.RemoveMarkupOrThrow(action)));
 
         if (checkEmote)
-            TryEmoteChatInput(source, action);
+            {
+            // Reserve emote cooldwon begin
+            TryEmoteChatInput(source, action, out var consumed);
+            if (consumed)
+                return;
+            // Reserve emote cooldwon end
+            }
         SendInVoiceRange(ChatChannel.Emotes, action, wrappedMessage, source, range, author);
         if (!hideLog)
             if (name != Name(source))
