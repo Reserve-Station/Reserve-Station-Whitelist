@@ -16,7 +16,7 @@ job-name-nct = Карьерный тренер Нанотрейзен
 
 # Half Life
 
-job-name-hecu = Оперативник HECU
+job-name-hecu = Оперативник ХЕКУ
 job-name-gman = Джи-Мен
 
 # Misc
@@ -28,7 +28,7 @@ job-name-greytide = Грейтайдер
 
 JobBlueshieldOfficer = Офицер "Синий Щит"
 JobNanotrasenRepresentative = Представитель НаноТрейзен
-JobHecuOperative = Оперативник HECU
+JobHecuOperative = Оперативник ХЕКУ
 JobNanotrasenCareerTrainer = Профессиональный тренер НаноТрейзен
 JobNavyOfficer = Офицер военно-морского флота
 JobNavyOfficerUndercover = Офицер флота под прикрытием
