@@ -42,24 +42,27 @@ heretic-livingheart-faraway = Оно { $state }, очень далеко отс�
 
 ## speech
 
-heretic-speech-mansusgrasp = Р'CH Т АЛ ТР-ГО!
-heretic-speech-ash-jaunt = ПЕПЕЛЬНО-белый'
+heretic-speech-mansusgrasp = УЗ'И ПР'ВДУ!
+heretic-speech-ash-jaunt = ПЕП'Н ПЕ'ЕХОД
 heretic-speech-ash-volcano = В'ЛК'Н!
-heretic-speech-ash-rebirth = Ты же с ЭТИМ не БОРЕШЬСЯ!
-heretic-speech-ash-flame = ЭТО они!!
-heretic-speech-ash-cascade = ХОРОШО!!
-heretic-speech-blade-furioussteel = Ф'ЛШ'НГ С'Лв'Р!
-heretic-speech-flesh-surgery = Я твой брат!
-heretic-speech-flesh-worm = РЕАЛЬНОСТЬ РАЗВОРАЧИВАЕТСЯ!!
-heretic-speech-rust-spread = А'ГРСВ ПРЫСНУЛ!
-heretic-speech-rust-plume = "НТР'П'К Пл'М"!
-heretic-speech-rust-wave = ОГО-ГО-ГО!
-heretic-speech-void-blast = Ф'РЗ'Е!
-heretic-speech-void-phase = ЭТО НЕ "Ф'ЭС"!
-heretic-speech-void-pull = ПРИНОШУ ИЗВИНЕНИЯ за ТО, что Я здесь!!
-heretic-speech-cleave = КЛ'Ве!
-heretic-speech-bloodsiphon = ЭТО ВЕЧНОСТЬ!
-heretic-speech-mansuslink = ПИ'Рк'Тх-М'НД!
-heretic-speech-realignment = ЭТО НЕ ТАК!
-heretic-speech-fuckoff = Черт возьми!!
-heretic-speech-ice-spear = Черт бы это побрал!
+heretic-speech-ash-rebirth = СЛА'А Н'ЧН'МУ НАБ'Л'ДАТ'ЛЮ
+heretic-speech-ash-flame = ПЛ'МЯ!
+heretic-speech-ash-cascade = К'СК'АД!!
+heretic-speech-blade-furioussteel = С'ЕРК'ЮЩ'Е СЕР'БРО!
+heretic-speech-flesh-surgery = ПРИ'И Л'НУ!
+heretic-speech-flesh-worm = РЕ'ЛЬ'О'ТЬ РАЗ'ОР'ЧИВ'ТС'!!
+
+heretic-speech-rust-spread = ЯР'ОСТН'Е РАС'ПР'Р'ЕНИ'!
+heretic-speech-rust-wave = НАС'Т'ГНИ 'ИХ!
+heretic-speech-rust-plume = РА'СС'Л'ИСЬ!
+
+heretic-speech-void-blast = З'СТЫ'НЬ!
+heretic-speech-void-phase = РЕК'ЛТ'ВЫЙ СД'В'Г!
+heretic-speech-void-pull = БР'СЬ ИХ К' МН'!!
+
+heretic-speech-cleave = ОС'РИЁ!
+heretic-speech-bloodsiphon = ГОР'ИЛ'О ВЕЧ'ОС'И!
+heretic-speech-mansuslink = ПРО'З' РА'УМ!
+heretic-speech-realignment = СБ'ОС!
+heretic-speech-fuckoff = ПО'ЁЛ 'Ы!!
+heretic-speech-ice-spear = 'АРА ЛЬ'А!

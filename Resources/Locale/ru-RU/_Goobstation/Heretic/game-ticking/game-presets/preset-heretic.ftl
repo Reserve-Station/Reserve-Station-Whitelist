@@ -2,16 +2,16 @@ heretic-roundend-name = еретик
 roundend-prepend-heretic-ascension-success = { $name }, [color=green] вознесся![/color]
 roundend-prepend-heretic-ascension-fail = { $name }, [color=red] не удалось![/color]
 roundend-prepend-heretic-knowledge-named = [color=white]{ $name }[/color] исследовал в общей сложности [color=purple]{ $number }[/color] знаний.
-roundend-prepend-heretic-ascension-fail-owls = { $name }, [color=red] отказался от своего восхождения и, таким образом, потерпел неудачу![/color]
+roundend-prepend-heretic-ascension-fail-owls = { $name }, [color=red] отказался от своего вознесения и, таким образом, потерпел неудачу![/color]
 heretic-gamemode-title = Еретики
 heretic-gamemode-description = На станции обнаружена пространственная аномалия. Дополнительных данных нет.
 heretic-role-greeting-fluff =
     Еще один день на бессмысленной работе. Вы чувствуете мерцание вокруг себя, когда осознаете, что в воздухе витает нечто странное. Вы заглядываете внутрь себя и обнаруживаете нечто, что изменит вашу жизнь.
-    
+
     Врата Мансуса открываются перед вашим разумом.
 heretic-role-greeting =
     Вы - Еретик!
-    
+
     Подробнее о вашей роли читайте в гайде.
 heretic-role-greeting-short =
     Вы - Еретик!
