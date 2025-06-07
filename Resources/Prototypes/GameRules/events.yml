@@ -582,7 +582,7 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-gas-leak-start-announcement
-    sstartAudio:
+    startAudio:
       path: /Audio/Announcements/gasleak_start.ogg # Reserve new sounds
       params:
         volume: -4
