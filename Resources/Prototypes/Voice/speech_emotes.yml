@@ -279,7 +279,6 @@
    # Reserve-Localization-Start
    - стрекочет
    - жужжит
-   - жжж
    - ж-ж-ж
    # Reserve-Localization-End
 
@@ -499,7 +498,8 @@
     - buzzed
     - buzzes
     # Reserve-Localization-Start
-    - жужжит
+    - жужж
+    - жжж
     - зажужжал
     - зажужжала
     # Reserve-Localization-End
