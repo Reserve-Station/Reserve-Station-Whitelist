@@ -50,3 +50,7 @@ ent-FoodMealHappyHonkClown = { ent-HappyHonk }
 ent-FoodBoxPizzaCotton = { ent-FoodBoxPizza }
     .suffix = Хлопковая
     .desc = { ent-FoodBoxPizza.desc }
+ent-FoodBoxCloth = Коробка с тканью марки Порхай-Легко
+    .suffix = Ткань
+    .desc = Ткань - самая важная еда для нианов! Не прнебрегайте ею и не используйте всякий хлам из нижних ящиков, а покупайте высококачественную ткань марки Порхай-Легко.
+
