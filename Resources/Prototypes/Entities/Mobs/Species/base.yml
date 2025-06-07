@@ -459,7 +459,7 @@
       Female: FemaleHuman
       Unsexed: MaleHuman
   - type: Emoting
-    chatEmoteCooldown: 5.0
+    chatEmoteCooldown: 5.0 # Reserve emoting cooldown
   - type: BodyEmotes
     soundsId: GeneralBodyEmotes
   - type: Grammar
