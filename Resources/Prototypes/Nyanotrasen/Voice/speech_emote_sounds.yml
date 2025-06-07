@@ -72,7 +72,7 @@
     Honk:
       collection: CluwneHorn
     Sigh:
-      path: /Audio/Corvax/Voice/Tajaran/sign.ogg # Reserve new sounds
+      path: /Audio/Corvax/Voice/Tajaran/sigh.ogg # Reserve new sounds
     Crying:
       path: /Audio/Corvax/Voice/Tajaran/cry.ogg # Reserve new sounds
     Whistle:
