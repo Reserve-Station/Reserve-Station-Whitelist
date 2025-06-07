@@ -74,7 +74,7 @@ namespace Content.Server.StationEvents.Events
             component.AnnounceCancelToken = new CancellationTokenSource();
             Timer.Spawn(3000, () =>
             {
-                Audio.PlayGlobal("/Audio/_Reserve/announcement/power_on.ogg", Filter.Broadcast(), true, AudioParams.Default.WithVolume(-4f)); /// Reserve
+                Audio.PlayGlobal("/Audio/_Reserve/Announcements/poweron1.ogg", Filter.Broadcast(), true, AudioParams.Default.WithVolume(-4f)); // Reserve new sounds
             }, component.AnnounceCancelToken.Token);
             component.Unpowered.Clear();
         }
