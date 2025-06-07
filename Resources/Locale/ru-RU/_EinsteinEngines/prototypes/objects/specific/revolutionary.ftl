@@ -1,2 +1,2 @@
-ent-RevolutionaryManifesto = revolutionary manifesto
-    .desc = A manifesto written by a self-proclaimed revolutionary leader. Very critical of Nanotrasen.
+ent-RevolutionaryManifesto = манифест революционера
+    .desc = Манифест, написанный самопровозглашенным революционным лидером. Очень критично относится к НаноТрейзен.

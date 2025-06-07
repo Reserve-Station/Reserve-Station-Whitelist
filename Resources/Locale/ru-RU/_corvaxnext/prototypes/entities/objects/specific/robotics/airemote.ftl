@@ -1,2 +1,2 @@
-ent-AiRemoteBrain = B.O.R.I.S. AI-Cyborg Remote Control
-    .desc = Artificial Intelligence cyborg control board.
+ent-AiRemoteBrain = Пульт дистанционного управления ИИ-киборгом Б.О.Р.И.С.
+    .desc = Пульт управления киборгом с искусственным интеллектом.

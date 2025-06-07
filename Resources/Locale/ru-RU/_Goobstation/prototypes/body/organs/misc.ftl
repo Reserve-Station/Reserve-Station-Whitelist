@@ -1,2 +1,2 @@
-ent-OrganHeartSandevistan = Sandevistan
-    .desc = Illegal cyberware that replaces the user's heart and allows them to greatly increase their speed for the cost of the endurance.
+ent-OrganHeartSandevistan = Сандевистан
+    .desc = Незаконное киберустройство, заменяющее сердце пользователя и позволяющее ему значительно увеличить скорость за счет выносливости.

@@ -1,2 +1,2 @@
-ent-quill = quill
-    .desc = Looks fancy, but you have no clue how to use this thing!
+ent-quill = перо
+    .desc = Выглядит шикарно, но вы понятия не имеете, как пользоваться этой штукой!

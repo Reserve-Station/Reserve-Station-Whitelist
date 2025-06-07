@@ -1,2 +1,2 @@
-ent-DeadRatvar = dead construct
-    .desc = The corpse of an ancient construct made of brass and cogs. It still hums with tremendous power.
+ent-DeadRatvar = мертвый конструкт
+    .desc = Труп древнего конструкта, сделанного из латуни и шестеренок. Он все еще гудит от огромной силы.

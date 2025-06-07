@@ -1,2 +1,2 @@
-ent-ConstructionBarricade = construction barricade
-    .desc = Wear your helmet!
+ent-ConstructionBarricade = строительная баррикада
+    .desc = Наденьте каску!

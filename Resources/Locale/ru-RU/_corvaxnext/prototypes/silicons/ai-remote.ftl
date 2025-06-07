@@ -1,5 +1,3 @@
-
-
 ent-PlayerBorgAiRemote = { ent-BorgChassisSelectable }
     .suffix = Батарея, Управляемый ИИ
     .desc = { ent-BorgChassisSelectable.desc }
