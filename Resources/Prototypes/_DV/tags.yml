@@ -9,6 +9,9 @@
 ## This is for Nyano and Delta V tags
 
 - type: Tag
+  id: ExplosivePayload
+
+- type: Tag
   id: HidesHarpyWings
 
 - type: Tag
