@@ -24,7 +24,7 @@ fugitive-report-crime = - {$count ->
 fugitive-report-last-line = ГАЛПОЛ предпочитает, чтобы беглецов возвращали живыми, чтобы они могли предстать перед судом Центрального командования.
 
 # All (non erp) felonies and capital crimes in Space Law as of June 2024
-скрывающееся преступление-1 = Убийство
+fugitive-crime-1 = Убийство
 fugitive-crime-2 = Терроризм
 fugitive-crime-3 = Грандиозный саботаж
 fugitive-crime-4 = Декорпореализации

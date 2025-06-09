@@ -1,6 +1,6 @@
 - type: entity
-  parent: SyndiCrewMonitor
-  id: SyndiCrewMonitorRecharging
+  parent: HandheldCrewMonitor
+  id: HandheldCrewMonitorRecharging  #todo change
   name: syndicate crew monitor recharging
   description: The syndicated version of crew monitor, intercepts information from the server.
   components:

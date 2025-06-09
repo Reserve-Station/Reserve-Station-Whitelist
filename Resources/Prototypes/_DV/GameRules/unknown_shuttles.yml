@@ -9,11 +9,16 @@
   parent: BaseUnknownShuttleRule
   id: SyndicateRecruiter
   components:
+  - type: GameRule
+    chaosScore: 200
   - type: StationEvent
     weight: 4
     minimumPlayers: 20
     maxOccurrences: 1
     duration: null
+    chaos:
+      Hostile: 75
+      Medical: 75
   - type: RuleGrids
   - type: LoadMapRule
     preloadedGrid: SyndieRecruiterShip
@@ -55,10 +60,16 @@
   id: SynthesisSpecialist
   components:
   - type: StationEvent
+    earliestStart: 15
     weight: 4
     minimumPlayers: 20
     maxOccurrences: 1
     duration: null
+    chaos:
+      Hostile: 75
+      Medical: 75
+  - type: GameRule
+    chaosScore: 300
   - type: RuleGrids
   - type: LoadMapRule
     preloadedGrid: SyndieSynthesisShip

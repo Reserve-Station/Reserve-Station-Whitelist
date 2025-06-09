@@ -18,6 +18,7 @@
 - type: entity
   id: ListeningPost
   parent: BaseGameRule
+  noSpawn: true
   components:
   - type: StationEvent
     earliestStart: 15
@@ -25,11 +26,11 @@
     minimumPlayers: 25
     maxOccurrences: 1
     duration: null
-  - type: PrecognitionResult
-    message: psionic-power-precognition-listening-post-result-message
+    chaos:
+      Hostile: 150
   - type: RuleGrids
   - type: LoadFarGridRule
-    path: /Maps/_DV/Nonstations/listening_post.yml
+    path: /Maps/Shuttles/DeltaV/listening_post.yml
     distanceModifier: 13
   - type: DebrisSpawnerRule
     count: 6
@@ -49,15 +50,16 @@
       components:
       - type: RandomMetadata
         nameSegments:
-        - NamesDeathCommando
+        - names_death_commando
       - type: AutoImplant
         implants:
         - DeathAcidifierImplant
       - type: NpcFactionMember
         factions:
         - Syndicate
-      mindRoles:
-      - MindRoleListeningPost
+      mindComponents:
+      - type: ListeningPostRole
+        prototype: ListeningPost
 
 # Mid round antag spawns
 
@@ -65,14 +67,13 @@
   parent: BaseGameRule
   id: Fugitive
   components:
+  - type: GameRule
+    chaosScore: 100
   - type: StationEvent
     minimumPlayers: 40 # it's really easy to find fugitives on lowpop
     duration: null
-    weight: 7
-    reoccurrenceDelay: 5
-    earliestStart: 25
-  - type: PrecognitionResult
-    message: psionic-power-precognition-fugitive-result-message
+    chaos:
+      Hostile: 25
   - type: FugitiveRule
   - type: AntagLoadProfileRule
   - type: AntagObjectives
@@ -91,15 +92,15 @@
       components:
       - type: RandomMetadata
         nameSegments:
-        - NamesFakeHumanFirst
-        - NamesFakeHumanLast
-        nameFormat: name-format-standard
+        - fake_human_first
+        - fake_human_last
       - type: RandomHumanoidAppearance
         randomizeName: false
       - type: EmitSoundOnSpawn # fell out of the ceiling
         sound: /Audio/Effects/clang.ogg
-      mindRoles:
-      - MindRoleFugitive
+      mindComponents:
+      - type: FugitiveRole
+        prototype: Fugitive
 
 - type: entity
   parent: BaseGameRule

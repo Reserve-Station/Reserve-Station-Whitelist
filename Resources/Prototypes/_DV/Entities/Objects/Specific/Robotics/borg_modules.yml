@@ -167,7 +167,7 @@
   components:
   - type: ItemBorgModule
     items:
-    - SyndiCrewMonitorRecharging
+    - HandheldCrewMonitorRecharging #todo change
 
 - type: entity
   parent: BaseBorgModuleSyndie
