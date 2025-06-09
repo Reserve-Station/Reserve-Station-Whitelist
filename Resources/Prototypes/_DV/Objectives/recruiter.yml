@@ -7,8 +7,7 @@
     difficulty: 0 # difficulty is unused
   - type: RoleRequirement
     roles:
-      components:
-      - RecruiterRole
+    - RecruiterRole
 
 - type: entity
   parent: [BaseRecruiterObjective, EscapeShuttleObjective]
@@ -43,7 +42,7 @@
 
 - type: stealTargetGroup
   id: RecruiterPen
-  name: recruiter pen
+  name: steal-target-groups-recruiter-pen
   sprite:
-    sprite: DeltaV/Objects/Misc/recruiter_pen.rsi
+    sprite: _DV/Objects/Misc/recruiter_pen.rsi
     state: empty
