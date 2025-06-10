@@ -15,12 +15,12 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitSyndieFormal
     jumpskirt: ClothingUniformJumpskirtSyndieFormalDress
-    back: ClothingBackpackChemistryFilled
+    back: ClothingBackpackSyndicate
     belt: ChemBag
     eyes: ClothingEyesGlassesChemical
-    gloves: ClothingHandsGlovesChemist
+    gloves: ClothingHandsGlovesNitrile
     outerClothing: ClothingOuterCoatLabChem
-    shoes: ClothingShoesEnclosedChem
+    shoes: ClothingShoesBootsCombat
     id: SyndiPDA
     ears: ClothingHeadsetAltSyndicate
     pocket1: HandLabeler

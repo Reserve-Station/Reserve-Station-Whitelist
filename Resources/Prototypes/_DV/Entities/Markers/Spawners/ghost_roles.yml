@@ -21,7 +21,7 @@
           state: full
 
 - type: entity # Part of ListeningPost
-  noSpawn: true
+  categories: [ HideSpawnMenu, Spawner ]
   parent: BaseAntagSpawner
   id: SpawnPointGhostSyndicateListener
   components:
@@ -29,6 +29,8 @@
     name: ghost-role-information-listeningop-name
     description: ghost-role-information-listeningop-description
     rules: ghost-role-information-listeningop-rules
+    mindRoles:
+    - MindRoleListeningPost
     requirements: # Worth considering these numbers for the goal of making sure someone willing to MRP takes this.
     - !type:OverallPlaytimeRequirement
       time: 259200 # 72 hours
@@ -43,7 +45,24 @@
       time: 40000 # 11.1 hours
 
 - type: entity
-  noSpawn: true
+  categories: [ HideSpawnMenu, Spawner ]
+  parent: BaseAntagSpawner
+  id: SpawnPointGhostFugitive
+  name: fugitive spawn point
+  components:
+  - type: GhostRole
+    name: ghost-role-information-fugitive-name
+    description: ghost-role-information-fugitive-description
+    rules: ghost-role-information-fugitive-rules
+    mindRoles:
+    - MindRoleFugitive
+    requirements:
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 3600 # 1 hour
+
+- type: entity
+  categories: [ HideSpawnMenu, Spawner ]
   parent: BaseAntagSpawner
   id: SpawnPointGhostRecruiter
   components:
@@ -51,20 +70,22 @@
     name: ghost-role-information-recruiter-name
     description: ghost-role-information-recruiter-description
     rules: ghost-role-information-recruiter-rules
+    mindRoles:
+    - MindRoleRecruiter
     requirements: # keep in sync with the antag prototype
     - !type:OverallPlaytimeRequirement
       time: 86400 # 24h so you probably know some general lore or something
     - !type:RoleTimeRequirement
-      role: Command
+      department: Command
       time: 3600 # 1h as Command so you maybe know how to paperwork
   - type: Sprite
     layers:
     - state: green
-    - sprite: DeltaV/Objects/Misc/recruiter_pen.rsi
+    - sprite: _DV/Objects/Misc/recruiter_pen.rsi
       state: empty
 
 - type: entity
-  noSpawn: true
+  categories: [ HideSpawnMenu, Spawner ]
   parent: BaseAntagSpawner
   id: SpawnPointGhostSynthesis
   components:
@@ -72,6 +93,8 @@
     name: ghost-role-information-synthesis-name
     description: ghost-role-information-synthesis-description
     rules: ghost-role-information-synthesis-rules
+    mindRoles:
+    - MindRoleSynthesis
     requirements: # keep in sync with the antag prototype
     - !type:OverallPlaytimeRequirement
       time: 86400 # 24h so you probably know some general lore or something

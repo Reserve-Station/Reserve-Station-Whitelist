@@ -1,4 +1,4 @@
 - type: preloadedGrid
   id: SyndieRecruiterShip
-  path: /Maps/Shuttles/DeltaV/recruiter_ship.yml
+  path: /Maps/Shuttles/_DV/recruiter_ship.yml
   copies: 1

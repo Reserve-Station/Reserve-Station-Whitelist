@@ -9,9 +9,14 @@
     roleDescription: synd-positronic-brain-role-description
   - type: IntrinsicRadioTransmitter
     channels:
-    - Binary
+    #- Binary
     - Syndicate
   - type: ActiveRadio
     channels:
-    - Binary
+    #- Binary
     - Syndicate
+  # Goobstation
+  - type: CollectiveMind
+    defaultChannel: Binary
+    channels:
+    - Binary

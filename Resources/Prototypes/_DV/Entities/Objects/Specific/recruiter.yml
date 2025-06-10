@@ -5,7 +5,7 @@
   description: A uniquely evil pen that draws your blood to make signatures.
   components:
   - type: Sprite
-    sprite: DeltaV/Objects/Misc/recruiter_pen.rsi
+    sprite: _DV/Objects/Misc/recruiter_pen.rsi
     layers:
     - state: empty
     - state: filled-1
@@ -16,9 +16,8 @@
     blacklist:
       components:
       - MindShield
-    mindBlacklist:
-      components:
-      - RecruiterRole # no silly goose
+    factionBlacklist:
+    - Syndicate # no silly goose
   - type: SolutionContainerManager
     solutions:
       blood:
@@ -34,3 +33,5 @@
         Piercing: 8
   - type: StealTarget
     stealGroup: RecruiterPen # not stolen, its for keeping it safe objective
+  - type: EmitSoundOnUse
+    handle: false # need to handle the event for pricking

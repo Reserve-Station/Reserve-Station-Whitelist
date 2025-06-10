@@ -6,12 +6,9 @@
     - id: ListeningPost
     - id: RoboNeuroticist
 
-# Replaces upstream meteor events until they're good
-
 - type: entity
   id: ListeningPost
   parent: BaseGameRule
-  noSpawn: true
   components:
   - type: StationEvent
     earliestStart: 15
@@ -23,7 +20,7 @@
       Hostile: 150
   - type: RuleGrids
   - type: LoadFarGridRule
-    path: /Maps/Shuttles/DeltaV/listening_post.yml
+    path: /Maps/_DV/Nonstations/listening_post.yml
     distanceModifier: 13
   - type: DebrisSpawnerRule
     count: 6
@@ -43,16 +40,15 @@
       components:
       - type: RandomMetadata
         nameSegments:
-        - names_death_commando
+        - NamesDeathCommando
       - type: AutoImplant
         implants:
         - DeathAcidifierImplant
       - type: NpcFactionMember
         factions:
         - Syndicate
-      mindComponents:
-      - type: ListeningPostRole
-        prototype: ListeningPost
+      mindRoles:
+      - MindRoleListeningPost
 
 # Mid round antag spawns
 
@@ -72,6 +68,7 @@
   - type: AntagObjectives
     objectives:
     - FugitiveEscapeObjective
+  - type: AntagRandomSpawn
   - type: AntagSelection
     agentName: fugitive-round-end-agent-name
     definitions:
@@ -85,15 +82,15 @@
       components:
       - type: RandomMetadata
         nameSegments:
-        - fake_human_first
-        - fake_human_last
+        - NamesFakeHumanFirst
+        - NamesFakeHumanLast
+        nameFormat: name-format-standard
       - type: RandomHumanoidAppearance
         randomizeName: false
       - type: EmitSoundOnSpawn # fell out of the ceiling
         sound: /Audio/Effects/clang.ogg
-      mindComponents:
-      - type: FugitiveRole
-        prototype: Fugitive
+      mindRoles:
+      - MindRoleFugitive
 
 - type: entity
   parent: BaseGameRule
@@ -105,6 +102,12 @@
     reoccurrenceDelay: 30
     duration: null # so it shows up in round end
     maxOccurrences: 1
+    chaos:
+      Hostile: 100
+      Medical: 100
+      Death: 100
+  - type: GameRule
+    chaosScore: 250
   - type: RuleGrids
   - type: LoadMapRule
     gridPath: /Maps/_DV/Shuttles/roboneuroticist_ship.yml
