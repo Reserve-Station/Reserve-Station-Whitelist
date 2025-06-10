@@ -49,7 +49,7 @@
 #  name: mining-voucher-resonator-name
 #  description: mining-voucher-resonator-description
 #  sprite:
-#    sprite: DeltaV/Objects/Weapons/Ranged/resonator.rsi
+#    sprite: _DVObjects/Weapons/Ranged/resonator.rsi
 #    state: icon
 #  content:
 #  - Resonator
