@@ -118,7 +118,7 @@
     - RoboNeuroticistSurviveObjective
     - RoboNeuroticistBorgObjective
     - RoboNeuroticistKillObjective
-    - RoboNeuroticistPlutoniumCoreStealObjective
+    #- RoboNeuroticistPlutoniumCoreStealObjective #not implemented
     - RoboNeuroticistUploadAILawObjective
   - type: AntagSelection
     agentName: roboneuroticist-round-end-agent-name

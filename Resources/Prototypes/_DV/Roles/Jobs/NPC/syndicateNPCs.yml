@@ -11,11 +11,11 @@
     outerClothing: ClothingOuterVestWebUnremoveable
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: ClothingOuterVestWeb
   id: ClothingOuterVestWebUnremoveable
   name: grafted web vest
   suffix: Unremoveable
   description: An off-the-shelf web vest that has been cruelly grafted onto its wearers body
-  noSpawn: true
   components:
   - type: Unremoveable

@@ -48,15 +48,15 @@
   - type: KillPersonCondition
     requireDead: true
 
-- type: entity
-  parent: [ BaseRoboNeuroticistObjective, BaseStealObjective ]
-  id: RoboNeuroticistPlutoniumCoreStealObjective
-  components:
-  - type: Objective
-  - type: StealCondition
-    verifyMapExistence: false
-    stealGroup: PlutoniumCore
-    owner: objective-condition-steal-nuclear-bomb
+#- type: entity
+#  parent: [ BaseRoboNeuroticistObjective, BaseStealObjective ]
+#  id: RoboNeuroticistPlutoniumCoreStealObjective
+#  components:
+#  - type: Objective
+#  - type: StealCondition
+#    verifyMapExistence: false
+#    stealGroup: PlutoniumCore
+#    owner: objective-condition-steal-nuclear-bomb
 
 - type: entity
   parent: BaseRoboNeuroticistObjective
