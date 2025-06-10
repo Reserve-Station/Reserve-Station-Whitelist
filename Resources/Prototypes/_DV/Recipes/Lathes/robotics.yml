@@ -144,3 +144,8 @@
     Silver: 200
     Gold: 200
     Plasma: 100
+
+- type: latheRecipe
+  parent: IdChipSyndie
+  id: IdChipRoboNeuroticist
+  result: IdChipRoboNeuroticist
