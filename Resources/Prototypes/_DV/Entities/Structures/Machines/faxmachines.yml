@@ -9,7 +9,7 @@
   suffix: Syndicate
   components:
   - type: Sprite
-    sprite: _DVStructures/Machines/syndicate_fax_machine.rsi
+    sprite: _DV/Structures/Machines/syndicate_fax_machine.rsi
     layers:
       - state: icon
         map: [ "base" ]

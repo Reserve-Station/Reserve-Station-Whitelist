@@ -16,6 +16,6 @@
   description: This durable Suit Jacket and Turtleneck Combo doubles as an Accounting suit, and includes an extra button. Take that, Nerd-otrasen!
   components:
   - type: Sprite
-    sprite: _DVClothing/Uniforms/Jumpsuit/cybersunattorney.rsi
+    sprite: _DV/Clothing/Uniforms/Jumpsuit/cybersunattorney.rsi
   - type: Clothing
-    sprite: _DVClothing/Uniforms/Jumpsuit/cybersunattorney.rsi
+    sprite: _DV/Clothing/Uniforms/Jumpsuit/cybersunattorney.rsi
