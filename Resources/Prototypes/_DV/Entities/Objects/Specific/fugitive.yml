@@ -1,11 +1,14 @@
 - type: entity
-  parent: ToolboxThief
+  parent: [ BaseItem, BaseSetSelector ]
   id: FugitiveStash
   name: fugitive's stash
   description: "These supplies got you out of jail and hopefully they'll keep you out of it."
   components:
   # TODO: make the sprite a hobo bindle or something wysi
-  - type: ThiefUndeterminedBackpack
+  - type: Sprite
+    sprite: Clothing/Back/Satchels/smuggler.rsi
+    state: folded
+  - type: SetSelector
     maxSelectedSets: 1
     possibleSets:
     - FugitiveHitman

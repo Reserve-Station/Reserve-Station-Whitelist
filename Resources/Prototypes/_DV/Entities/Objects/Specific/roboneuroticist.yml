@@ -1,10 +1,13 @@
 - type: entity
-  parent: ToolboxThief
+  parent: [ BaseItem, BaseSetSelector ]
   id: RoboNeuroticistStash
   name: roboneuroticist's specialty
   description: "You've trained for this. Pick how you want to specialize"
   components:
-  - type: ThiefUndeterminedBackpack
+  - type: Sprite
+    sprite: _Goobstation/Objects/Devices/unique_teleporters.rsi
+    state: standard
+  - type: SetSelector
     maxSelectedSets: 1
     possibleSets:
     - RoboNeuroticistCommander
