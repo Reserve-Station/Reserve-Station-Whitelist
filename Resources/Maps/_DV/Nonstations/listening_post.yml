@@ -1,15 +1,27 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 251.0.0
+  forkId: ""
+  forkVersion: ""
+  time: 06/10/2025 20:02:36
+  entityCount: 1237
+maps: []
+grids:
+- 1
+orphans:
+- 1
+nullspace: []
 tilemap:
   0: Space
   7: FloorAsteroidSand
   25: FloorCave
+  4: FloorConcrete
   32: FloorDark
+  5: FloorDarkMono
   38: FloorDarkOffset
   41: FloorDarkPlastic
   65: FloorLino
-  4: FloorMS13TileConcreteSmall
   67: FloorMetalDiamond
   3: FloorRedCircuit
   80: FloorReinforced
@@ -45,7 +57,7 @@ entities:
           version: 6
         -1,-1:
           ind: -1,-1
-          tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAAAAAAAAAAAAAAAAAGQAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAEGQAAAAAAGQAAAAAAGQAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAGGQAAAAACGQAAAAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAADGQAAAAADGQAAAAAAGQAAAAAAGQAAAAACGQAAAAACGQAAAAADAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAABAAAAAAAGQAAAAABBAAAAAAAGQAAAAADGQAAAAABGQAAAAADGQAAAAACAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAABGQAAAAAGBAAAAAAABAAAAAAABAAAAAAAGQAAAAADGQAAAAAGGQAAAAAGAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAABAAAAAAABAAAAAAAWQAAAAAABAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAEBAAAAAAAWQAAAAAABAAAAAAAQwAAAAAAQwAAAAAAQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAbQAAAAAAbQAAAAAAbQAAAAAAGQAAAAAEBAAAAAAAWQAAAAAABAAAAAAAQwAAAAAAIAAAAAADIAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAbQAAAAAAbQAAAAAAbQAAAAAAbQAAAAAABAAAAAAAWQAAAAAABAAAAAAAQwAAAAAAWQAAAAAAWQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAbQAAAAAAbQAAAAAAbQAAAAAAGQAAAAADBAAAAAAABAAAAAAABAAAAAAAQwAAAAAAWQAAAAAAWQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAADGQAAAAABBAAAAAAABAAAAAAABAAAAAAAQwAAAAAAQwAAAAAAQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAGAgAAAAAAAgAAAAAAAgAAAAAAQwAAAAAAWgAAAAAAWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAfgAAAAAAGQAAAAAFGQAAAAABGQAAAAABAgAAAAAAAgAAAAAAAgAAAAAAQwAAAAAAWgAAAAAAWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAGGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAADAgAAAAAAQwAAAAAAKQAAAAACQwAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAKQAAAAAAKQAAAAAAKQAAAAAAKQAAAAAAKQAAAAAAKQAAAAAAKQAAAAAA
+          tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAAAAAAAAAAAAAAAAAGQAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAEGQAAAAAAGQAAAAAAGQAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAGGQAAAAACGQAAAAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAADGQAAAAADGQAAAAAAGQAAAAAAGQAAAAACGQAAAAACGQAAAAADAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAABAAAAAAAGQAAAAABBAAAAAAAGQAAAAADGQAAAAABGQAAAAADGQAAAAACAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAABGQAAAAAGBQAAAAAABQAAAAAABQAAAAAAGQAAAAADGQAAAAAGGQAAAAAGAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAABAAAAAAABQAAAAAAWQAAAAAABQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAEBQAAAAAAWQAAAAAABQAAAAAAQwAAAAAAQwAAAAAAQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAbQAAAAAAbQAAAAAAbQAAAAAAGQAAAAAEBQAAAAAAWQAAAAAABQAAAAAAQwAAAAAAIAAAAAADIAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAbQAAAAAAbQAAAAAAbQAAAAAAbQAAAAAABQAAAAAAWQAAAAAABQAAAAAAQwAAAAAAWQAAAAAAWQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAbQAAAAAAbQAAAAAAbQAAAAAAGQAAAAADBQAAAAAABQAAAAAABQAAAAAAQwAAAAAAWQAAAAAAWQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAADGQAAAAABBAAAAAAABAAAAAAABAAAAAAAQwAAAAAAQwAAAAAAQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAGAgAAAAAAAgAAAAAAAgAAAAAAQwAAAAAAWgAAAAAAWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAfgAAAAAAGQAAAAAFGQAAAAABGQAAAAABAgAAAAAAAgAAAAAAAgAAAAAAQwAAAAAAWgAAAAAAWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAGGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAADAgAAAAAAQwAAAAAAKQAAAAACQwAAAAAAAAAAAAAAAAAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAGQAAAAAAKQAAAAAAKQAAAAAAKQAAAAAAKQAAAAAAKQAAAAAAKQAAAAAAKQAAAAAA
           version: 6
         1,-1:
           ind: 1,-1
@@ -506,11 +518,19 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
           - 21.6852
           - 81.57766
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -536,11 +556,19 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.15
           moles:
           - 21.824873
           - 82.1031
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -566,11 +594,19 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.1495
           moles:
           - 20.078888
           - 75.53487
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -795,7 +831,7 @@ entities:
       pos: -6.5,-6.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -18780.352
+      secondsUntilStateChange: -21014.828
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -858,7 +894,7 @@ entities:
       pos: -2.5,-6.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -18772.586
+      secondsUntilStateChange: -21007.062
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -896,7 +932,7 @@ entities:
       parent: 567
     - type: Physics
       canCollide: False
-- proto: AlwaysPoweredLightColoredFrostyBlue
+- proto: AlwaysPoweredLightExterior
   entities:
   - uid: 16
     components:
@@ -904,7 +940,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -0.5,-2.5
       parent: 1
-- proto: AlwaysPoweredLightColoredRed
+- proto: AlwaysPoweredLightSodium
   entities:
   - uid: 17
     components:
@@ -943,7 +979,7 @@ entities:
     - type: Transform
       pos: -8.5,-4.5
       parent: 1
-- proto: AsteroidAltRock
+- proto: AsteroidRock
   entities:
   - uid: 3
     components:
@@ -1893,7 +1929,6 @@ entities:
   - uid: 244
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: -8.5,-1.5
       parent: 1
   - uid: 245
@@ -2309,7 +2344,6 @@ entities:
   - uid: 508
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
       pos: -8.5,-3.5
       parent: 1
   - uid: 509
@@ -2320,7 +2354,6 @@ entities:
   - uid: 511
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
       pos: -7.5,-3.5
       parent: 1
   - uid: 513
@@ -2331,13 +2364,11 @@ entities:
   - uid: 514
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
       pos: -9.5,-3.5
       parent: 1
   - uid: 579
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
       pos: -11.5,-4.5
       parent: 1
   - uid: 580
@@ -2378,7 +2409,6 @@ entities:
   - uid: 597
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
       pos: -12.5,-4.5
       parent: 1
   - uid: 598
@@ -2399,13 +2429,11 @@ entities:
   - uid: 654
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
       pos: -11.5,-3.5
       parent: 1
   - uid: 655
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -11.5,-9.5
       parent: 1
   - uid: 681
@@ -2466,7 +2494,6 @@ entities:
   - uid: 776
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: -8.5,-0.5
       parent: 1
   - uid: 803
@@ -2487,7 +2514,6 @@ entities:
   - uid: 854
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
       pos: -14.5,-5.5
       parent: 1
   - uid: 858
@@ -2508,7 +2534,6 @@ entities:
   - uid: 894
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
       pos: -13.5,-5.5
       parent: 1
   - uid: 904
@@ -2519,25 +2544,21 @@ entities:
   - uid: 1026
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: -7.5,-0.5
       parent: 1
   - uid: 1027
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: -7.5,-1.5
       parent: 1
   - uid: 1028
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: -7.5,0.5
       parent: 1
   - uid: 1029
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: -8.5,0.5
       parent: 1
   - uid: 1048
@@ -2588,103 +2609,86 @@ entities:
   - uid: 1091
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -8.5,-2.5
       parent: 1
   - uid: 1098
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -12.5,-6.5
       parent: 1
   - uid: 1099
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -11.5,-6.5
       parent: 1
   - uid: 1100
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -11.5,-7.5
       parent: 1
   - uid: 1101
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -11.5,-8.5
       parent: 1
   - uid: 1102
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -12.5,-7.5
       parent: 1
   - uid: 1103
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -10.5,-10.5
       parent: 1
   - uid: 1104
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -12.5,-8.5
       parent: 1
   - uid: 1105
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -11.5,-10.5
       parent: 1
   - uid: 1106
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -10.5,-9.5
       parent: 1
   - uid: 1107
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -12.5,-9.5
       parent: 1
   - uid: 1108
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -13.5,-9.5
       parent: 1
   - uid: 1109
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -14.5,-9.5
       parent: 1
   - uid: 1110
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -10.5,-11.5
       parent: 1
   - uid: 1111
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -12.5,-10.5
       parent: 1
   - uid: 1112
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -12.5,-11.5
       parent: 1
   - uid: 1113
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -12.5,-12.5
       parent: 1
   - uid: 1183
@@ -2735,10 +2739,9 @@ entities:
   - uid: 1206
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
       pos: -12.5,-3.5
       parent: 1
-- proto: AsteroidAltRockMining
+- proto: AsteroidRockMining
   entities:
   - uid: 306
     components:
@@ -2784,7 +2787,7 @@ entities:
     - type: Transform
       pos: -1.4242729,5.649396
       parent: 1
-- proto: BarSignWhiskeyEcho
+- proto: BarSignWhiskeyEchoes
   entities:
   - uid: 956
     components:
@@ -2839,53 +2842,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: -5.5,-2.5
       parent: 1
-- proto: BenchSofaCorpLeft
-  entities:
-  - uid: 422
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 6.5,-4.5
-      parent: 1
-  - uid: 423
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 8.5,-5.5
-      parent: 1
-  - uid: 984
-    components:
-    - type: Transform
-      pos: 11.5,2.5
-      parent: 1
-  - uid: 1177
-    components:
-    - type: Transform
-      pos: -1.5,0.5
-      parent: 1
-- proto: BenchSofaCorpRight
+- proto: Binoculars
   entities:
   - uid: 404
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 6.5,-5.5
-      parent: 1
-  - uid: 421
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 8.5,-4.5
-      parent: 1
-  - uid: 985
-    components:
-    - type: Transform
-      pos: 10.5,2.5
-      parent: 1
-  - uid: 1176
-    components:
-    - type: Transform
-      pos: -2.5,0.5
+      pos: 12.647491,0.93442714
       parent: 1
 - proto: BlastDoor
   entities:
@@ -3960,20 +3922,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 8.5,-4.5
       parent: 1
-- proto: ChairOfficeDark
-  entities:
-  - uid: 535
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 9.5,1.5
-      parent: 1
-  - uid: 536
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 11.5,1.5
-      parent: 1
 - proto: CigCartonSyndicate
   entities:
   - uid: 406
@@ -4014,6 +3962,10 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
@@ -4040,7 +3992,7 @@ entities:
       parent: 620
     - type: Physics
       canCollide: False
-- proto: ClothingBeltSyndicateUtility
+- proto: ClothingBeltUtilityEngineering
   entities:
   - uid: 475
     components:
@@ -4311,6 +4263,10 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: CrateFoodDonkpocketSavory
   entities:
   - uid: 551
@@ -4336,6 +4292,10 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: CrateServiceBureaucracy
   entities:
   - uid: 999
@@ -4351,6 +4311,10 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -4467,6 +4431,16 @@ entities:
     - type: Transform
       pos: 10.5,-2.5
       parent: 1
+- proto: DisposalUnit
+  entities:
+  - uid: 596
+    components:
+    - type: MetaData
+      desc: a chute leading straight out to space, attached with a reminder that the Syndicate is not responsible for any injuries caused by improper use.
+      name: Escape Hatch
+    - type: Transform
+      pos: 10.5,-2.5
+      parent: 1
 - proto: DonkpocketBoxSpawner
   entities:
   - uid: 1221
@@ -4566,6 +4540,8 @@ entities:
     - type: Transform
       pos: -0.5,5.5
       parent: 1
+    - type: FaxMachine
+      name: Неизвестно
 - proto: FaxMachineListeningSyndie
   entities:
   - uid: 368
@@ -6054,6 +6030,10 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
@@ -6138,17 +6118,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -2.5,-3.5
-      parent: 1
-- proto: N14WallDecorCalendar
-  entities:
-  - uid: 823
-    components:
-    - type: MetaData
-      desc: A calendar, youve been using it to keep track of how long youve been deployed for, looks like its your last day!
-      name: Deployment Calendar
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -2.5,-2.5
       parent: 1
 - proto: NukeDiskFake
   entities:
@@ -6376,21 +6345,25 @@ entities:
     - type: MetaData
       name: Inbound fax
     - type: Transform
-      pos: -0.6824486,5.519004
+      pos: -0.78043675,5.423232
       parent: 1
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
     - type: Paper
       stampState: paper_stamp-syndicate
       stampedBy:
       - stampedColor: '#850000FF'
         stampedName: stamp-component-stamped-name-syndicate
-      content: >-
-        Your normal fax is invisible to station faxes unless they are emagged, but sometimes your deception involves recieving messages.
+      content: >2
+
+        Ваш обычный факс невидим для станционных факсов, кроме тех случаев, когда те емагнуты. Но иногда в вашу работу входит и приём сообщений.
 
 
-        This fax is reachable by station-bound faxes, by default, its called "Unknown".
+        Этот факс доступен для станционных, по умолчанию его имя "Неизвестно".
 
 
-        You can rename it to whatever you want, for example: "CentComm" by using a screwdriver (or your Cybersun Pen™)
+        Вы можете переименовать его как вам угодно, например "Центральное Командование", используя отвертку (или вашу ручку Киберсан™)
   - uid: 1147
     components:
     - type: MetaData
@@ -6403,19 +6376,20 @@ entities:
       stampedBy:
       - stampedColor: '#850000FF'
         stampedName: stamp-component-stamped-name-syndicate
-      content: >-
-        You can make use of this long-range holopad to make calls.
+      content: >2-
+
+        Вы можете использовать этот голопад для совершения звонков
 
 
-        Use the Chameleon gear provided to dress the part of whomever youre trying to impersonate.
+        Используйте данный вам набор вещей-хамелеонов, чтоб одеться как тот, за кого вы хотите себя выдать.
 
 
-        Holocalls give the callers name, use the Agent ID to provide one.
+        При голо-звонках видно имя звонящего, используйте карту Агента, чтоб подменить его.
 
 
-        Holocalls also say from where they are made, use the Labeler to change yours,
+        При звонках так же, указывается, откуда идёт звонок. Используйте этикетировщик, чтоб изменить его имя (то бишь, отоброжаемую локацию голопада).
 
-        the Format is ( Department - Location )
+        Формат ( Департамент - Место)
 - proto: PaperStationWarrant
   entities:
   - uid: 770
@@ -6441,68 +6415,11 @@ entities:
   - uid: 893
     components:
     - type: Transform
-      pos: 8.5,0.5
+      pos: 8.436543,0.38557982
       parent: 1
-- proto: PaperStickyNote
-  entities:
-  - uid: 1192
-    components:
-    - type: Transform
-      pos: -5.987184,2.8954349
-      parent: 1
-    - type: Paper
-      stampState: paper_stamp-syndicate
-      stampedBy:
-      - stampedColor: '#850000FF'
-        stampedName: stamp-component-stamped-name-syndicate
-      content: >-
-        EMERGENCIES ONLY
-
-        or exceptionally funny ideas.
-
-
-        -High Command
-  - uid: 1215
-    components:
-    - type: Transform
-      pos: 4.1906867,-7.1493835
-      parent: 1
-    - type: Paper
-      stampState: paper_stamp-syndicate
-      stampedBy:
-      - stampedColor: '#850000FF'
-        stampedName: stamp-component-stamped-name-syndicate
-      content: >-
-        In case of overwhelming boarding parties, arm this baby. She packs an extra punch and is SURE to punish anyone who tried to attack us. Once shes armed, make sure they dont try to disarm it, and close the blast door behind you.
-
-
-        Also, dont even think about trying to move her, shes made of pure plastitanium.
-
-
-        Make sure the situation is hopeless before you arm her, we'd threaten to kill you otherwise, but youll be dead anyways.
-  - uid: 1252
-    components:
-    - type: Transform
-      pos: 0.23913574,0.36962616
-      parent: 567
-    - type: EmbeddableProjectile
-      embeddedIntoUid: 567
-    - type: Paper
-      stampState: paper_stamp-syndicate
-      stampedBy:
-      - stampedColor: '#850000FF'
-        stampedName: stamp-component-stamped-name-syndicate
-      content: >-
-        Weve provided you with a list of all active codewords at the time of your FTL.
-
-
-        Any new codewords from assets activated after your arrival will not be available here.
-
-
-        Do NOT let this fall into enemy hands.
     - type: Physics
-      canCollide: False
-      bodyType: Static
+      angularDamping: 0
+      linearDamping: 0
 - proto: PhoneInstrumentSyndicate
   entities:
   - uid: 1132
@@ -6588,14 +6505,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,4.5
-      parent: 1
-- proto: PosterLegitHotDonkExplosion
-  entities:
-  - uid: 767
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -0.5,-4.5
       parent: 1
 - proto: PosterLegitNoERP
   entities:
@@ -6704,61 +6613,6 @@ entities:
     - type: Transform
       pos: 8.5,-2.5
       parent: 1
-- proto: PoweredLightColoredRed
-  entities:
-  - uid: 20
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 6.5,-4.5
-      parent: 1
-  - uid: 22
-    components:
-    - type: Transform
-      pos: 12.5,2.5
-      parent: 1
-  - uid: 23
-    components:
-    - type: Transform
-      pos: -1.5,-5.5
-      parent: 1
-  - uid: 771
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.5,2.5
-      parent: 1
-    - type: Timer
-  - uid: 772
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.5,-3.5
-      parent: 1
-  - uid: 773
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 4.5,0.5
-      parent: 1
-    - type: Timer
-  - uid: 774
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 8.5,0.5
-      parent: 1
-  - uid: 952
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 6.5,1.5
-      parent: 1
-  - uid: 955
-    components:
-    - type: Transform
-      pos: 11.5,-2.5
-      parent: 1
 - proto: PoweredlightOrange
   entities:
   - uid: 1007
@@ -6826,6 +6680,20 @@ entities:
     - type: Transform
       pos: 4.5,-7.5
       parent: 1
+- proto: PrinterDoc
+  entities:
+  - uid: 408
+    components:
+    - type: Transform
+      pos: 11.5,3.5
+      parent: 1
+  - uid: 409
+    components:
+    - type: Transform
+      pos: 11.5,2.5
+      parent: 1
+    - type: Emagged
+      emagType: Interaction
 - proto: Rack
   entities:
   - uid: 777
@@ -6844,6 +6712,27 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -3.5,-5.5
+      parent: 1
+- proto: RadioHandheld
+  entities:
+  - uid: 20
+    components:
+    - type: Transform
+      pos: 8.133041,1.1415834
+      parent: 1
+- proto: RadioHandheldSecurity
+  entities:
+  - uid: 22
+    components:
+    - type: Transform
+      pos: 8.158042,0.46658355
+      parent: 1
+- proto: RadioHandheldSyndicate
+  entities:
+  - uid: 415
+    components:
+    - type: Transform
+      pos: 9.521703,0.9101021
       parent: 1
 - proto: Railing
   entities:
@@ -7020,13 +6909,6 @@ entities:
       linkedPorts:
         1217:
         - Pressed: Toggle
-- proto: SalvageLorePaperGamingSpawner
-  entities:
-  - uid: 801
-    components:
-    - type: Transform
-      pos: 12.5,-9.5
-      parent: 1
 - proto: SheetGlass
   entities:
   - uid: 403
@@ -7144,51 +7026,27 @@ entities:
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
-        773:
-        - On: Off
-        - Off: On
         21:
         - On: On
         - Off: Off
         917:
         - On: On
         - Off: Off
-        771:
-        - On: Off
-        - Off: On
         375:
         - On: On
         - Off: Off
-        774:
-        - Off: On
-        - On: Off
         958:
         - On: On
         - Off: Off
         731:
         - On: On
         - Off: Off
-        772:
-        - On: Off
-        - Off: On
         896:
         - On: On
         - Off: Off
-        20:
-        - On: Off
-        - Off: On
-        23:
-        - On: Off
-        - Off: On
-        955:
-        - On: Off
-        - Off: On
         19:
         - On: On
         - Off: Off
-        22:
-        - On: Off
-        - Off: On
 - proto: SignElectricalMed
   entities:
   - uid: 1219
@@ -7229,16 +7087,6 @@ entities:
       pos: 1.5,-4.5
       parent: 1
     - type: Emagged
-- proto: SpaceDisposalUnit
-  entities:
-  - uid: 596
-    components:
-    - type: MetaData
-      desc: a chute leading straight out to space, attached with a reminder that the Syndicate is not responsible for any injuries caused by improper use.
-      name: Escape Hatch
-    - type: Transform
-      pos: 10.5,-2.5
-      parent: 1
 - proto: SpawnMobRadioGuard
   entities:
   - uid: 811
@@ -7314,6 +7162,9 @@ entities:
   entities:
   - uid: 405
     components:
+    - type: MetaData
+      desc: Шкафчик с полным разнообразием поддельных печатей. Печать Центкома в комплект не входит.
+      name: шкаф с печатями
     - type: Transform
       pos: 10.5,3.5
       parent: 1
@@ -7325,6 +7176,10 @@ entities:
         moles:
         - 1.734816
         - 6.5262127
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -7439,7 +7294,6 @@ entities:
     - ActionGrant
     - UserInterface
     - IntrinsicRadioReceiver
-    - IntrinsicRadioTransmitter
     - ActiveRadio
 - proto: StationAnchor
   entities:
@@ -7567,6 +7421,10 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
 - proto: SyndicateBomb
   entities:
   - uid: 1211
@@ -7586,6 +7444,31 @@ entities:
     - Pullable
 - proto: SyndicateBusinessCard
   entities:
+  - uid: 410
+    components:
+    - type: Transform
+      pos: 8.50104,0.5101025
+      parent: 1
+  - uid: 411
+    components:
+    - type: Transform
+      pos: 8.50104,0.5101025
+      parent: 1
+  - uid: 412
+    components:
+    - type: Transform
+      pos: 8.50104,0.5101025
+      parent: 1
+  - uid: 413
+    components:
+    - type: Transform
+      pos: 8.50104,0.5101025
+      parent: 1
+  - uid: 414
+    components:
+    - type: Transform
+      pos: 8.50104,0.5101025
+      parent: 1
   - uid: 1254
     components:
     - type: Transform
@@ -7700,7 +7583,7 @@ entities:
     - type: Transform
       pos: -6.5,3.5
       parent: 1
-- proto: TableWoodReinforced
+- proto: TableWood
   entities:
   - uid: 382
     components:
@@ -7830,8 +7713,11 @@ entities:
   - uid: 838
     components:
     - type: Transform
-      pos: 16.198624,-0.765656
+      pos: 15.975362,-0.76014733
       parent: 1
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
 - proto: VendingMachineBoozeSyndicate
   entities:
   - uid: 827
@@ -7846,6 +7732,14 @@ entities:
     components:
     - type: Transform
       pos: 4.5,0.5
+      parent: 1
+    - type: Emagged
+- proto: VendingMachineClothing
+  entities:
+  - uid: 23
+    components:
+    - type: Transform
+      pos: -3.5,0.5
       parent: 1
     - type: Emagged
 - proto: VendingMachineColaBlack
@@ -7870,17 +7764,6 @@ entities:
     components:
     - type: Transform
       pos: 12.5,-2.5
-      parent: 1
-    - type: Emagged
-- proto: VendingMachinePride
-  entities:
-  - uid: 1178
-    components:
-    - type: MetaData
-      desc: For dispensing pride in deep space, has a cool S spraypainted on the side.
-      name: Syndicate Pride-O-Mat
-    - type: Transform
-      pos: -3.5,0.5
       parent: 1
     - type: Emagged
 - proto: VendingMachineSeedsUnlocked
@@ -8682,15 +8565,6 @@ entities:
       name: Syndicate Listening Post
     - type: Transform
       pos: 10.5,0.5
-      parent: 1
-- proto: WashingMachineFilledClothes
-  entities:
-  - uid: 1205
-    components:
-    - type: MetaData
-      desc: a note taped to it reads "We had to move it to make space for the bomb, sorry. -High Command"
-    - type: Transform
-      pos: -3.5,-7.5
       parent: 1
 - proto: WaterCooler
   entities:

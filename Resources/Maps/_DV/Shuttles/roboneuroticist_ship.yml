@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Grid
-  engineVersion: 247.2.0
+  engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/13/2025 00:43:58
-  entityCount: 266
+  time: 06/10/2025 20:20:25
+  entityCount: 269
 maps: []
 grids:
 - 1
@@ -251,10 +251,12 @@ entities:
             0: 28979
             1: 2112
           -1,0:
-            0: 49072
+            0: 48944
+            2: 128
             1: 1
           0,1:
-            0: 35019
+            0: 35011
+            3: 8
             1: 8704
           -1,1:
             0: 9083
@@ -302,9 +304,55 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           immutable: True
           moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 21.6852
+          - 81.57766
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 15.635188
+          - 58.8181
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -434,6 +482,8 @@ entities:
     - type: Transform
       parent: 228
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
 - proto: BorgModuleFireExtinguisher
@@ -452,6 +502,8 @@ entities:
     - type: Transform
       parent: 228
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
 - proto: BorgModuleMartyr
@@ -470,15 +522,8 @@ entities:
     - type: Transform
       parent: 228
     - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: BorgModuleSecurityDeescalate
-  entities:
-  - uid: 232
-    components:
-    - type: Transform
-      parent: 228
-    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
 - proto: BorgModuleSyndicateWeapon
@@ -812,6 +857,14 @@ entities:
     - type: Transform
       pos: 2.5,-0.5
       parent: 1
+- proto: ChairPilotSeat
+  entities:
+  - uid: 249
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 0.5,3.5
+      parent: 1
 - proto: CigPackSyndicate
   entities:
   - uid: 109
@@ -889,6 +942,10 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
@@ -919,8 +976,12 @@ entities:
         immutable: False
         temperature: 293.14673
         moles:
-        - 1.7459903
-        - 6.568249
+        - 7.935679
+        - 29.853271
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -937,15 +998,14 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 229
-          - 230
-          - 231
-          - 232
           - 233
           - 234
           - 235
           - 236
           - 237
+          - 230
+          - 231
+          - 229
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -970,6 +1030,10 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -1023,6 +1087,10 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
@@ -1066,6 +1134,10 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
@@ -1098,8 +1170,12 @@ entities:
         immutable: False
         temperature: 293.14673
         moles:
-        - 1.7459903
-        - 6.568249
+        - 1.8856695
+        - 7.0937095
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -1116,13 +1192,13 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 131
           - 129
-          - 130
-          - 155
-          - 154
-          - 137
           - 138
+          - 137
+          - 154
+          - 155
+          - 130
+          - 131
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -1246,6 +1322,14 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
+- proto: FuelDispenser
+  entities:
+  - uid: 100
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -1.5,4.5
+      parent: 1
 - proto: GasPassiveVent
   entities:
   - uid: 156
@@ -1444,10 +1528,18 @@ entities:
       parent: 1
 - proto: Gyroscope
   entities:
-  - uid: 270
+  - uid: 98
     components:
     - type: Transform
-      pos: 1.5,-0.5
+      rot: 3.141592653589793 rad
+      pos: 2.5,-0.5
+      parent: 1
+- proto: HappyHonkNukieSnacks
+  entities:
+  - uid: 254
+    components:
+    - type: Transform
+      pos: 1.5717403,3.626751
       parent: 1
 - proto: IngotGold
   entities:
@@ -1490,13 +1582,6 @@ entities:
     - type: Transform
       pos: -0.5,-3.5
       parent: 1
-- proto: LunchboxSyndicateFilledRandom
-  entities:
-  - uid: 254
-    components:
-    - type: Transform
-      pos: 1.5717403,3.626751
-      parent: 1
 - proto: MachineArtifactCrusher
   entities:
   - uid: 211
@@ -1506,14 +1591,6 @@ entities:
       name: borg-creator-9000
     - type: Transform
       pos: -4.5,4.5
-      parent: 1
-- proto: N14ChairCaptain
-  entities:
-  - uid: 249
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,3.5
       parent: 1
 - proto: NitrogenTankFilled
   entities:
@@ -1700,6 +1777,8 @@ entities:
     - type: Transform
       parent: 133
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
   - uid: 154
@@ -1707,6 +1786,8 @@ entities:
     - type: Transform
       parent: 133
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
   - uid: 155
@@ -1714,6 +1795,8 @@ entities:
     - type: Transform
       parent: 133
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
 - proto: PowerCellMicroreactor
@@ -1723,6 +1806,8 @@ entities:
     - type: Transform
       parent: 133
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
 - proto: Poweredlight
@@ -1790,6 +1875,8 @@ entities:
     - type: Transform
       parent: 133
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
   - uid: 130
@@ -1797,6 +1884,8 @@ entities:
     - type: Transform
       parent: 133
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
 - proto: SheetGlass
@@ -1905,12 +1994,13 @@ entities:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
-- proto: SubstationBasic
+- proto: SubstationWallBasic
   entities:
   - uid: 83
     components:
     - type: Transform
-      pos: 2.5,-0.5
+      rot: 3.141592653589793 rad
+      pos: 2.5,-1.5
       parent: 1
 - proto: SuitStorageEVASyndicate
   entities:
@@ -1927,6 +2017,10 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
@@ -2019,6 +2113,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: -4.5,0.5
       parent: 1
+- proto: ToolboxSyndicateFilled
+  entities:
+  - uid: 101
+    components:
+    - type: Transform
+      pos: -2.4156628,3.8664465
+      parent: 1
 - proto: VendingMachineRestockRobotics
   entities:
   - uid: 138
@@ -2026,6 +2127,8 @@ entities:
     - type: Transform
       parent: 133
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
 - proto: VendingMachineRobotics
@@ -2047,6 +2150,13 @@ entities:
     - type: AccessReader
       enabled: False
     - type: Emagged
+- proto: VendingMachineTankDispenserEVA
+  entities:
+  - uid: 99
+    components:
+    - type: Transform
+      pos: 1.5,-0.5
+      parent: 1
 - proto: WallPlastitanium
   entities:
   - uid: 2
@@ -2322,6 +2432,13 @@ entities:
     components:
     - type: Transform
       pos: -1.5,5.5
+      parent: 1
+- proto: WelderIndustrialAdvanced
+  entities:
+  - uid: 102
+    components:
+    - type: Transform
+      pos: 4.1639166,6.7039466
       parent: 1
 - proto: WeldingFuelTankFull
   entities:

@@ -1,6 +1,17 @@
 meta:
-  format: 6
-  postmapinit: false
+  format: 7
+  category: Grid
+  engineVersion: 251.0.0
+  forkId: ""
+  forkVersion: ""
+  time: 06/10/2025 20:25:16
+  entityCount: 279
+maps: []
+grids:
+- 1
+orphans:
+- 1
+nullspace: []
 tilemap:
   0: Space
   81: FloorRGlass
@@ -19,7 +30,6 @@ entities:
       name: Modus
     - type: Transform
       pos: -0.515625,-0.484375
-      parent: invalid
     - type: MapGrid
       chunks:
         0,0:
@@ -307,11 +317,19 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.14975
           moles:
           - 20.078888
           - 75.53487
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -337,11 +355,19 @@ entities:
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
         - volume: 2500
           temperature: 293.14975
           moles:
           - 21.824879
           - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -772,26 +798,6 @@ entities:
     - type: Transform
       pos: 5.5,3.5
       parent: 1
-- proto: ChairOfficeLight
-  entities:
-  - uid: 232
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 7.5391264,4.5711703
-      parent: 1
-  - uid: 233
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 2.4766264,4.5867953
-      parent: 1
-  - uid: 234
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 3.5235014,8.644082
-      parent: 1
 - proto: ChemDispenserEmpty
   entities:
   - uid: 74
@@ -904,6 +910,10 @@ entities:
         - 0
         - 0
         - 0
+        - 0
+        - 0
+        - 0
+        - 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
@@ -948,6 +958,15 @@ entities:
     - type: Transform
       pos: 5.2693834,2.7092228
       parent: 1
+- proto: FloorDrain
+  entities:
+  - uid: 232
+    components:
+    - type: Transform
+      pos: 8.5,3.5
+      parent: 1
+    - type: Fixtures
+      fixtures: {}
 - proto: FoodTinMRE
   entities:
   - uid: 221
@@ -1446,6 +1465,10 @@ entities:
         moles:
         - 1.7459903
         - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
         - 0
         - 0
         - 0
