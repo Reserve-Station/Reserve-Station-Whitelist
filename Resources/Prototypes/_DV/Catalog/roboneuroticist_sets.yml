@@ -1,4 +1,4 @@
-- type: thiefBackpackSet
+- type: selectableSet
   id: RoboNeuroticistCommander
   name: roboneuroticist-set-commander-name
   description: roboneuroticist-set-commander-description
@@ -9,7 +9,7 @@
   - BorgModuleSyndicateWeapon
   - EncryptionKeyCommon
 
-- type: thiefBackpackSet
+- type: selectableSet
   id: RoboNeuroticistSaboteur
   name: roboneuroticist-set-saboteur-name
   description: roboneuroticist-set-saboteur-description
@@ -20,7 +20,7 @@
   - BorgModuleRCD
   - BorgModuleRCD
 
-- type: thiefBackpackSet
+- type: selectableSet
   id: RoboNeuroticistMechanic
   name: roboneuroticist-set-mechanic-name
   description: roboneuroticist-set-mechanic-description
@@ -30,7 +30,7 @@
   - ClothingBackpackDuffelSyndicateEliteHardsuitBundle
   - ClothingBeltChiefEngineerFilled
 
-- type: thiefBackpackSet
+- type: selectableSet
   id: RoboNeuroticistInfiltrator
   name: roboneuroticist-set-infiltrator-name
   description: roboneuroticist-set-infiltrator-description
@@ -42,7 +42,7 @@
   - BorgModuleRCD
   - BorgModuleChameleonProjector
 
-- type: thiefBackpackSet
+- type: selectableSet
   id: RoboNeuroticistWarmonger
   name: roboneuroticist-set-warmonger-name
   description: roboneuroticist-set-warmonger-description
@@ -51,7 +51,7 @@
   content:
   - PlayerBorgSyndicateAssaultGhostRole
 
-- type: thiefBackpackSet
+- type: selectableSet
   id: RoboNeuroticistClown
   name: roboneuroticist-set-clown-name
   description: roboneuroticist-set-clown-description

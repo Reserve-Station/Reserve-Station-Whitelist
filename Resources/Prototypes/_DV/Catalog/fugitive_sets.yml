@@ -1,4 +1,4 @@
-- type: thiefBackpackSet
+- type: selectableSet
   id: FugitiveHitman
   name: fugitive-set-hitman-name
   description: fugitive-set-hitman-description
@@ -10,7 +10,7 @@
   - MagazinePistol
   - BriefcaseBrown
 
-- type: thiefBackpackSet
+- type: selectableSet
   id: FugitiveSaboteur
   name: fugitive-set-saboteur-name
   description: fugitive-set-saboteur-description
@@ -23,7 +23,7 @@
   - C4
   - ClothingMaskGas
 
-- type: thiefBackpackSet
+- type: selectableSet
   id: FugitiveGhost
   name: fugitive-set-ghost-name
   description: fugitive-set-ghost-description
@@ -36,7 +36,7 @@
   - ScramImplanter
   - ClothingOuterGhostSheet
 
-- type: thiefBackpackSet
+- type: selectableSet
   id: FugitiveLeverage
   name: fugitive-set-leverage-name
   description: fugitive-set-leverage-description
@@ -49,7 +49,7 @@
   - Handcuffs
   - Bola
 
-- type: thiefBackpackSet
+- type: selectableSet
   id: FugitiveInfiltrator
   name: fugitive-set-infiltrator-name
   description: fugitive-set-infiltrator-description
@@ -60,7 +60,7 @@
   - FreedomImplanter
   - ClothingMaskGasSyndicate
 
-- type: thiefBackpackSet
+- type: selectableSet
   id: FugitiveDisruptor
   name: fugitive-set-disruptor-name
   description: fugitive-set-disruptor-description
