@@ -429,6 +429,11 @@
         Heat: 0.7 #Goliath hide gets grilled instead of you
         Radiation: 0.1
         Caustic: 0.8
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -476,6 +481,11 @@
         Piercing: 0.5
         Heat: 0.3
         Radiation: 0.01
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: TemperatureProtection
@@ -645,6 +655,11 @@
         Heat: 0.6 #Goob - Modsuit Rebalance end
         Radiation: 0.15
         Caustic: 0.6
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: ClothingSpeedModifier
     walkModifier: 0.9 #Goob - Modsuit Rebalance
     sprintModifier: 0.9 #Goob - Modsuit Rebalance
@@ -753,6 +768,11 @@
         Shock: 0.85
         Radiation: 0.05
         Caustic: 0.4
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: ExplosionResistance
     damageCoefficient: 0.15 #Goob - Modsuits
   - type: ClothingSpeedModifier
@@ -811,6 +831,11 @@
         Heat: 0.8
         Radiation: 0.5
         Caustic: 0.5
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -849,6 +874,11 @@
         Piercing: 0.9
         Radiation: 0.15
         Caustic: 0.8
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.9
@@ -896,6 +926,12 @@
         Heat: 0.45
         Radiation: 0.45
         Caustic: 0.45
+        Cold: 0.8 # DeltaV - Cold res
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -974,6 +1010,12 @@
         Heat: 0.2
         Radiation: 0.01
         Caustic: 0.4
+        Cold: 0.4 # DeltaV - Cold res
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: Item
     size: Huge
   - type: ClothingSpeedModifier # goobstation - duke nukies
@@ -1020,6 +1062,12 @@
         Heat: 0.45
         Radiation: 0.2
         Caustic: 0.4
+        Cold: 0.8 # DeltaV - Cold res
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -1064,6 +1112,12 @@
         Heat: 0.2
         Radiation: 0.2
         Caustic: 0.2
+        Cold: 0.6 # DeltaV - Cold res
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.65
@@ -1109,6 +1163,11 @@
         Heat: 0.35
         Radiation: 0.05
         Caustic: 0.1
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: ClothingSpeedModifier
     walkModifier: 0.9 # Goob edit
     sprintModifier: 0.9 # Goob edit
@@ -1386,6 +1445,11 @@
         Cellular: 0.1
         Radiation: 0.1
         Caustic: 0.1
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
@@ -1428,6 +1492,11 @@
         Shock: 0.15
         Radiation: 0.1
         Caustic: 0.1
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
   - type: ZombificationResistance
     zombificationResistanceCoefficient: 0.25
   - type: ClothingSpeedModifier

@@ -235,6 +235,7 @@
   - type: Tag
     tags:
     - DroneUsable # Goobstation
+    - WeldingTool # DeltaV - To make it work w/ the guns
 
 - type: entity
   name: industrial welding tool
