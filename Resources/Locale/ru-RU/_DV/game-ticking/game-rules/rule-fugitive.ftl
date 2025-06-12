@@ -5,9 +5,9 @@ fugitive-spawn = Вы падаете с потолка!
 station-event-fugitive-hunt-announcement = Пожалуйста, проверьте пульты связи на наличие конфиденциального сообщения.
 fugitive-announcement-GALPOL = ГАЛПОЛ
 
-fugitive-report-title = РАЗЫСКИВАЕТСЯ: {$name}
-fugitive-report-first-line = В секторе замечен сбежавший беглец {$name}. Он может быть безбилетником на какой-нибудь станции.
-fugitive-report-inhuman = {CAPITALIZE(THE($name))} {CONJUGATE-BE($name)} нечеловеческий. У нас нет больше никаких подробностей.
+fugitive-report-title = [bold]РАЗЫСКИВАЕТСЯ БЕГЛЕЦ![/bold]
+fugitive-report-first-line = В этом секторе был замечен беглец, который замаскировал свою личность. Возможно, он безбилетник на какой-нибудь станции.
+fugitive-report-inhuman = {CAPITALIZE(THE($name))} {CONJUGATE-BE($name)} не гуманоид. У нас нет больше никаких подробностей.
 fugitive-report-morphotype = МОРФОТИП: {$species}
 fugitive-report-age = ВОЗРАСТ: {$age}
 fugitive-report-sex = ПОЛ: {$sex ->
@@ -16,33 +16,37 @@ fugitive-report-sex = ПОЛ: {$sex ->
     *[none] Н/О
 }
 fugitive-report-weight = ВЕС: {$weight} кг
+
+# Random details
+fugitive-report-detail-dna = ДНК: {$dna}
+fugitive-report-detail-prints = ОТПЕЧАТКИ ПАЛЬЦЕВ: {$prints}
+
 fugitive-report-crimes-header = Вышеупомянутого ищут во всем секторе из-за:
 fugitive-report-crime = - {$count ->
-    [1] случая
+    [1] Одного случая
     *[other] {$count} случаев
 } {$crime}
-fugitive-report-last-line = ГАЛПОЛ предпочитает, чтобы беглецов возвращали живыми, чтобы они могли предстать перед судом Центрального командования.
+fugitive-report-last-line = ГАЛПОЛ предпочитает, чтобы беглецов возвращали живыми, чтобы они могли предстать перед судом Центрального Командования.
 
-# All (non erp) felonies and capital crimes in Space Law as of June 2024
-fugitive-crime-1 = Убийство
-fugitive-crime-2 = Терроризм
-fugitive-crime-3 = Грандиозный саботаж
-fugitive-crime-4 = Декорпореализации
-fugitive-crime-5 = Похищение
-fugitive-crime-6 = Подстрекательство
-
-fugitive-crime-7 = Непредумышленное убийство
-fugitive-crime-8 = Крупная кража
-fugitive-crime-9 = Контрабандизм
-fugitive-crime-10 = Саботаж
-fugitive-crime-11 = Массовый саботаж
-fugitive-crime-12 = Нападение
-fugitive-crime-13 = Злоупотребление властью
-fugitive-crime-14 = Владение ограниченным снаряжением
-fugitive-crime-15 = Опасность
-fugitive-crime-16 = Взлом с проникновением
-fugitive-crime-17 = Мятеж
-fugitive-crime-18 = Неуважение к суду
-fugitive-crime-19 = Лжесвидетельство
-fugitive-crime-20 = Ложное сообщение
-fugitive-crime-21 = Воспрепятствование правосудию
+# All (non erp) felonies and capital crimes in Space Law as of June 2025
+fugitive-crime-1 = Убийства
+fugitive-crime-2 = Терроризма
+fugitive-crime-3 = Грандиозного саботажа
+fugitive-crime-4 = Вандализма
+fugitive-crime-5 = Крупного мятежа
+fugitive-crime-6 = Подстрекательства к демонстрации
+fugitive-crime-7 = Непредумышленного убийства
+fugitive-crime-8 = Крупной кражи
+fugitive-crime-9 = Контрабандизма
+fugitive-crime-10 = Саботажа
+fugitive-crime-11 = Массового саботажа
+fugitive-crime-12 = Нападения
+fugitive-crime-13 = Злоупотребления властью
+fugitive-crime-14 = Владения ограниченным снаряжением
+fugitive-crime-15 = Халатности
+fugitive-crime-16 = Жестокости
+fugitive-crime-17 = Мятежа
+fugitive-crime-18 = Неуважения к власти
+fugitive-crime-19 = Лжесвидетельства
+fugitive-crime-20 = Проникновения со взломом
+fugitive-crime-21 = Воспрепятствования правосудию

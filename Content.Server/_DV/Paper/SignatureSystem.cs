@@ -5,25 +5,26 @@
 
 using Content.Goobstation.Common.Paper;
 using Content.Goobstation.Shared.Devil;
-using Content.Server.Access.Systems;
-using Content.Server.Popups;
+using Content.Shared.Access.Systems;
 using Content.Shared.Paper;
-using Content.Server.Paper;
 using Content.Shared.Popups;
 using Content.Shared.Tag;
 using Content.Shared.Verbs;
-using Robust.Server.Audio;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server._DV.Paper;
 
 public sealed class SignatureSystem : EntitySystem
 {
-    [Dependency] private readonly AudioSystem _audio = default!;
-    [Dependency] private readonly IdCardSystem _idCard = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly SharedIdCardSystem _idCard = default!;
     [Dependency] private readonly PaperSystem _paper = default!;
-    [Dependency] private readonly PopupSystem _popup = default!;
+    [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly TagSystem _tags = default!;
+
+    public static readonly ProtoId<TagPrototype> WriteTag = "Write";
 
     // The sprite used to visualize "signatures" on paper entities.
     private const string SignatureStampState = "paper_stamp-signature";
@@ -38,7 +39,7 @@ public sealed class SignatureSystem : EntitySystem
         if (!args.CanAccess || !args.CanInteract)
             return;
 
-        if (args.Using is not {} pen || !_tags.HasTag(pen, "Write"))
+        if (args.Using is not { } pen || !_tags.HasTag(pen, WriteTag))
             return;
 
         var user = args.User;
@@ -80,34 +81,33 @@ public sealed class SignatureSystem : EntitySystem
             StampedColor = Color.DarkSlateGray, //TODO Make this configurable depending on the pen.
         };
 
-        if (!comp.StampedBy.Contains(stampInfo) && _paper.TryStamp(paper, stampInfo, SignatureStampState))
-        {
-            // Show popups and play a paper writing sound
-            if (!HasComp<DevilComponent>(signer)) // Goobstation - Don't display popups for devils, it covers the others.
-            {
-                var signedOtherMessage = Loc.GetString("paper-signed-other", ("user", signer), ("target", paper.Owner));
-                _popup.PopupEntity(signedOtherMessage, signer, Filter.PvsExcept(signer, entityManager: EntityManager), true);
-
-                var signedSelfMessage = Loc.GetString("paper-signed-self", ("target", paper.Owner));
-                _popup.PopupEntity(signedSelfMessage, signer, signer);
-            }
-
-            _audio.PlayPvs(comp.Sound, signer);
-
-            _paper.UpdateUserInterface(paper);
-
-            var evSignSucessfulEvent = new SignSuccessfulEvent(paper, signer); // Goobstation - Devil Antagonist
-            RaiseLocalEvent(paper, ref evSignSucessfulEvent); // Goobstation - Devil Antagonist
-
-            return true;
-        }
-        else
+        if (comp.StampedBy.Contains(stampInfo) || !_paper.TryStamp(paper, stampInfo, SignatureStampState))
         {
             // Show an error popup
             _popup.PopupEntity(Loc.GetString("paper-signed-failure", ("target", paper.Owner)), signer, signer, PopupType.SmallCaution);
-
             return false;
         }
+
+        // Show popups and play a paper writing sound
+        // Goobstation - Don't display popups for devils, it covers the others.
+        if (!HasComp<DevilComponent>(signer))
+        {
+            var signedOtherMessage = Loc.GetString("paper-signed-other", ("user", signer), ("target", paper.Owner));
+            _popup.PopupEntity(signedOtherMessage, signer, Filter.PvsExcept(signer, entityManager: EntityManager), true);
+
+            var signedSelfMessage = Loc.GetString("paper-signed-self", ("target", paper.Owner));
+            _popup.PopupEntity(signedSelfMessage, signer, signer);
+        }
+
+        _audio.PlayPredicted(comp.Sound, signer, signer);
+
+        _paper.UpdateUserInterface(paper);
+
+        // Goobstation - Devil Antagonist
+        var evSignSucessfulEvent = new SignSuccessfulEvent(paper, signer);
+        RaiseLocalEvent(paper, ref evSignSucessfulEvent);
+
+        return true;
     }
 
     private string DetermineEntitySignature(EntityUid uid)

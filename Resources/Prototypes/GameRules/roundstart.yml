@@ -559,6 +559,8 @@
         tableId: UnknownShuttlesFreelanceTable
       - !type:NestedSelector
         tableId: UnknownShuttlesHostileTable
+      - !type:NestedSelector
+        tableId: UnknownShuttlesFreelanceTableDeltaV # DeltaV
 
 - type: entity
   id: BasicStationEventScheduler

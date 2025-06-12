@@ -55,7 +55,7 @@
     description: ghost-role-information-fugitive-description
     rules: ghost-role-information-fugitive-rules
     mindRoles:
-    - MindRoleFugitive
+    - MindRoleGhostRoleSoloAntagonist
     requirements:
     - !type:DepartmentTimeRequirement
       department: Security
@@ -71,7 +71,7 @@
     description: ghost-role-information-recruiter-description
     rules: ghost-role-information-recruiter-rules
     mindRoles:
-    - MindRoleRecruiter
+    - MindRoleGhostRoleSoloAntagonist
     requirements: # keep in sync with the antag prototype
     - !type:OverallPlaytimeRequirement
       time: 86400 # 24h so you probably know some general lore or something
@@ -103,6 +103,19 @@
       time: 7200 # 2h chemist so you know how to make CH
 
 - type: entity
+  name: robo neuroticist spawner
+  id: SpawnPointRoboNeuroticist
+  parent: MarkerBase
+  components:
+  - type: SpawnPoint
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+      - state: green
+      - sprite: Structures/Wallmounts/signs.rsi
+        state: radiation
+
+- type: entity
   categories: [ HideSpawnMenu, Spawner ]
   parent: BaseAntagSpawner
   id: SpawnPointGhostRoboNeuroticist
@@ -112,7 +125,7 @@
     description: ghost-role-information-roboneuroticist-description
     rules: ghost-role-information-roboneuroticist-rules
     mindRoles:
-    - MindRoleRoboNeuroticist
+    - MindRoleGhostRoleSoloAntagonist
     requirements: # keep in sync with the antag prototype
     - !type:OverallPlaytimeRequirement
       time: 172800 # 48h evil big antag lots of playtime

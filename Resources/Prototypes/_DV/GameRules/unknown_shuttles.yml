@@ -12,34 +12,51 @@
   - type: GameRule
     chaosScore: 150
   - type: StationEvent
+    startAnnouncement: null
     weight: 4
     minimumPlayers: 20
     maxOccurrences: 1
     duration: null
     chaos:
-      Hostile: 75
-      Medical: 75
+      Hostile: 50
+    eventType: HostilesSpawn # Goobstation
   - type: RuleGrids
   - type: LoadMapRule
     preloadedGrid: SyndieRecruiterShip
-  - type: AntagSpawner
-    prototype: MobHuman
   - type: AntagObjectives
     objectives:
     - RecruiterEscapeObjective
     - RecruiterRecruitingObjective
     - RecruiterKeepPenObjective
+  - type: AntagLoadProfileRule
   - type: AntagSelection
     agentName: recruiter-round-end-agent-name
     definitions:
     - spawnerPrototype: SpawnPointGhostRecruiter
+      briefing:
+        text: recruiter-role-briefing
+        color: Red
+        sound: /Audio/_Reserve/Ambience/Antag/traitor_start.ogg
       min: 1
       max: 1
       pickPlayer: false
       startingGear: SyndicateRecruiterGear
       roleLoadout:
-      - RoleSurvivalStandard
+      - RoleSurvivalSyndicate
       components:
+      - type: GhostRole
+        name: ghost-role-information-recruiter-name
+        description: ghost-role-information-recruiter-description
+        rules: ghost-role-information-recruiter-rules
+        mindRoles:
+          - MindRoleGhostRoleSoloAntagonist
+        requirements: # keep in sync with the antag prototype
+        - !type:OverallPlaytimeRequirement
+          time: 36000 # 10h so you probably know some general lore or something
+        - !type:DepartmentTimeRequirement
+          department: Command
+          time: 3600 # 1h as Command so you maybe know how to paperwork
+      - type: GhostTakeoverAvailable
       - type: RandomMetadata
         nameSegments:
         - NamesFakeHumanFirst
@@ -58,35 +75,52 @@
   id: SynthesisSpecialist
   components:
   - type: StationEvent
+    startAnnouncement: null
     weight: 4
     minimumPlayers: 20
     maxOccurrences: 1
     duration: null
     chaos:
-      Hostile: 75
-      Medical: 75
+      Hostile: 45
+    eventType: HostilesSpawn
   - type: GameRule
     chaosScore: 200
   - type: RuleGrids
   - type: LoadMapRule
     preloadedGrid: SyndieSynthesisShip
-  - type: AntagSpawner
-    prototype: MobHuman
   - type: AntagObjectives
     objectives:
     - SynthesisSurviveObjective
     - SynthesisPrescribeObjective
+  - type: AntagLoadProfileRule
   - type: AntagSelection
     agentName: synthesis-round-end-agent-name
     definitions:
     - spawnerPrototype: SpawnPointGhostSynthesis
+      briefing:
+        text: synthesis-role-briefing
+        color: Red
+        sound: /Audio/_Reserve/Ambience/Antag/traitor_start.ogg
       min: 2
       max: 2
       pickPlayer: false
       startingGear: SyndicateSynthesisGear
       roleLoadout:
-      - RoleSurvivalStandard
+      - RoleSurvivalSyndicate
       components:
+      - type: GhostRole
+        name: ghost-role-information-synthesis-name
+        description: ghost-role-information-synthesis-description
+        rules: ghost-role-information-synthesis-rules
+        mindRoles:
+        - MindRoleGhostRoleFreeAgent
+        requirements: # keep in sync with the antag prototype
+        - !type:OverallPlaytimeRequirement
+          time: 36000 # 10h so you probably know some general lore or something
+        - !type:RoleTimeRequirement
+          role: JobChemist
+          time: 7200 # 2h chemist so you know how to make CH
+      - type: GhostTakeoverAvailable
       - type: RandomMetadata
         nameSegments:
         - NamesFakeHumanFirst

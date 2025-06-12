@@ -34,9 +34,13 @@
       min: 2
       max: 2
       pickPlayer: false
+      briefing:
+        text: listening-post-role-briefing
+        color: Red
+        sound: /Audio/_Reserve/Ambience/Antag/traitor_start.ogg
       startingGear: SyndicateListenerGear
       roleLoadout:
-      - RoleSurvivalStandard
+      - RoleSurvivalSyndicate
       components:
       - type: RandomMetadata
         nameSegments:
@@ -111,8 +115,6 @@
   - type: RuleGrids
   - type: LoadMapRule
     gridPath: /Maps/_DV/Shuttles/roboneuroticist_ship.yml
-  - type: AntagSpawner
-    prototype: MobHuman
   - type: AntagObjectives
     objectives:
     - RoboNeuroticistSurviveObjective
@@ -120,6 +122,7 @@
     - RoboNeuroticistKillObjective
     #- RoboNeuroticistPlutoniumCoreStealObjective #not implemented
     - RoboNeuroticistUploadAILawObjective
+  - type: AntagLoadProfileRule
   - type: AntagSelection
     agentName: roboneuroticist-round-end-agent-name
     definitions:
@@ -128,16 +131,33 @@
       max: 1
       pickPlayer: false
       startingGear: RoboNeuroticistGear
+      briefing:
+        text: roboneuroticist-role-briefing
+        color: Red
+        sound: /Audio/Ambience/Antag/emagged_borg.ogg # evil sound
       roleLoadout:
-      - RoleSurvivalStandard
+      - RoleSurvivalSyndicate
       components:
+      - type: GhostRole
+        name: ghost-role-information-roboneuroticist-name
+        description: ghost-role-information-roboneuroticist-description
+        rules: ghost-role-information-roboneuroticist-rules
+        mindRoles:
+        - MindRoleGhostRoleSoloAntagonist
+        raffle:
+          settings: default
+        requirements: # keep in sync with the antag prototype
+        - !type:OverallPlaytimeRequirement
+          time: 36000 # 10h evil big antag lots of playtime
+        - !type:RoleTimeRequirement
+          role: JobScientist
+          time: 7200 # 2h Scientist so you know how to make robot
+      - type: GhostTakeoverAvailable
       - type: RandomMetadata
         nameSegments:
         - NamesHologram
         - NamesMilitaryLast
         nameFormat: name-format-standard
-      - type: EmitSoundOnSpawn # evil sound
-        sound: /Audio/Ambience/Antag/emagged_borg.ogg
       - type: RandomHumanoidAppearance
         randomizeName: false
       - type: NpcFactionMember
