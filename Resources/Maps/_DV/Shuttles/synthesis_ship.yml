@@ -516,8 +516,6 @@ entities:
     - type: RadiationGridResistance
     - type: NavMap
   - uid: 307
-    mapInit: true
-    paused: true
     components:
     - type: MetaData
       name: solution - beaker
@@ -1867,8 +1865,6 @@ entities:
 - proto: Jug
   entities:
   - uid: 306
-    mapInit: true
-    paused: true
     components:
     - type: MetaData
       desc: Кажется, он тут в роли чайника.
