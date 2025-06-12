@@ -14,7 +14,7 @@
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
-        pda-syndi-agent
+        pda-syndi
 
 - type: entity
   parent: SyndiPDA
