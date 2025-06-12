@@ -2854,8 +2854,8 @@ entities:
   - uid: 1187
     components:
     - type: MetaData
-      desc: this one says "Management Danger"
-      name: vault blast door
+      desc: На этом написано "Опасность управления".
+      name: гермозатвор хранилища
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -5.5,1.5
@@ -2865,8 +2865,8 @@ entities:
   - uid: 1217
     components:
     - type: MetaData
-      desc: provides access to the emergency decomissioning device, for use in DIRE emergencies. It can be opened via the signaller found in the vault.
-      name: emergency decomissioning device blast door
+      desc: обеспечивает доступ к устройству аварийной дезинтеграции, предназначенному для использования в аварийных ситуациях. Его можно открыть с помощью сигналлера, расположенного в хранилище.
+      name: гермозатвор устройства аварийной дезинтеграции
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 3.5,-6.5
@@ -3939,7 +3939,7 @@ entities:
   - uid: 388
     components:
     - type: MetaData
-      name: pyjama closet
+      name: шкаф пижам
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 7.5,2.5
@@ -5974,8 +5974,8 @@ entities:
   - uid: 1220
     components:
     - type: MetaData
-      desc: the final step between you and the decomissioning device.
-      name: emergency decomissioning device unlocker
+      desc: последний шаг между вами и устройством для дезинтеграции.
+      name: разблокировщик устройства дезинтеграции
     - type: Transform
       pos: 4.5,-5.5
       parent: 1
@@ -6343,7 +6343,7 @@ entities:
   - uid: 1146
     components:
     - type: MetaData
-      name: Inbound fax
+      name: Входящий факс
     - type: Transform
       pos: -0.78043675,5.423232
       parent: 1
@@ -6367,7 +6367,7 @@ entities:
   - uid: 1147
     components:
     - type: MetaData
-      name: Instruction manual
+      name: Инструкция по эксплуатации
     - type: Transform
       pos: -2.2845595,3.286944
       parent: 1
@@ -6900,8 +6900,8 @@ entities:
   - uid: 1218
     components:
     - type: MetaData
-      desc: Opens access to the emergency decomissioning device, for use in emergencies.
-      name: decomissioning device key
+      desc: Открывает доступ к устройству аварийной дезинтеграции, предназначенному для использования в чрезвычайных ситуациях.
+      name: ключ к устройству дезинтеграции
     - type: Transform
       pos: -6.192114,3.883606
       parent: 1
@@ -6942,7 +6942,7 @@ entities:
   - uid: 805
     components:
     - type: MetaData
-      name: bridge blast doors button
+      name: кнопка гермозатворов мостика
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 11.5,-1.5
@@ -6962,15 +6962,15 @@ entities:
   - uid: 806
     components:
     - type: MetaData
-      desc: A note taped to it reads, "Be sure to keep it bolted, else those crazy guards might try to drink vacuum"
-      name: external bolts button
+      desc: "На ней приклеена записка: 'Не забудьте держать шлюзы заболтированными, иначе эти сумасшедшие охранники могут попытаться выйти погулять в вакуум'."
+      name: кнопка внешних болтов
     - type: Transform
       pos: 4.5,4.5
       parent: 1
   - uid: 807
     components:
     - type: MetaData
-      name: rec room blast shields button
+      name: кнопка щитов комнаты отдыха
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 5.5,-2.5
@@ -6994,8 +6994,8 @@ entities:
   - uid: 1181
     components:
     - type: MetaData
-      desc: contains the GOOD stuff.
-      name: Vault Button
+      desc: Внутри ХОРОШИЕ штуки.
+      name: кнопка хранилища
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -6.5,0.5
@@ -7430,8 +7430,8 @@ entities:
   - uid: 1211
     components:
     - type: MetaData
-      desc: an Extra reinforced Syndicate hardbomb, dont bother moving it, and dont bother trying to disarm her either. Activate ONLY in case of overwhelming nanotrasen forces.
-      name: Emergency Decomissioning Device
+      desc: Усиленная бомба Синдиката, не пытайтесь ее сдвинуть с места и не пытайтесь ее обезвредить. Активировать только в случае превосходящих сил НаноТрейзен.
+      name: Устройство Аварийной Дезинтеграции
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 4.5,-7.5
