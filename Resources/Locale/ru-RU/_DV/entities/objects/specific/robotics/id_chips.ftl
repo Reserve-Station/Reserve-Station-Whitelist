@@ -1,0 +1,17 @@
+ent-BaseIdChip = идентификационный чип
+    .desc = Программируемый идентификационный чип, контролирующий доступ киборга. Настройте его с помощью консоли ID-карт.
+ent-IdChipBasic = { ent-BaseIdChip }
+    .suffix = Базовый
+    .desc = { ent-BaseIdChip.desc }
+ent-IdChipAA = { ent-BaseIdChip }
+    .suffix = Полный доступ
+    .desc = { ent-BaseIdChip.desc }
+ent-IdChipBorgAA = { ent-BaseIdChip }
+    .suffix = Борговский полный доступ, без глав
+    .desc = { ent-BaseIdChip.desc }
+ent-IdChipSyndie = идентификационный чип синдиката
+    .desc = Зловеще выглядящий идентификационный чип для более чем мерзких киборгов.
+    .suffix = Синдикат, Копирующий
+ent-IdChipRoboNeuroticist = { ent-IdChipSyndie }
+    .suffix = Робо-Невротик
+    .desc = { ent-IdChipSyndie.desc }

@@ -1,0 +1,10 @@
+ent-MindRoleListeningPost = Оператора поста прослушки Роль
+    .desc = { ent-BaseMindRoleAntag.desc }
+ent-MindRoleFugitive = Беглец Роль
+    .desc = { ent-BaseMindRoleAntag.desc }
+ent-MindRoleRecruiter = Рекрутёр Роль
+    .desc = { ent-BaseMindRoleAntag.desc }
+ent-MindRoleSynthesis = Специалист по синтезу Роль
+    .desc = { ent-BaseMindRoleAntag.desc }
+ent-MindRoleRoboNeuroticist = Робо-невротик Роль
+    .desc = { ent-BaseMindRoleAntag.desc }

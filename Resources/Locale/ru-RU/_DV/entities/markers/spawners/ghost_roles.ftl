@@ -1,0 +1,15 @@
+ent-SpawnPointPlayerCharacter = гостроль спавнер
+    .suffix = игровой персонажа, НЕ МАППИТЬ
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnPointGhostSyndicateListener = { ent-BaseAntagSpawner }
+    .desc = { ent-BaseAntagSpawner.desc }
+ent-SpawnPointGhostFugitive = { ent-BaseAntagSpawner }
+    .desc = { ent-BaseAntagSpawner.desc }
+ent-SpawnPointGhostRecruiter = { ent-BaseAntagSpawner }
+    .desc = { ent-BaseAntagSpawner.desc }
+ent-SpawnPointGhostSynthesis = { ent-BaseAntagSpawner }
+    .desc = { ent-BaseAntagSpawner.desc }
+ent-SpawnPointRoboNeuroticist = robo neuroticist spawner
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnPointGhostRoboNeuroticist = { ent-BaseAntagSpawner }
+    .desc = { ent-BaseAntagSpawner.desc }

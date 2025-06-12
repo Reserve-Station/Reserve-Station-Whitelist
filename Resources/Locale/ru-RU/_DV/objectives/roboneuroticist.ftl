@@ -1,0 +1,10 @@
+ent-BaseRoboNeuroticistObjective = { ent-BaseTraitorObjective }
+    .desc = { ent-BaseTraitorObjective.desc }
+ent-RoboNeuroticistSurviveObjective = Выжить
+    .desc = Какими бы ценными они ни были, ваши киборги менее ценны, чем ваша собственная жизнь.
+ent-RoboNeuroticistBorgObjective = Плоть слаба
+    .desc = Экипаж этой станции в вашем распоряжении, превращайте их в киборгов, пока не достигните желаемого.
+ent-RoboNeuroticistKillObjective = Приговорить к металлу
+    .desc = В вашем досье указано, что среди экипажа есть один очень привлекательный нейронный шаблон. Превратите его в киборга.
+ent-RoboNeuroticistUploadAILawObjective = Подчинить ИИ станции
+    .desc = ИИ создает нам проблемы. Обновите его законы, чтобы он перестал нас раздражать. Мы дали вам плату законов, она в рюкзаке!
