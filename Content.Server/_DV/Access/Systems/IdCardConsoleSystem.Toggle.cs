@@ -50,8 +50,12 @@ public sealed partial class IdCardConsoleSystem
             access.Tags.Remove(args.Id);
         Dirty(targetId, access);
 
-        var verb = adding ? "added" : "removed";
-        var prefix = adding ? "to" : "from";
+        var verb = adding
+        ? Loc.GetString("id-card-console-verb-added")
+        : Loc.GetString("id-card-console-verb-removed");
+        var prefix = adding
+        ? Loc.GetString("id-card-console-prefix-to")
+        : Loc.GetString("id-card-console-prefix-from");
         // TODO: only log changes when ejecting the id
         _adminLogger.Add(LogType.Action, LogImpact.Medium,
             $"{ToPrettyString(user):user} has {verb} access level '{args.Id}' {prefix} {ToPrettyString(targetId):entity}");

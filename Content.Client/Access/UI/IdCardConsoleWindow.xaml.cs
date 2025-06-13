@@ -288,15 +288,14 @@ namespace Content.Client.Access.UI
         // Reserve-IDConsoleActions-Start
         private void ActionGiveAllAccess()
         {
-            foreach (var button in _accessButtons.ButtonsList.Values)
+            foreach (var (id, button) in _accessButtons.ButtonsList)
             {
-                if (!button.Disabled && button.Pressed == false)
+                if (!button.Disabled && !button.Pressed)
                 {
+                    OnToggleAccess?.Invoke(id);
                     button.Pressed = true;
                 }
             }
-
-            SubmitData();
         }
 
         private void AddAccessGroup(AccessGroupPrototype? group)
@@ -309,47 +308,56 @@ namespace Content.Client.Access.UI
 
             foreach (var pair in _accessButtons.ButtonsList)
             {
-                if (group.Tags.Contains(pair.Key))
+                if (group.Tags.Contains(pair.Key) && !pair.Value.Disabled && !pair.Value.Pressed)
                 {
-                    if (!pair.Value.Disabled && pair.Value.Pressed == false)
-                    {
-                        pair.Value.Pressed = true;
-                    }
+                    OnToggleAccess?.Invoke(pair.Key);
+                    pair.Value.Pressed = true;
                 }
             }
-            SubmitData();
         }
 
         public void SetJobAccess(JobPrototype job)
         {
-            ClearAllAccess();
+            // First switch off all non-work-related accesses
+            foreach (var (id, button) in _accessButtons.ButtonsList)
+            {
+                if (button.Pressed &&
+                    !job.Access.Contains(id) &&
+                    !job.AccessGroups.Any(g =>
+                        _prototypeManager.TryIndex(g, out AccessGroupPrototype? group) &&
+                        group.Tags.Contains(id)))
+                {
+                    OnToggleAccess?.Invoke(id);
+                    button.Pressed = false;
+                }
+            }
 
-            // this is a sussy way to do this
+            // Then we enable all the accesses we need for our work
             foreach (var access in job.Access)
             {
-                if (_accessButtons.ButtonsList.TryGetValue(access, out var button) && !button.Disabled)
+                if (_accessButtons.ButtonsList.TryGetValue(access, out var button) &&
+                    !button.Disabled && !button.Pressed)
                 {
+                    OnToggleAccess?.Invoke(access);
                     button.Pressed = true;
                 }
             }
 
             foreach (var group in job.AccessGroups)
             {
-                if (!_prototypeManager.TryIndex(group, out AccessGroupPrototype? groupPrototype))
+                if (_prototypeManager.TryIndex(group, out AccessGroupPrototype? groupPrototype))
                 {
-                    continue;
-                }
-
-                foreach (var access in groupPrototype.Tags)
-                {
-                    if (_accessButtons.ButtonsList.TryGetValue(access, out var button) && !button.Disabled)
+                    foreach (var access in groupPrototype.Tags)
                     {
-                        button.Pressed = true;
+                        if (_accessButtons.ButtonsList.TryGetValue(access, out var button) &&
+                            !button.Disabled && !button.Pressed)
+                        {
+                            OnToggleAccess?.Invoke(access);
+                            button.Pressed = true;
+                        }
                     }
                 }
             }
-
-            SubmitData();
         }
 
         public void ResetToDefaultJobAccess()

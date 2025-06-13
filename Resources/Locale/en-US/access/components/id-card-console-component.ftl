@@ -21,3 +21,7 @@ id-card-console-window-job-selection-label = Job presets (sets department and jo
 access-id-card-console-component-no-hands-error = You have no hands.
 id-card-console-privileged-id = Privileged ID
 id-card-console-target-id = Target ID
+id-card-console-verb-added = added
+id-card-console-verb-removed = removed
+id-card-console-prefix-to = to
+id-card-console-prefix-from = from

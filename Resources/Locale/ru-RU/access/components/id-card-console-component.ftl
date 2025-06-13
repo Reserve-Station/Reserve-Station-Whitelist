@@ -9,3 +9,7 @@ id-card-console-window-job-selection-label = Предустановки долж
 access-id-card-console-component-no-hands-error = У вас нет рук.
 id-card-console-privileged-id = Основная ID
 id-card-console-target-id = Целевая ID
+id-card-console-verb-added = добавлено
+id-card-console-verb-removed = убрано
+id-card-console-prefix-to = на
+id-card-console-prefix-from = с
