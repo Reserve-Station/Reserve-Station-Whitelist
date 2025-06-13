@@ -862,8 +862,8 @@
       borg_brain:
         - PositronicBrain
       borg_module:
-        - BorgModuleSyndicateWeapon
-        - BorgModuleTool
+        - BorgModuleAdvancedTool # Reserve edit
+        - BorgModuleFlamingAxe # Reserve edit - axe borg modules
         - BorgModuleOperative
       borg_id_chip: # DeltaV - borg id chips
       - IdChipSyndie

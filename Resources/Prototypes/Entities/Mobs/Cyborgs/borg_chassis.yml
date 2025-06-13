@@ -141,7 +141,7 @@
           map: ["light"]
           visible: false
     - type: BorgChassis
-      maxModules: 3
+      maxModules: 5 # Reserve edit
       moduleWhitelist:
         tags:
           - BorgModuleGeneric
@@ -173,7 +173,7 @@
           map: ["light"]
           visible: false
     - type: BorgChassis
-      maxModules: 3
+      maxModules: 5 # Reserve edit
       moduleWhitelist:
         tags:
           - BorgModuleGeneric
@@ -212,7 +212,7 @@
           map: ["light"]
           visible: false
     - type: BorgChassis
-      maxModules: 3
+      maxModules: 5 # Reserve edit
       moduleWhitelist:
         tags:
           - BorgModuleGeneric

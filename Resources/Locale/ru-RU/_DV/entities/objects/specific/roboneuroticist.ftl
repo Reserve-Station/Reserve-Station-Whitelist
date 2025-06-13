@@ -1,2 +1,2 @@
-ent-RoboNeuroticistStash = roboneuroticist's specialty
-    .desc = You've trained for this. Pick how you want to specialize
+ent-RoboNeuroticistStash = специальность робоневротика
+    .desc = Вы тренировались для этого. Выберите, на чём вы хотите специализироваться

@@ -1,3 +1,4 @@
+# all kits should cost about ~100TC (if possible)
 - type: selectableSet
   id: RoboNeuroticistCommander
   name: roboneuroticist-set-commander-name
@@ -6,8 +7,17 @@
     entity: ClothingMaskGasVoiceChameleon
   content:
   - ClothingMaskGasVoiceChameleon
-  - BorgModuleSyndicateWeapon
-  - EncryptionKeyCommon
+  - BorgModuleSyndicateWeaponAdvanced
+  - EncryptionKeyStationMaster
+  - SyndicatePersonalAI
+  - AgentIDCard
+  - RadioImplanter
+  - DeathRattleImplanter
+  - ClothingEyesNightVisionGogglesNukie
+  - CameraBug
+  - RemoteSignallerAdvanced
+  - BloodredCasette # sit and listen to music when borgs do all the job
+  - HandheldCrewMonitorRecharging
 
 - type: selectableSet
   id: RoboNeuroticistSaboteur
@@ -19,6 +29,11 @@
   - PowerSink
   - BorgModuleRCD
   - BorgModuleRCD
+  - SyndicateJawsOfLife
+  - BorgModuleFlamingAxe
+  - ClothingBackpackDuffelSyndicateC4tBundle
+  - ElectricalDisruptionKit
+  - ClothingHandsGlovesColorYellow
 
 - type: selectableSet
   id: RoboNeuroticistMechanic
@@ -29,6 +44,7 @@
   content:
   - ClothingBackpackDuffelSyndicateEliteHardsuitBundle
   - ClothingBeltChiefEngineerFilled
+  - SmokeImplanter #to fix borgs in smoke
 
 - type: selectableSet
   id: RoboNeuroticistInfiltrator
@@ -37,7 +53,7 @@
   sprite:
     entity: BorgChassisSyndicateSaboteur
   content:
-  - PlayerBorgSyndicateSaboteurGhostRole
+  - PlayerBorgSyndicateSaboteurGhostRole #TC heavy, no clue how much exactly. >100 already ig
   - BorgModuleEsword
   - BorgModuleRCD
   - BorgModuleChameleonProjector
@@ -49,8 +65,12 @@
   sprite:
     entity: BorgChassisSyndicateAssault
   content:
-  - PlayerBorgSyndicateAssaultGhostRole
+  - PlayerBorgSyndicateAssaultGhostRole #375 TC :troll:
+  - ClothingUniformJumpsuitOperative
+  - ClothingNeckScarfStripedSyndieRed
+  - ClothingHeadHatOutlawHat #stylish evil men
 
+#why does this even exists
 - type: selectableSet
   id: RoboNeuroticistClown
   name: roboneuroticist-set-clown-name
@@ -66,4 +86,26 @@
   - ClothingBackpackDuffelSyndicateCostumeClown
   - MobJonkBot
   - HappyHonk
+  - FoodPieBananaCream
+  - BananiumSword
+  - ClothingBackpackERTClown
+  - SadTromboneImplanter
+  - LauncherCreamPieRegenerating
 
+- type: selectableSet
+  id: RoboNeuroticistDoctor
+  name: roboneuroticist-set-doctor-name
+  description: roboneuroticist-set-doctor-description
+  sprite:
+    entity: PlayerBorgSyndicateMedicalBattery
+  content:
+  - PlayerBorgSyndicateMedicalGhostRole
+  - BluespaceBeaker
+  - ChemistryBottleNocturine
+  - ChemistryBottleOmnizine
+  - ChemistryBottleOmnizine
+  - ChemistryBottleLead
+  - ChemistryBottleEphedrine
+  - ChemistryBottleOxycodone
+  - ClothingEyesHudSyndicateAgent
+  - CigPackSyndicate
