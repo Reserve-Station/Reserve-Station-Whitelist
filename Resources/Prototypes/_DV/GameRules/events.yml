@@ -51,6 +51,7 @@
       - type: NpcFactionMember
         factions:
         - Syndicate
+      - type: PreventGridLeave # WWDP
       mindRoles:
       - MindRoleListeningPost
 
