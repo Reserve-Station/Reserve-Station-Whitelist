@@ -1,4 +1,4 @@
-roboneuroticist-set-commander-name = Командир дрона
+roboneuroticist-set-commander-name = Командир дронов
 roboneuroticist-set-commander-description =
     Вы всегда вели боргов своим голосом и говорили на их языке.
     Поставляется с дополнительным оружейным модулем, мастер-ключом, голосовой маской
