@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingBackpackMilitarySatchel
+  id: ClothingBackpackMilitarySatchelSalvageCCFilled
+  suffix: Filled, Event, Salvage
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: SatchelSalvageCCFillTable
+
+- type: entityTable
+  id: SatchelSalvageCCFillTable
+  table: !type:AllSelector
+    children:
+    - id: BoxCardboard #may be changed. Box for delievery
+    - id: BoxMagazineShotgunSlug
+    - id: BoxFolderCentCom
+    - id: FlashlightSeclite
+    - id: HandheldGPSBasic
+    - id: PenCentcom
+    - id: WeaponPulsePistol

@@ -1,0 +1,33 @@
+#ERT Leader Hardsuit
+- type: entity
+  parent: [ BaseCentcommContraband, ClothingHeadHelmetHardsuitSyndieCommander ]
+  id: ClothingHeadHelmetHardsuitERTLeaderAlt
+  name: ERT leader voidsuit helmet
+  description: A special voidsuit helmet worn by members of an emergency response team. This one looks damaged.
+  suffix: Syndicate
+  components:
+  - type: Sprite
+    sprite: _Reserve/Clothing/Head/Hardsuits/ertleader_alt.rsi
+  - type: Clothing
+    sprite: _Reserve/Clothing/Head/Hardsuits/ertleader_alt.rsi
+  - type: PointLight
+    color: "#adffc8"
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+
+#ERT Security Hardsuit
+- type: entity
+  parent: [ BaseCentcommContraband, ClothingHeadHelmetHardsuitSyndie ]
+  id: ClothingHeadHelmetHardsuitERTSecurityAlt
+  name: ERT security voidsuit helmet
+  description: A special voidsuit helmet worn by members of an emergency response team. This one looks damaged.
+  suffix: Syndicate
+  components:
+  - type: Sprite
+    sprite: _Reserve/Clothing/Head/Hardsuits/ertsecurity_alt.rsi
+  - type: Clothing
+    sprite: _Reserve/Clothing/Head/Hardsuits/ertsecurity_alt.rsi
+  - type: PointLight
+    color: "#ffadad"
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
