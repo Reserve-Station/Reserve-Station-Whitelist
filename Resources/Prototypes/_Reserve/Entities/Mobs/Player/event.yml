@@ -1,0 +1,116 @@
+### ERT covert leader (Syndicate role)
+- type: entity
+  name: covert ERT leader spawner
+  id: ERTLeaderCovertSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Structures/Decoration/banner.rsi
+        state: banner_syndicate
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidERTLeaderCovert
+
+- type: entity
+  id: RandomHumanoidERTLeaderCovert
+  name: covert ERT leader ghost role
+  components:
+    - type: Sprite
+      sprite: Structures/Decoration/banner.rsi
+      state: banner_syndicate
+    - type: RandomHumanoidSpawner
+      settings: ERTLeaderCovert
+
+- type: randomHumanoidSettings
+  id: ERTLeaderCovert
+  parent: EventHumanoid
+  speciesBlacklist:
+  - Monkey
+  - Kobold
+  - Abductor
+  - Yowie
+  - IPC
+  - Diona
+  - Vox # Sprites look shit on them.
+  - Gingerbread
+  components:
+    - type: AutoImplant
+      implants: [ FakeMindShieldImplant, FreedomImplant, RadioImplant, MicroBombImplant, DeathRattleImplant ]
+    - type: NpcFactionMember
+      factions:
+      - Syndicate
+    - type: NukeOperative
+    - type: GhostRole
+      name: ghost-role-information-ert-covert-leader-name
+      description: ghost-role-information-ert-covert-leader-description
+      rules: ghost-role-information-rules-team-antagonist
+      mindRoles:
+      - MindRoleGhostRoleTeamAntagonist
+      raffle:
+        settings: default
+      requirements:
+      - !type:DepartmentTimeRequirement
+        department: Command
+        time: 18000 # 5h
+    - type: Loadout
+      prototypes: [ ERTLeaderCovertGearFull ]
+      roleLoadout: [ RoleSurvivalSyndicate ]
+
+# ERT covert officcer
+- type: entity
+  name: syndicate soldier spawner
+  id: ERTCovertSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Structures/Decoration/banner.rsi
+        state: banner_syndicate
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidERTCovert
+
+- type: entity
+  id: RandomHumanoidERTCovert
+  name: covert ERT officer ghost role
+  components:
+    - type: Sprite
+      sprite: Structures/Decoration/banner.rsi
+      state: banner_syndicate
+    - type: RandomHumanoidSpawner
+      settings: ERTCovert
+
+- type: randomHumanoidSettings
+  id: ERTCovert
+  parent: EventHumanoid
+  speciesBlacklist:
+  - Monkey
+  - Kobold
+  - Abductor
+  - Yowie
+  - IPC
+  - Diona
+  - Harpy
+  - Vox # Sprites look shit on them.
+  - Gingerbread
+  components:
+    - type: AutoImplant
+      implants: [ FakeMindShieldImplant, FreedomImplant, RadioImplant, MicroBombImplant, DeathRattleImplant ]
+    - type: NpcFactionMember
+      factions:
+      - Syndicate
+    - type: NukeOperative
+    - type: GhostRole
+      name: ghost-role-information-ert-covert-name
+      description: ghost-role-information-ert-covert-description
+      rules: ghost-role-information-rules-team-antagonist
+      mindRoles:
+      - MindRoleGhostRoleTeamAntagonist
+      raffle:
+        settings: default
+    - type: Loadout
+      prototypes: [ ERTCovertGearFull ]
+      roleLoadout: [ RoleSurvivalSyndicate ]
