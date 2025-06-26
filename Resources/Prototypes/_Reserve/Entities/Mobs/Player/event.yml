@@ -35,6 +35,7 @@
   - Diona
   - Vox # Sprites look shit on them.
   - Gingerbread
+  - Oni
   components:
     - type: AutoImplant
       implants: [ FakeMindShieldImplant, FreedomImplant, RadioImplant, MicroBombImplant, DeathRattleImplant ]
@@ -60,7 +61,7 @@
 
 # ERT covert officcer
 - type: entity
-  name: syndicate soldier spawner
+  name: covert ERT officer spawner
   id: ERTCovertSpawner
   parent: MarkerBase
   components:
@@ -96,6 +97,7 @@
   - Harpy
   - Vox # Sprites look shit on them.
   - Gingerbread
+  - Oni
   components:
     - type: AutoImplant
       implants: [ FakeMindShieldImplant, FreedomImplant, RadioImplant, MicroBombImplant, DeathRattleImplant ]

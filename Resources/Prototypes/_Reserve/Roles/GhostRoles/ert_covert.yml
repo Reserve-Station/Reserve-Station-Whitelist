@@ -3,20 +3,26 @@
   id: ERTCovertGearFull
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTLeader
-    back: ClothingBackpackERTOfficer
+    back: ClothingBackpackERTSecurity
     shoes: ClothingShoesBootsCombatFilled #no magboots?
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTSecurityAlt
-    id: SyndiPDANukie #chameleon this before you go
+    suitstorage: OxygenTankFilled
+    id: ChameleonPDA #chameleon this before you go. card in a backpack
     ears: ClothingHeadsetAltSecurityRegular #no cc channel
     belt: ClothingBeltAssaultFilled
+    pocket1: WeaponPistolCobra #stealthy kill the target
     pocket2: FlashlightSeclite
   storage:
     back:
     - MedkitCombatFilled
     - CrowbarRed
+    - NukieAgentIDCard
+    - MagazinePistolCaselessRifle
+    - MagazinePistolCaselessRifleSAPHE
+    - WeaponLauncherRocketDisposable
 
 # ERT Covert Leader gear
 - type: startingGear
