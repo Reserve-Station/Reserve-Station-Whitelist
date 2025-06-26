@@ -4,7 +4,6 @@
 // SPDX-License-Identifier: MIT
 
 using Content.Goobstation.Maths.FixedPoint;
-﻿using Content.Shared.FixedPoint;
 using Content.Shared.Whitelist; // imp
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;

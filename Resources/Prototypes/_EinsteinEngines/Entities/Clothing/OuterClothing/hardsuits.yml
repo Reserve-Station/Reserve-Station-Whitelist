@@ -51,6 +51,11 @@
   - type: ModifyDelayedKnockdown # Goobstation
     delayDelta: 3
     knockdownTimeDelta: -3
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
 
 - type: entity
   parent: [ClothingOuterHardsuitCombatStandard,BaseCommandContraband]
@@ -110,6 +115,11 @@
   - type: ModifyDelayedKnockdown # Goobstation
     delayDelta: 3
     knockdownTimeDelta: -3
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
 
 # Riot Combat Hardsuits
 - type: entity
@@ -154,3 +164,8 @@
     damageCoefficient: 0.5
   - type: ModifyDelayedKnockdown # Goobstation
     cancel: true
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
