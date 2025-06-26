@@ -15,9 +15,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 20
-    intensitySlope: 1
-    totalIntensity: 200
+    maxIntensity: 30
+    intensitySlope: 3
+    totalIntensity: 300
     maxTileBreak: 1
   - type: PointLight
     radius: 3.5
@@ -32,7 +32,7 @@
   components:
   - type: Sprite
     sprite: _Impstation/Objects/Weapons/Guns/Projectiles/bazooka.rsi
-    layers: 
+    layers:
       - state: concussionproj
   - type: Projectile
     impactEffect: BulletImpactEffect

@@ -5,7 +5,7 @@
   description: A special, disposable containment device designed for quickly refueling Echion plasma weapons.
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Weapons/Guns/Ammuntion/Magazine/Special/echioncanister.rsi
+    sprite: _Impstation/Objects/Weapons/Guns/Ammunition/Magazine/Special/echioncanister.rsi
     layers:
       - state: canister
         map: ["enum.GunVisualLayers.Base"]
@@ -24,16 +24,16 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 4
     fillBaseName: canister-
-  - type: SolutionItemStatus
-    solution: tank
   - type: ExaminableSolution
+    solution: tank
+  - type: SolutionItemStatus
     solution: tank
   - type: ReagentTank
     tankType: Fuel
-    fuelWhitelist: 
+    fuelWhitelist:
       tags:
         - EchionGun
-    fuelBlacklist: 
+    fuelBlacklist:
       tags:
         - WeldingTool
   - type: SolutionContainerManager

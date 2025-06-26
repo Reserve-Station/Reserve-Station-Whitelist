@@ -1,23 +1,23 @@
 - type: entity
   name: Adder
-  parent: BaseItem
+  parent: [BaseItem, BaseSyndicateContraband]
   id: WeaponPlasmaAdder
-  description: While not the intended product of Cybersun's research, the Adder's liquid-ammo platform is a fearsome technology. Uses Echion, produced from advanced synthesizers.
+  description: The future of stellar warfare in the palm of your hand. Uses Echion, produced from advanced synthesizers.
   components:
   - type: Sprite
     sprite: _Impstation/Objects/Weapons/Guns/Special/adder.rsi
     layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-unshaded-4
-      map: ["enum.GunVisualLayers.MagUnshaded"]
-      shader: unshaded
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-unshaded-4
+        map: ["enum.GunVisualLayers.MagUnshaded"]
+        shader: unshaded
   - type: Clothing
     sprite: _Impstation/Objects/Weapons/Guns/Special/adder.rsi
     quickEquip: false
     slots:
-    - suitStorage
-    - Belt
+      - suitStorage
+      - Belt
   - type: Appearance
   - type: AmmoCounter
   - type: MagazineVisuals
@@ -25,10 +25,10 @@
     steps: 5
     zeroVisible: true
   - type: Item
+    sprite: _Impstation/Objects/Weapons/Guns/Special/adder.rsi
     size: Small
     shape:
-    - 0,0,1,0
-    - 0,1,0,1
+    - 0,0,1,1
   - type: Gun
     clumsyProof: false
     cameraRecoilScalar: 1
@@ -37,7 +37,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/_Impstation/Weapons/Guns/Gunshots/adder.ogg
+      path: /Audio/_Impstation/Weapons/Guns/Gunshots/akurra.ogg
   - type: SolutionContainerManager
     solutions:
       chamber:
@@ -58,7 +58,7 @@
     solution: chamber
   - type: Tag
     tags:
-     - EchionGun
+    - EchionGun
   - type: StaticPrice
     price: 100
 
@@ -66,24 +66,25 @@
   name: Akurra
   parent: [WeaponPlasmaAdder, BaseGunWieldable]
   id: WeaponPlasmaAkurra
-  description: Critics call the Adder's successor "a beautiful marriage of technology and malice in a single package". Uses Echion, produced from advanced synthesizers.
+  description: A beautiful marriage of technology and malice in a single package. Uses Echion, produced from advanced synthesizers.
   components:
   - type: Sprite
     sprite: _Impstation/Objects/Weapons/Guns/Special/akurra.rsi
     layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-unshaded-4
-      map: ["enum.GunVisualLayers.MagUnshaded"]
-      shader: unshaded
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-unshaded-4
+        map: ["enum.GunVisualLayers.MagUnshaded"]
+        shader: unshaded
   - type: Clothing
     sprite: _Impstation/Objects/Weapons/Guns/Special/akurra.rsi
     quickEquip: false
     slots:
-    - suitStorage
-    - Belt
+      - suitStorage
+      - Belt
   - type: Appearance
   - type: Item
+    sprite: _Impstation/Objects/Weapons/Guns/Special/akurra.rsi
     size: Large
     shape:
     - 0,0,3,0
@@ -101,7 +102,7 @@
     angleIncrease: 2
     angleDecay: 18
     soundGunshot:
-      path: /Audio/_Impstation/Weapons/Guns/Gunshots/akurra.ogg
+      path: /Audio/_Impstation/Weapons/Guns/Gunshots/adder.ogg
   - type: SolutionContainerManager
     solutions:
       chamber:
@@ -115,6 +116,6 @@
     fireCost: 5
   - type: Tag
     tags:
-      - EchionGun
+    - EchionGun
   - type: StaticPrice
     price: 100
