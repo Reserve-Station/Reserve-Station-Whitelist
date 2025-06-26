@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 āda <ss.adasts@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.Chemistry.Reagent;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
