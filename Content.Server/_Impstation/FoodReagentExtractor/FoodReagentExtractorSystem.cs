@@ -2,7 +2,7 @@ using System.Linq;
 using Content.Server.Nutrition.Components;
 using Content.Server.Popups;
 using Content.Shared.Chemistry.EntitySystems;
-using Content.Shared.FixedPoint;
+using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Interaction;
 using Robust.Server.Audio;
 

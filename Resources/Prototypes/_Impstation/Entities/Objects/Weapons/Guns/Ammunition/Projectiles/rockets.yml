@@ -40,10 +40,8 @@
       types:
         Piercing: 0
         Blunt: 125
-        Structural: 300
-    penetrationThreshold: 500
-    penetrationDamageTypeRequirement:
-    - Structural
+        Structural: 500
+    penetrationThreshold: 800
     soundHit:
       path: /Audio/Weapons/genhit3.ogg
   - type: StaminaDamageOnCollide
