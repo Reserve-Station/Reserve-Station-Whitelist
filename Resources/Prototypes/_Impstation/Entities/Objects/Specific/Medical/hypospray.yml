@@ -30,8 +30,10 @@
       pen:
         maxVol: 30
         reagents:
+        - ReagentId: Mechanotoxin
+          Quantity: 2.5
         - ReagentId: Bungotoxin
-          Quantity: 20.7
+          Quantity: 18.2
         - ReagentId: Toxin
           Quantity: 1.5
         - ReagentId: Blackpepper
