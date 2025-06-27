@@ -45,9 +45,6 @@
     pocket2: WeaponGrapplingGun
   inhand:
   - BoxCardboard #TODO CHANGE TO COOL STUFF
-  storage:
-    back:
-    - BoxSurvivalSlotsSecurity
 
 - type: startingGear
   id: SalvageCentcomGearAlt #another armor set
@@ -69,6 +66,3 @@
     pocket2: WeaponGrapplingGun
   inhand:
   - BoxCardboard #TODO CHANGE TO COOL STUFF
-  storage:
-    back:
-    - BoxSurvivalSlotsSecurity

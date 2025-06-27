@@ -12,7 +12,7 @@
   id: SatchelSalvageCCFillTable
   table: !type:AllSelector
     children:
-    - id: BoxCardboard #may be changed. Box for delievery
+    - id: BoxSurvivalSlotsSecurity
     - id: BoxMagazineShotgunSlug
     - id: BoxFolderCentCom
     - id: FlashlightSeclite
