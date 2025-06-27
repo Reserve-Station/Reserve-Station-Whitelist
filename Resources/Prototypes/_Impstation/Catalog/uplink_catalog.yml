@@ -4,7 +4,7 @@
   description: uplink-poison-injector-desc
   productEntity: PoisonAutoInjector
   cost:
-    Telecrystal: 8
+    Telecrystal: 40 # goob currency
   categories:
   - UplinkChemicals
   conditions:
@@ -20,7 +20,7 @@
   description: uplink-poison-injector-desc
   productEntity: PoisonAutoInjector
   cost:
-    Telecrystal: 12
+    Telecrystal: 60 # goob currency
   categories:
   - UplinkChemicals
   conditions:
