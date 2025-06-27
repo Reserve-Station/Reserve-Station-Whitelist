@@ -1,6 +1,6 @@
 - type: entity
   name: lethal poison auto-injector
-  parent: [BaseItem, Tier3Contraband]
+  parent: [BaseItem, BaseSyndicateContraband]
   description: A single dose of a lethal toxin mix, induces gradual organ failure and esophagus inflammation which eliminates a subject within one to two minutes of injection. Small print on it says "Non-Recyclable. Please return to Gorlex Customer Satisfaction for reuse and rebate."
   id: PoisonAutoInjector
   components:
