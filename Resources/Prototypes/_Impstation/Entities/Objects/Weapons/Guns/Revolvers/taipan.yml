@@ -1,16 +1,16 @@
 - type: entity
-  name: Anaconda
+  name: Taipan
   parent: [BaseWeaponRevolver, BaseSyndicateContraband]
-  id: WeaponAnaconda
+  id: WeaponRevolverTaipan
   description: A junior designer at Waffle Corp. swears they submitted this as a joke. Kicks like a blood-red horse if used without a hardsuit. Uses .60 anti-materiel ammo.
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/anaconda.rsi
+    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/Taipan.rsi
     layers:
     - state: icon
       map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
-    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/anaconda.rsi
+    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/Taipan.rsi
     slots:
     - suitStorage
     - Belt
@@ -18,11 +18,11 @@
     size: Normal
     storedSprite:
       state: storage
-      sprite: _Impstation/Objects/Weapons/Guns/Revolvers/anacondax64.rsi
+      sprite: _Impstation/Objects/Weapons/Guns/Revolvers/Taipanx64.rsi
     shape:
     - 0,0,3,0
     - 0,1,0,1
-    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/anaconda.rsi
+    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/Taipan.rsi
   - type: Gun
     fireRate: 1.0
     minAngle: 1
@@ -30,7 +30,7 @@
     angleIncrease: 20
     angleDecay: 4
     soundGunshot:
-      path: /Audio/_Impstation/Weapons/Guns/Gunshots/anaconda.ogg
+      path: /Audio/_Impstation/Weapons/Guns/Gunshots/Taipan.ogg
   - type: RevolverAmmoProvider
     whitelist:
       tags:

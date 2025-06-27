@@ -1,7 +1,7 @@
 - type: entity
-  id: BriefcaseSyndieAnacondaBundleFilled
+  id: BriefcaseSyndieTaipanBundleFilled
   parent: BriefcaseSyndie
-  suffix: Syndicate, Anaconda Bundle
+  suffix: Syndicate, Taipan Bundle
   components:
   - type: Item
     size: Ginormous
@@ -11,8 +11,8 @@
     - 0,0,6,3
   - type: StorageFill
     contents:
-      - id: WeaponAnaconda
-      - id: SpeedLoaderAnaconda
+      - id: WeaponRevolverTaipan
+      - id: SpeedLoaderTaipan
         amount: 2
       - id: ClothingHeadHatCowboyRed
       - id: ClothingShoesBootsCowboyBlack
