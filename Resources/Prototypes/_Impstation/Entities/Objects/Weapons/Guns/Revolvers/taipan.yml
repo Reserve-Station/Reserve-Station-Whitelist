@@ -5,12 +5,12 @@
   description: A junior designer at Waffle Corp. swears they submitted this as a joke. Kicks like a blood-red horse if used without a hardsuit. Uses .60 anti-materiel ammo.
   components:
   - type: Sprite
-    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/Taipan.rsi
+    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/taipan.rsi
     layers:
     - state: icon
       map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
-    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/Taipan.rsi
+    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/taipan.rsi
     slots:
     - suitStorage
     - Belt
@@ -22,7 +22,7 @@
     shape:
     - 0,0,3,0
     - 0,1,0,1
-    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/Taipan.rsi
+    sprite: _Impstation/Objects/Weapons/Guns/Revolvers/taipan.rsi
   - type: Gun
     fireRate: 1.0
     minAngle: 1
@@ -30,7 +30,7 @@
     angleIncrease: 20
     angleDecay: 4
     soundGunshot:
-      path: /Audio/_Impstation/Weapons/Guns/Gunshots/Taipan.ogg
+      path: /Audio/_Impstation/Weapons/Guns/Gunshots/taipan.ogg
   - type: RevolverAmmoProvider
     whitelist:
       tags:
