@@ -1,6 +1,6 @@
 - type: entity
-  id: BriefcaseSyndieTaipanBundleFilled
   parent: BriefcaseSyndie
+  id: BriefcaseSyndieTaipanBundleFilled
   suffix: Syndicate, Taipan Bundle
   components:
   - type: Item
