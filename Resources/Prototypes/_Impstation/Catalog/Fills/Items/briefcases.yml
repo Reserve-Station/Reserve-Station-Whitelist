@@ -1,0 +1,20 @@
+- type: entity
+  parent: BriefcaseSyndie
+  id: BriefcaseSyndieTaipanBundleFilled
+  suffix: Syndicate, Taipan Bundle
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,6,3
+  - type: StorageFill
+    contents:
+      - id: WeaponRevolverTaipan
+      - id: SpeedLoaderTaipan
+        amount: 2
+      - id: ClothingHeadHatCowboyRed
+      - id: ClothingShoesBootsCowboyBlack
+      - id: ClothingOuterPonchoClassic
+      - id: ClothingUniformJumpsuitFlannel

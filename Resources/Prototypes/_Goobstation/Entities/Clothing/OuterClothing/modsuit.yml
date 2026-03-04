@@ -85,6 +85,11 @@
   - type: HideClothingLayerClothing
     hiddenSlots:
     - jumpsuit
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
 
 - type: entity
   parent: ClothingOuterBase

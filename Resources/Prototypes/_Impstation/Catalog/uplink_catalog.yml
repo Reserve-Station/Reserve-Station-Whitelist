@@ -1,0 +1,34 @@
+- type: listing
+  id: UplinkPoisonAuto-Injector
+  name: uplink-poison-injector-name
+  description: uplink-poison-injector-desc
+  productEntity: PoisonAutoInjector
+  cost:
+    Telecrystal: 40 # goob currency
+  categories:
+  - UplinkChemicals
+  conditions:
+  - !type:StoreWhitelistCondition
+     blacklist:
+       tags:
+       - NukeOpsUplink
+  - !type:BuyerWhitelistCondition
+
+- type: listing
+  id: UplinkNukiePoisonAuto-Injector
+  name: uplink-poison-injector-name
+  description: uplink-poison-injector-desc
+  productEntity: PoisonAutoInjector
+  cost:
+    Telecrystal: 60 # goob currency
+  categories:
+  - UplinkChemicals
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+        - SurplusBundle

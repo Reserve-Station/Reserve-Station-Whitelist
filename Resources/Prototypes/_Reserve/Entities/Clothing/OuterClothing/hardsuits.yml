@@ -1,0 +1,35 @@
+#ERT Leader Hardsuit
+- type: entity
+  parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieCommander ]
+  id: ClothingOuterHardsuitERTLeaderAlt
+  name: ERT leader's voidsuit
+  description: A protective voidsuit worn by the leader of an emergency response team. This one looks damaged. I hope, it's not taken from a corpse.
+  suffix: Syndicate
+  components:
+  - type: Sprite
+    sprite: _Reserve/Clothing/OuterClothing/Hardsuits/ertleader_alt.rsi
+  - type: Clothing
+    sprite: _Reserve/Clothing/OuterClothing/Hardsuits/ertleader_alt.rsi
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetHardsuitERTLeaderAlt
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+
+#ERT Security Hardsuit
+- type: entity
+  parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndie ]
+  id: ClothingOuterHardsuitERTSecurityAlt
+  name: ERT security's voidsuit
+  description: A protective voidsuit worn by the security officers of an emergency response team. This one looks damaged. I hope, it's not taken from a corpse.
+  suffix: Syndicate
+  components:
+  - type: Sprite
+    sprite: _Reserve/Clothing/OuterClothing/Hardsuits/ertsecurity_alt.rsi
+  - type: Clothing
+    sprite: _Reserve/Clothing/OuterClothing/Hardsuits/ertsecurity_alt.rsi
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHelmetHardsuitERTSecurityAlt
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag

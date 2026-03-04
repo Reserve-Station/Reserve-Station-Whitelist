@@ -1,0 +1,68 @@
+- type: job
+  id: SalvageCentcom #event role
+  name: job-name-salvagecentcom
+  description: job-description-salvagecentcom
+  playTimeTracker: JobSalvageSpecialistCentcom
+  setPreference: false
+  startingGear: SalvageCentcomGear
+  icon: "JobIconShaftMiner"
+  supervisors: job-supervisors-commander
+  canBeAntag: false
+  access: #no AA, only cargo + CC access. Role anyway gets Executive ID Card for AA.
+  - Cargo
+  - Maintenance
+  - Salvage
+  - External
+  - Command
+  - Brig
+  - CentralCommand
+  special:
+  - !type:AddImplantSpecial
+    implants: [ FreedomImplant, BluespaceLifelineImplant, RadioImplantCentcomm, NutrimentPumpImplant, StypticStimulatorImplant ]
+  - !type:AddComponentSpecial
+    components:
+    - type: GrantCqc
+      startingStage: Hard
+      isBlocked: false
+
+- type: startingGear
+  id: SalvageCentcomGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+    back: ClothingBackpackMilitarySatchelSalvageCCFilled
+    mask: ClothingMaskGasMerc
+    eyes: ClothingEyesGlassesCentComm
+    neck: ExecutiveIDCard
+    ears: ClothingHeadsetMining
+    gloves: ClothingHandsMercGlovesCombat
+    outerClothing: ClothingOuterArmorBasic #just for style
+    suitstorage: WeaponShotgunEnforcer
+    shoes: ClothingShoesBootsMagEmergencyResponseTeam
+    head: ClothingHeadBandMerc
+    id: SalvagePDA
+    belt: ClothingBeltSalvageWebbingSalvageCCFilled
+    pocket1: WeaponCrusherDagger
+    pocket2: WeaponGrapplingGun
+  inhand:
+  - BoxCardboard #TODO CHANGE TO COOL STUFF
+
+- type: startingGear
+  id: SalvageCentcomGearAlt #another armor set
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+    back: ClothingBackpackMilitarySatchelSalvageCCFilled
+    mask: ClothingMaskGasERT #this
+    eyes: ClothingEyesGlassesCentComm
+    neck: ExecutiveIDCard
+    ears: ClothingHeadsetMining
+    gloves: ClothingHandsMercGlovesCombat
+    outerClothing: ClothingOuterArmorHelldiver #this
+    suitstorage: WeaponShotgunEnforcer
+    shoes: ClothingShoesBootsMagEmergencyResponseTeam
+    head: ClothingHeadHatBeretNavyOfficer #this
+    id: SalvagePDA
+    belt: ClothingBeltSalvageWebbingSalvageCCFilled
+    pocket1: WeaponCrusherDagger
+    pocket2: WeaponGrapplingGun
+  inhand:
+  - BoxCardboard #TODO CHANGE TO COOL STUFF

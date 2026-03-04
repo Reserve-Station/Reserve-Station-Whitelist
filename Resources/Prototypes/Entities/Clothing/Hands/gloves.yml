@@ -414,6 +414,10 @@
         Slash: 0.9
         Piercing: 0.9
         Shock: 0.75
+  - type: DamageOnShootProtection # imp
+    damageProtection:
+      flatReductions:
+        Blunt: 4
 
 # can't parent combat gloves since they are butcherable
 - type: entity
@@ -436,6 +440,10 @@
         Slash: 0.9
         Piercing: 0.9
         Shock: 0.75
+  - type: DamageOnShootProtection # imp - These are just reskinned combat gloves
+    damageProtection:
+      flatReductions:
+        Blunt: 4
 
 - type: entity
   parent: [ BaseSecurityCargoContraband, ClothingHandsGlovesCombat ]
@@ -454,6 +462,10 @@
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-olive
+  - type: DamageOnShootProtection # imp
+    damageProtection:
+      flatReductions:
+        Blunt: 4
 
 - type: entity
   parent: ClothingHandsButcherable

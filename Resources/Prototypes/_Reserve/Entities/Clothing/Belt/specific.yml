@@ -1,0 +1,22 @@
+- type: entity
+  parent: ClothingBeltSalvageWebbing
+  id: ClothingBeltSalvageWebbingSalvageCCFilled
+  suffix: Filled, Event, Salvage
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: BeltlSalvageCCFillTable
+
+- type: entityTable
+  id: BeltlSalvageCCFillTable
+  table: !type:AllSelector
+    children:
+    - id: JawsOfLife
+    - id: Flare
+      amount: !type:ConstantNumberSelector
+        value: 2
+    - id: MedkitCombatFilled
+    - id: C4
+      amount: !type:ConstantNumberSelector
+        value: 2

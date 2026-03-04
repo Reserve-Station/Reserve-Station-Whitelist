@@ -179,6 +179,9 @@
   - type: Tool #Goob
     qualities:
     - Ignition
+  - type: Tag # DeltaV
+    tags:
+      - WeldingTool
 
 - type: entity
   name: cheap lighter
@@ -302,6 +305,9 @@
   - type: UseDelay
   - type: IgnitionSource
     ignited: false
+  - type: Tag # DeltaV
+    tags:
+    - WeldingTool
 
 - type: entity
   name: flippo engraved lighter
